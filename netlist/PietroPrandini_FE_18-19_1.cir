@@ -1,0 +1,15 @@
+* First Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - 1 of 4
+********************************************************************************
+*                        Pietro Prandini - mat. 1097752                        *
+*                                                                              *
+* This work is licensed under the Creative Commons Attribution-ShareAlike 4.0  *
+* International License. To view a copy of this license, visit                 *
+* http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative  *
+* Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
+********************************************************************************
+
+VIN Vi 0 100mV DC 0 AC 1 sin(0 100mV 10kHz 0 0 0)
+C2 N001 Vi 100n
+R2 N001 0 100k
+
+.END
