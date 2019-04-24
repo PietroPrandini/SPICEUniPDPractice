@@ -1715,108 +1715,6 @@ pop pop
 [47 0 0 -47 0 0]
 makefont setfont
 223 2432 moveto
-9 3108
-<000100810000043a0581000a002b4014
-040802020b0c05044003060608010001
-74590018003f2b110033183f331acd32
-11120139113333313033352111053525
-2111211581015dfeae0161010a0143d1
-03c1d3dde5fb50d1>
-/LiberationSans-Bold findfont exch 1 index
-havetype42gdir
-{/GlyphDirectory get begin 20 exch def end}
-{/sfnts get 4 index get 3 index 2 index putinterval pop}
-ifelse
-/CharStrings get
-begin
- /one 20 def
-end
-pop pop
-/one glyphshow
-9 2972
-<00020051ffec041f0596000b001b0028
-401414050c0005001d1c091073590907
-031873590319003f2b00183f2b111201
-39391133113331300110022320113412
-3633321201342e0123220e0115141e01
-33323e01041ff5f5fe1c6ad4aefae8fe
-e626545055572527555150572702c1fe
-9bfe9002d5fd014098fe96fe95c3d85e
-5fd7c3c1d95e63da>
-/LiberationSans-Bold findfont exch 1 index
-havetype42gdir
-{/GlyphDirectory get begin 19 exch def end}
-{/sfnts get 4 index get 3 index 2 index putinterval pop}
-ifelse
-/CharStrings get
-begin
- /zero 19 def
-end
-pop pop
-/zero glyphshow
-/zero glyphshow
-10 6140
-<000100870000069e044f00260093405e
-172600001f081f1e1007081e08282722
-031403505910171a0314100c0f1f0800
-15e42801d428018428015428013b2801
-db2801bb28019b28015428013b28012f
-2801021f2801002801e02801d02801b0
-28019f28018028016028012f28015d5d
-5d5d5d5d5d71715f7171717171717272
-727272003f32323f3f17332b11003311
-12013939113333113311123911333331
-3021111023220615112111342627211e
-0115333e01333217333e013332161511
-2111102322060711030ca4556bfee705
-03010c030a04349b6cf83506379a779e
-a6fee9a4526905025f011dae8afdbc03
-48576f2c13a51f7c70ec7e6ed7c9fd51
-025f011d9f8cfdaf>
-/LiberationSans-Bold findfont exch 1 index
-havetype42gdir
-{/GlyphDirectory get begin 80 exch def end}
-{/sfnts get 4 index get 3 index 2 index putinterval pop}
-ifelse
-/CharStrings get
-begin
- /m 80 def
-end
-pop pop
-/m glyphshow
-10 2468
-<0001000e000005480581000a0038401f
-090a010006030202060a030c0bc00c01
-9f0c01600c012f0c0109020306011200
-3f333f33015d5d5d5d11121739113311
-333311333130290101210116173f0101
-210342fed5fdf7013401221b2f153301
-2101310581fc7758b256b40389000000
->
-/LiberationSans-Bold findfont exch 1 index
-havetype42gdir
-{/GlyphDirectory get begin 57 exch def end}
-{/sfnts get 4 index get 3 index 2 index putinterval pop}
-ifelse
-/CharStrings get
-begin
- /V 57 def
-end
-pop pop
-/V glyphshow
-9 76
-<>
-/LiberationSans-Bold findfont exch 1 index
-havetype42gdir
-{/GlyphDirectory get begin 3 exch def end}
-{/sfnts get 4 index get 3 index 2 index putinterval pop}
-ifelse
-/CharStrings get
-begin
- /space 3 def
-end
-pop pop
-/space glyphshow
 9 7336
 <00020089000005710581000900120034
 401d0f050a0005001413060e5f590603
@@ -1862,7 +1760,39 @@ begin
 end
 pop pop
 /C glyphshow
+9 76
+<>
+/LiberationSans-Bold findfont exch 1 index
+havetype42gdir
+{/GlyphDirectory get begin 3 exch def end}
+{/sfnts get 4 index get 3 index 2 index putinterval pop}
+ifelse
+/CharStrings get
+begin
+ /space 3 def
+end
+pop pop
 /space glyphshow
+9 2972
+<00020051ffec041f0596000b001b0028
+401414050c0005001d1c091073590907
+031873590319003f2b00183f2b111201
+39391133113331300110022320113412
+3633321201342e0123220e0115141e01
+33323e01041ff5f5fe1c6ad4aefae8fe
+e626545055572527555150572702c1fe
+9bfe9002d5fd014098fe96fe95c3d85e
+5fd7c3c1d95e63da>
+/LiberationSans-Bold findfont exch 1 index
+havetype42gdir
+{/GlyphDirectory get begin 19 exch def end}
+{/sfnts get 4 index get 3 index 2 index putinterval pop}
+ifelse
+/CharStrings get
+begin
+ /zero 19 def
+end
+pop pop
 /zero glyphshow
 /space glyphshow
 9 6316
@@ -1917,6 +1847,23 @@ pop pop
 /A glyphshow
 /C glyphshow
 /space glyphshow
+9 3108
+<000100810000043a0581000a002b4014
+040802020b0c05044003060608010001
+74590018003f2b110033183f331acd32
+11120139113333313033352111053525
+2111211581015dfeae0161010a0143d1
+03c1d3dde5fb50d1>
+/LiberationSans-Bold findfont exch 1 index
+havetype42gdir
+{/GlyphDirectory get begin 20 exch def end}
+{/sfnts get 4 index get 3 index 2 index putinterval pop}
+ifelse
+/CharStrings get
+begin
+ /one 20 def
+end
+pop pop
 /one glyphshow
 /space glyphshow
 10 7176
@@ -2014,7 +1961,54 @@ pop pop
 /one glyphshow
 /zero glyphshow
 /zero glyphshow
+10 6140
+<000100870000069e044f00260093405e
+172600001f081f1e1007081e08282722
+031403505910171a0314100c0f1f0800
+15e42801d428018428015428013b2801
+db2801bb28019b28015428013b28012f
+2801021f2801002801e02801d02801b0
+28019f28018028016028012f28015d5d
+5d5d5d5d5d71715f7171717171717272
+727272003f32323f3f17332b11003311
+12013939113333113311123911333331
+3021111023220615112111342627211e
+0115333e01333217333e013332161511
+2111102322060711030ca4556bfee705
+03010c030a04349b6cf83506379a779e
+a6fee9a4526905025f011dae8afdbc03
+48576f2c13a51f7c70ec7e6ed7c9fd51
+025f011d9f8cfdaf>
+/LiberationSans-Bold findfont exch 1 index
+havetype42gdir
+{/GlyphDirectory get begin 80 exch def end}
+{/sfnts get 4 index get 3 index 2 index putinterval pop}
+ifelse
+/CharStrings get
+begin
+ /m 80 def
+end
+pop pop
 /m glyphshow
+10 2468
+<0001000e000005480581000a0038401f
+090a010006030202060a030c0bc00c01
+9f0c01600c012f0c0109020306011200
+3f333f33015d5d5d5d11121739113311
+333311333130290101210116173f0101
+210342fed5fdf7013401221b2f153301
+2101310581fc7758b256b40389000000
+>
+/LiberationSans-Bold findfont exch 1 index
+havetype42gdir
+{/GlyphDirectory get begin 57 exch def end}
+{/sfnts get 4 index get 3 index 2 index putinterval pop}
+ifelse
+/CharStrings get
+begin
+ /V 57 def
+end
+pop pop
 /V glyphshow
 /space glyphshow
 /one glyphshow
