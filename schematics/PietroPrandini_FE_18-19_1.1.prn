@@ -1,10 +1,10 @@
 %!PS-Adobe-3.0
-%cupsJobTicket: media=A4
+%cupsJobTicket: media=8x12
 %%Creator: Wine PostScript Driver
 %%Title: PietroPrandini_FE_18-19_1.1.asc
-%%BoundingBox: 0 0 594 841
+%%BoundingBox: 0 0 576 864
 %%Pages: (atend)
-%%Orientation: Portrait
+%%Orientation: Landscape
 %%EndComments
 %%BeginProlog
 /tmpmtrx matrix def
@@ -23,8 +23,8 @@
 %%EndProlog
 %%BeginSetup
 mark {
-%%BeginFeature: *PageSize A4
-<</PageSize[595 842]/ImagingBBox null>>setpagedevice
+%%BeginFeature: *PageSize 8x12
+<</PageSize[576 864]/ImagingBBox null>>setpagedevice
 %%EndFeature
 } stopped cleartomark
 %%EndSetup
@@ -32,18 +32,18 @@ mark {
 %%BeginPageSetup
 /pgsave save def
 72 300 div 72 300 div scale
-0 3508 translate
+0 0 translate
 1 -1 scale
-0 rotate
+-90 rotate
 %%EndPageSetup
 0.00 0.00 0.00 setrgbcolor
 1 setlinewidth 1 setlinejoin 1 setlinecap
 [] 0 setdash
-165 2154 moveto
-237 2154 lineto
+495 1693 moveto
+582 1693 lineto
 stroke
 gsave
-237 2154 moveto
+582 1693 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -52,11 +52,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-165 2334 moveto
-237 2334 lineto
+495 1912 moveto
+582 1912 lineto
 stroke
 gsave
-237 2334 moveto
+582 1912 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -65,11 +65,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-201 2118 moveto
-201 2190 lineto
+538 1650 moveto
+538 1737 lineto
 stroke
 gsave
-201 2190 moveto
+538 1737 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -78,11 +78,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-201 2424 moveto
-201 2388 lineto
+538 2021 moveto
+538 1977 lineto
 stroke
 gsave
-201 2388 moveto
+538 1977 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -91,11 +91,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-201 2064 moveto
-201 2100 lineto
+538 1584 moveto
+538 1628 lineto
 stroke
 gsave
-201 2100 moveto
+538 1628 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -107,8 +107,8 @@ grestore
 0.00 0.00 0.00 setrgbcolor
 newpath
 tmpmtrx currentmatrix pop
-200 2244 translate
-287 288 scale
+538 1802 translate
+349 349 scale
 0 0 0.5 -360.0 -0.0 arc
 tmpmtrx setmatrix
 closepath
@@ -1712,9 +1712,9 @@ begin
 end
 pop pop
 /LiberationSans-Bold findfont
-[47 0 0 -47 0 0]
+[56 0 0 -56 0 0]
 makefont setfont
-223 2432 moveto
+566 2030 moveto
 9 7336
 <00020089000005710581000900120034
 401d0f050a0005001413060e5f590603
@@ -2103,20 +2103,20 @@ pop pop
 /parenright glyphshow
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-308 2103 moveto
+669 1631 moveto
 /V glyphshow
 /i glyphshow
 /n glyphshow
 0.00 0.00 0.00 setrgbcolor
 1 setlinewidth 1 setlinejoin 1 setlinecap
 [] 0 setdash
-758 1921 moveto
-632 1921 lineto
+1215 1409 moveto
+1063 1409 lineto
 stroke
 gsave
-632 1921 moveto
+1063 1409 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2125,11 +2125,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-794 1921 moveto
-920 1921 lineto
+1259 1409 moveto
+1412 1409 lineto
 stroke
 gsave
-920 1921 moveto
+1412 1409 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2138,11 +2138,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-794 1849 moveto
-794 1992 lineto
+1259 1322 moveto
+1259 1497 lineto
 stroke
 gsave
-794 1992 moveto
+1259 1497 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2151,11 +2151,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-758 1849 moveto
-758 1992 lineto
+1215 1322 moveto
+1215 1497 lineto
 stroke
 gsave
-758 1992 moveto
+1215 1497 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2165,9 +2165,9 @@ fill
 grestore
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-705 1825 moveto
+1150 1293 moveto
 /C glyphshow
 9 3196
 <00010047000004210596001c003d401f
@@ -2193,9 +2193,9 @@ pop pop
 /two glyphshow
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-649 2093 moveto
+1082 1620 moveto
 /one glyphshow
 /zero glyphshow
 /zero glyphshow
@@ -2203,11 +2203,11 @@ makefont setfont
 0.00 0.00 0.00 setrgbcolor
 1 setlinewidth 1 setlinejoin 1 setlinecap
 [] 0 setdash
-1208 2388 moveto
-1208 2424 lineto
+1761 1977 moveto
+1761 2021 lineto
 stroke
 gsave
-1208 2424 moveto
+1761 2021 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2216,11 +2216,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1136 2352 moveto
-1208 2388 lineto
+1674 1933 moveto
+1761 1977 lineto
 stroke
 gsave
-1208 2388 moveto
+1761 1977 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2229,11 +2229,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1279 2280 moveto
-1136 2352 lineto
+1849 1846 moveto
+1674 1933 lineto
 stroke
 gsave
-1136 2352 moveto
+1674 1933 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2242,11 +2242,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1136 2208 moveto
-1279 2280 lineto
+1674 1759 moveto
+1849 1846 lineto
 stroke
 gsave
-1279 2280 moveto
+1849 1846 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2255,11 +2255,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1279 2136 moveto
-1136 2208 lineto
+1849 1671 moveto
+1674 1759 lineto
 stroke
 gsave
-1136 2208 moveto
+1674 1759 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2268,11 +2268,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1208 2064 moveto
-1208 2100 lineto
+1761 1584 moveto
+1761 1628 lineto
 stroke
 gsave
-1208 2100 moveto
+1761 1628 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2281,11 +2281,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1208 2100 moveto
-1279 2136 lineto
+1761 1628 moveto
+1849 1671 lineto
 stroke
 gsave
-1279 2136 moveto
+1849 1671 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2295,9 +2295,9 @@ fill
 grestore
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-1297 2211 moveto
+1870 1762 moveto
 10 1560
 <000200890000059d0581000d0015005d
 4033010c0c1209120303040e09000d0d
@@ -2325,9 +2325,9 @@ pop pop
 /two glyphshow
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-1297 2373 moveto
+1870 1959 moveto
 /one glyphshow
 /zero glyphshow
 /zero glyphshow
@@ -2335,11 +2335,11 @@ makefont setfont
 0.00 0.00 0.00 setrgbcolor
 1 setlinewidth 1 setlinejoin 1 setlinecap
 [] 0 setdash
-668 1345 moveto
-632 1345 lineto
+1106 711 moveto
+1063 711 lineto
 stroke
 gsave
-632 1345 moveto
+1063 711 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2348,11 +2348,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-704 1273 moveto
-668 1345 lineto
+1150 623 moveto
+1106 711 lineto
 stroke
 gsave
-668 1345 moveto
+1106 711 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2361,11 +2361,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-776 1417 moveto
-704 1273 lineto
+1237 798 moveto
+1150 623 lineto
 stroke
 gsave
-704 1273 moveto
+1150 623 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2374,11 +2374,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-848 1273 moveto
-776 1417 lineto
+1325 623 moveto
+1237 798 lineto
 stroke
 gsave
-776 1417 moveto
+1237 798 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2387,11 +2387,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-920 1417 moveto
-848 1273 lineto
+1412 798 moveto
+1325 623 lineto
 stroke
 gsave
-848 1273 moveto
+1325 623 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2400,11 +2400,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-992 1345 moveto
-956 1345 lineto
+1499 711 moveto
+1456 711 lineto
 stroke
 gsave
-956 1345 moveto
+1456 711 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2413,11 +2413,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-956 1345 moveto
-920 1417 lineto
+1456 711 moveto
+1412 798 lineto
 stroke
 gsave
-920 1417 moveto
+1412 798 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2427,9 +2427,9 @@ fill
 grestore
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-741 1249 moveto
+1194 594 moveto
 /R glyphshow
 9 3348
 <0001002fffe904290596002800954060
@@ -2463,19 +2463,19 @@ pop pop
 /three glyphshow
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-750 1518 moveto
+1205 921 moveto
 /one glyphshow
 /k glyphshow
 0.00 0.00 0.00 setrgbcolor
 1 setlinewidth 1 setlinejoin 1 setlinecap
 [] 0 setdash
-1459 985 moveto
-1423 985 lineto
+2067 274 moveto
+2023 274 lineto
 stroke
 gsave
-1423 985 moveto
+2023 274 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2484,11 +2484,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1495 914 moveto
-1459 985 lineto
+2111 187 moveto
+2067 274 lineto
 stroke
 gsave
-1459 985 moveto
+2067 274 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2497,11 +2497,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1567 1057 moveto
-1495 914 lineto
+2198 361 moveto
+2111 187 lineto
 stroke
 gsave
-1495 914 moveto
+2111 187 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2510,11 +2510,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1639 914 moveto
-1567 1057 lineto
+2285 187 moveto
+2198 361 lineto
 stroke
 gsave
-1567 1057 moveto
+2198 361 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2523,11 +2523,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1711 1057 moveto
-1639 914 lineto
+2373 361 moveto
+2285 187 lineto
 stroke
 gsave
-1639 914 moveto
+2285 187 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2536,11 +2536,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1783 985 moveto
-1747 985 lineto
+2460 274 moveto
+2416 274 lineto
 stroke
 gsave
-1747 985 moveto
+2416 274 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2549,11 +2549,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1747 985 moveto
-1711 1057 lineto
+2416 274 moveto
+2373 361 lineto
 stroke
 gsave
-1711 1057 moveto
+2373 361 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2563,9 +2563,9 @@ fill
 grestore
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-1532 890 moveto
+2155 158 moveto
 /R glyphshow
 9 3620
 <0002001f000004680581000a0012003a
@@ -2590,20 +2590,20 @@ pop pop
 /four glyphshow
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-1510 1158 moveto
+2128 484 moveto
 /one glyphshow
 /zero glyphshow
 /k glyphshow
 0.00 0.00 0.00 setrgbcolor
 1 setlinewidth 1 setlinejoin 1 setlinecap
 [] 0 setdash
-1423 1489 moveto
-1711 1633 lineto
+2023 885 moveto
+2373 1060 lineto
 stroke
 gsave
-1711 1633 moveto
+2373 1060 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2612,11 +2612,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1423 1777 moveto
-1711 1633 lineto
+2023 1235 moveto
+2373 1060 lineto
 stroke
 gsave
-1711 1633 moveto
+2373 1060 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2625,11 +2625,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1423 1489 moveto
-1423 1777 lineto
+2023 885 moveto
+2023 1235 lineto
 stroke
 gsave
-1423 1777 moveto
+2023 1235 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2638,11 +2638,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1441 1561 moveto
-1477 1561 lineto
+2045 973 moveto
+2089 973 lineto
 stroke
 gsave
-1477 1561 moveto
+2089 973 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2651,11 +2651,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1441 1705 moveto
-1477 1705 lineto
+2045 1147 moveto
+2089 1147 lineto
 stroke
 gsave
-1477 1705 moveto
+2089 1147 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2664,11 +2664,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1459 1723 moveto
-1459 1687 lineto
+2067 1169 moveto
+2067 1126 lineto
 stroke
 gsave
-1459 1687 moveto
+2067 1126 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2678,9 +2678,9 @@ fill
 grestore
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-1567 1528 moveto
+2198 932 moveto
 10 2324
 <0001007bffec054a058100110049402c
 0d0e05040e0413120d040300095f5900
@@ -2707,11 +2707,11 @@ pop pop
 0.00 0.00 0.00 setrgbcolor
 1 setlinewidth 1 setlinejoin 1 setlinecap
 [] 0 setdash
-120 2568 moveto
-281 2568 lineto
+440 2196 moveto
+637 2196 lineto
 stroke
 gsave
-281 2568 moveto
+637 2196 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2720,11 +2720,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-281 2568 moveto
-201 2649 lineto
+637 2196 moveto
+538 2294 lineto
 stroke
 gsave
-201 2649 moveto
+538 2294 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2733,11 +2733,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-201 2649 moveto
-120 2568 lineto
+538 2294 moveto
+440 2196 lineto
 stroke
 gsave
-120 2568 moveto
+440 2196 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2746,11 +2746,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1127 2568 moveto
-1288 2568 lineto
+1663 2196 moveto
+1860 2196 lineto
 stroke
 gsave
-1288 2568 moveto
+1860 2196 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2759,11 +2759,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1288 2568 moveto
-1208 2649 lineto
+1860 2196 moveto
+1761 2294 lineto
 stroke
 gsave
-1208 2649 moveto
+1761 2294 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2772,11 +2772,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1208 2649 moveto
-1127 2568 lineto
+1761 2294 moveto
+1663 2196 lineto
 stroke
 gsave
-1127 2568 moveto
+1663 2196 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2786,9 +2786,9 @@ fill
 grestore
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-2215 1672 moveto
+2984 1107 moveto
 /V glyphshow
 10 6564
 <00020050ffec0493044e000b00150030
@@ -2813,19 +2813,19 @@ pop pop
 /o glyphshow
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-291 1897 moveto
+649 1380 moveto
 /V glyphshow
 /i glyphshow
 0.00 0.00 0.00 setrgbcolor
 1 setlinewidth 1 setlinejoin 1 setlinecap
 [] 0 setdash
-120 1561 moveto
-281 1561 lineto
+440 973 moveto
+637 973 lineto
 stroke
 gsave
-281 1561 moveto
+637 973 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2834,11 +2834,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-281 1561 moveto
-201 1642 lineto
+637 973 moveto
+538 1071 lineto
 stroke
 gsave
-201 1642 moveto
+538 1071 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2847,11 +2847,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-201 1642 moveto
-120 1561 lineto
+538 1071 moveto
+440 973 lineto
 stroke
 gsave
-120 1561 moveto
+440 973 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2861,9 +2861,9 @@ fill
 grestore
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-1230 1960 moveto
+1789 1456 moveto
 /V glyphshow
 9 2660
 <0001005600a1045904b1000b00254011
@@ -2885,9 +2885,9 @@ pop pop
 /plus glyphshow
 0.00 0.00 0.00 setrgbcolor
 /LiberationSans-Bold findfont
-[112 0 0 -112 0 0]
+[136 0 0 -136 0 0]
 makefont setfont
-1230 1384 moveto
+1789 758 moveto
 /V glyphshow
 9 2828
 <0001005001990258028d00030016400a
@@ -2908,11 +2908,11 @@ pop pop
 0.00 0.00 0.00 setrgbcolor
 1 setlinewidth 1 setlinejoin 1 setlinecap
 [] 0 setdash
-1423 985 moveto
-1208 985 lineto
+2023 274 moveto
+1761 274 lineto
 stroke
 gsave
-1208 985 moveto
+1761 274 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2921,11 +2921,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1999 985 moveto
-1783 985 lineto
+2722 274 moveto
+2460 274 lineto
 stroke
 gsave
-1783 985 moveto
+2460 274 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2934,11 +2934,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-632 1345 moveto
-201 1345 lineto
+1063 711 moveto
+538 711 lineto
 stroke
 gsave
-201 1345 moveto
+538 711 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2947,11 +2947,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1208 1345 moveto
-1208 985 lineto
+1761 711 moveto
+1761 274 lineto
 stroke
 gsave
-1208 985 moveto
+1761 274 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2960,11 +2960,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1208 1345 moveto
-992 1345 lineto
+1761 711 moveto
+1499 711 lineto
 stroke
 gsave
-992 1345 moveto
+1499 711 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2973,11 +2973,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-201 1561 moveto
-201 1345 lineto
+538 973 moveto
+538 711 lineto
 stroke
 gsave
-201 1345 moveto
+538 711 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2986,11 +2986,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1208 1561 moveto
-1208 1345 lineto
+1761 973 moveto
+1761 711 lineto
 stroke
 gsave
-1208 1345 moveto
+1761 711 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -2999,11 +2999,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1423 1561 moveto
-1208 1561 lineto
+2023 973 moveto
+1761 973 lineto
 stroke
 gsave
-1208 1561 moveto
+1761 973 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3012,11 +3012,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1999 1633 moveto
-1999 985 lineto
+2722 1060 moveto
+2722 274 lineto
 stroke
 gsave
-1999 985 moveto
+2722 274 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3025,11 +3025,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1999 1633 moveto
-1711 1633 lineto
+2722 1060 moveto
+2373 1060 lineto
 stroke
 gsave
-1711 1633 moveto
+2373 1060 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3038,11 +3038,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-2215 1633 moveto
-1999 1633 lineto
+2984 1060 moveto
+2722 1060 lineto
 stroke
 gsave
-1999 1633 moveto
+2722 1060 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3051,11 +3051,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1423 1705 moveto
-1208 1705 lineto
+2023 1147 moveto
+1761 1147 lineto
 stroke
 gsave
-1208 1705 moveto
+1761 1147 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3064,11 +3064,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-344 1921 moveto
-201 1921 lineto
+713 1409 moveto
+538 1409 lineto
 stroke
 gsave
-201 1921 moveto
+538 1409 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3077,11 +3077,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-632 1921 moveto
-344 1921 lineto
+1063 1409 moveto
+713 1409 lineto
 stroke
 gsave
-344 1921 moveto
+713 1409 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3090,11 +3090,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1208 1921 moveto
-1208 1705 lineto
+1761 1409 moveto
+1761 1147 lineto
 stroke
 gsave
-1208 1705 moveto
+1761 1147 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3103,11 +3103,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1208 1921 moveto
-920 1921 lineto
+1761 1409 moveto
+1412 1409 lineto
 stroke
 gsave
-920 1921 moveto
+1412 1409 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3116,11 +3116,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-201 2064 moveto
-201 1921 lineto
+538 1584 moveto
+538 1409 lineto
 stroke
 gsave
-201 1921 moveto
+538 1409 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3129,11 +3129,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1208 2064 moveto
-1208 1921 lineto
+1761 1584 moveto
+1761 1409 lineto
 stroke
 gsave
-1208 1921 moveto
+1761 1409 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3142,11 +3142,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-201 2568 moveto
-201 2424 lineto
+538 2196 moveto
+538 2021 lineto
 stroke
 gsave
-201 2424 moveto
+538 2021 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3155,11 +3155,11 @@ closepath
 fill
 grestore
 0.00 0.00 0.00 setrgbcolor
-1208 2568 moveto
-1208 2424 lineto
+1761 2196 moveto
+1761 2021 lineto
 stroke
 gsave
-1208 2424 moveto
+1761 2021 moveto
 0 0 rlineto
 0 0 rlineto
 0 0 rlineto
@@ -3168,10 +3168,10 @@ closepath
 fill
 grestore
 gsave
-1190 1327 moveto
-37 0 rlineto
-0 37 rlineto
--37 0 rlineto
+1739 689 moveto
+45 0 rlineto
+0 45 rlineto
+-45 0 rlineto
 closepath
 gsave
 0.00 0.00 0.00 setrgbcolor
@@ -3179,10 +3179,10 @@ fill
 grestore
 grestore
 gsave
-1190 1903 moveto
-37 0 rlineto
-0 37 rlineto
--37 0 rlineto
+1739 1387 moveto
+45 0 rlineto
+0 45 rlineto
+-45 0 rlineto
 closepath
 gsave
 0.00 0.00 0.00 setrgbcolor
@@ -3190,10 +3190,10 @@ fill
 grestore
 grestore
 gsave
-1981 1615 moveto
-37 0 rlineto
-0 37 rlineto
--37 0 rlineto
+2700 1038 moveto
+45 0 rlineto
+0 45 rlineto
+-45 0 rlineto
 closepath
 gsave
 0.00 0.00 0.00 setrgbcolor
@@ -3204,7 +3204,7 @@ grestore
 /LiberationSans-Bold findfont
 [50 0 0 -50 0 0]
 makefont setfont
--447 3502 moveto
+114 2394 moveto
 /space glyphshow
 /hyphen glyphshow
 /hyphen glyphshow
