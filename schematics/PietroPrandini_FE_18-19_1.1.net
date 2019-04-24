@@ -1,0 +1,9 @@
+* Z:\home\peter\Documents\Uni\Courses\FondamentiElettronica\1819\SPICE\FirstExercise\schematics\PietroPrandini_FE_18-19_1.1.asc
+Vin Vi 0 100mV DC 0 AC 1 sin(0 100mV 10kHz 0 0 0)
+C2 V+ Vi 100n
+R2 V+ 0 100k
+R3 V- 0 1k
+R4 Vo V- 10k
+XU1 V- V+ Vo opamp Aol=100K GBW=10Meg
+.backanno
+.end

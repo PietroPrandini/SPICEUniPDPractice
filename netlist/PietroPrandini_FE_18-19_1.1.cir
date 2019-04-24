@@ -1,5 +1,6 @@
-* First Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - 1 of 4
+* Audio Amplifier - Voltage gain and frequency domain (ideal op. amp.)
 ********************************************************************************
+* 1st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - 1 of 4 *
 *                        Pietro Prandini - mat. 1097752                        *
 *                                                                              *
 * This work is licensed under the Creative Commons Attribution-ShareAlike 4.0  *
@@ -8,8 +9,25 @@
 * Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
 ********************************************************************************
 
-VIN Vi 0 100mV DC 0 AC 1 sin(0 100mV 10kHz 0 0 0)
-C2 N001 Vi 100n
-R2 N001 0 100k
+* Ideal Operational Amplifier subcircuit
+.LIB opamp.sub
+
+* Amplifiers
+XU1 V- V+ Vo opamp Aol=100k GBW=10meg
+
+* Capacitances
+C2 V+ Vi 100n
+
+* Generators
+Vin Vi 0 100mV DC 0 AC 1 sin(0 100mV 10kHz 0 0 0)
+
+* Resistances
+R2 V+ 0 100k
+R3 V- 0 1k
+R4 Vo V- 10k
+
+* Analysis
+.AC DEC 10 1 100k
+.backanno
 
 .END
