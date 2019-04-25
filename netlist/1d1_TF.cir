@@ -27,6 +27,6 @@ R3 V- 0 1k
 R4 Vo V- 10k
 
 * Analysis
-.AC DEC 10 1 100k
+.TF V(Vo) Vin
 
 .END

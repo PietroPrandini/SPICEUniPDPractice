@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0
 %cupsJobTicket: media=8x12
 %%Creator: Wine PostScript Driver
-%%Title: PietroPrandini_FE_18-19_1d1.cir
+%%Title: 1d1.cir
 %%BoundingBox: 0 0 576 864
 %%Pages: (atend)
 %%Orientation: Landscape
@@ -10140,10 +10140,10 @@ stroke
 3476 2044 lineto
 stroke
 gsave
-179 2349 moveto
-3242 0 rlineto
+488 2349 moveto
+2624 0 rlineto
 0 56 rlineto
--3242 0 rlineto
+-2624 0 rlineto
 closepath
 1.00 1.00 1.00 setrgbcolor
 fill
@@ -10153,7 +10153,7 @@ grestore
 [50 0 0 -50 0 0]
 makefont setfont
 1.00 1.00 1.00 setrgbcolor
-179 2394 moveto
+488 2394 moveto
 /space glyphshow
 /hyphen glyphshow
 /hyphen glyphshow
@@ -10805,45 +10805,6 @@ pop pop
 /s glyphshow
 /t glyphshow
 /backslash glyphshow
-/P glyphshow
-/i glyphshow
-/e glyphshow
-/t glyphshow
-/r glyphshow
-/o glyphshow
-/P glyphshow
-/r glyphshow
-/a glyphshow
-/n glyphshow
-/d glyphshow
-/i glyphshow
-/n glyphshow
-/i glyphshow
-10 3904
-<0001ffecff060485ff5400030019400c
-020500040100bb5900010101002f722b
-1101331133313007352115140499fa4e
-4e000000>
-/LiberationSans-Bold findfont exch 1 index
-havetype42gdir
-{/GlyphDirectory get begin 66 exch def end}
-{/sfnts get 4 index get 3 index 2 index putinterval pop}
-ifelse
-/CharStrings get
-begin
- /underscore 66 def
-end
-pop pop
-/underscore glyphshow
-/F glyphshow
-/E glyphshow
-/underscore glyphshow
-/one glyphshow
-/eight glyphshow
-/hyphen glyphshow
-/one glyphshow
-/nine glyphshow
-/underscore glyphshow
 /one glyphshow
 /d glyphshow
 /one glyphshow
