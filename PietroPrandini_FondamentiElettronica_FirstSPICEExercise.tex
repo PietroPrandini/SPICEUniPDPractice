@@ -17,12 +17,22 @@
 %  title=\lstname
 }
 
-\title{First Exercise\\{\small{Fundamentals Of Electronics - a.a. 2018-2019 -
-University of Padua (Italy)}}\\{\tiny{{CC-BY-SA}}}}
+\title{First SPICE Exercise\\{\small{Fundamentals Of Electronics - a.a. 2018-2019 -
+University of Padua (Italy)}}}
 \author{Pietro Prandini (mat. 1097752)}
 
 \begin{document}
 \maketitle
+
+% License
+\begin{center}
+\tiny{This work is licensed under the Creative Commons Attribution-ShareAlike
+ 4.0 International License. To view a copy of this license, visit
+ \href{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/}
+or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042,
+USA.}
+\end{center}
+
 \section{Audio amplifier}
 \subsection{Voltage gain and frequency domain - Ideal op. amp.}
 \begin{figure}[h]
@@ -56,30 +66,35 @@ $$ \omega_1 = \frac{1}{C_2R_2} =
 
 $$\log_{10} (\omega_1) = \log_{10} (100) = 2$$
 
-\subsection{Waveform}
+\subsection{Voltage output waveform - LT1028 op. amp.}
 \begin{figure}[h]
   \centering
   \includegraphics[width=10cm]{schematics/1d2.jpg}
-  \caption{Audio amplifier}
+  \caption{Audio amplifier - LT1028 op. amp.}
   \label{1d2}
 \end{figure}
 
+\subsubsection{Netlist}
 \lstinputlisting{netlist/1d2.cir}
 
-\begin{figure}[h]
+\subsubsection{Graph}
+\begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{graph/1d2.jpg}
-  \caption{Voltage output waveform}
+  \caption{Audio Amplifier - Voltage output waveform}
   \label{1d2}
 \end{figure}
 
-% License
-\vspace*{\fill}
-\centering
-\tiny{This work is licensed under the Creative Commons Attribution-ShareAlike
- 4.0 International License. To view a copy of this license, visit
- \href{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/}
-or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042,
-USA.}
+\subsection{Bode diagram - LT1028 op. amp.}
+\subsubsection{Netlist}
+\lstinputlisting{netlist/1d3.cir}
+
+\subsubsection{Graph}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{graph/1d3.jpg}
+  \caption{Audio Amplifier - Bode diagram}
+  \label{1d3}
+\end{figure}
 
 \end{document}
