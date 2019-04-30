@@ -1,0 +1,34 @@
+* Audio Amplifier - Waveform
+********************************************************************************
+* 1st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - 1 of 4 *
+*                        Pietro Prandini - mat. 1097752                        *
+*                                                                              *
+* This work is licensed under the Creative Commons Attribution-ShareAlike 4.0  *
+* International License. To view a copy of this license, visit                 *
+* http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative  *
+* Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
+********************************************************************************
+
+* Libraries
+.LIB LTC.lib
+
+* Amplifiers
+XU1 V+ V- A+ A- Vo LT1028
+
+* Capacitances
+C2 Vi V+ 100n
+
+* Generators
+Vin Vi 0 DC 0 AC 1 sin(0 1440mV {F} 0 0 0)
+Vdd A+ 0 DC 10
+Vss A- 0 DC -10
+
+* Resistances
+R2 V+ 0 109775.2
+R3 V- 0 1k
+R4 Vo V- 10k
+
+* Analysis
+.op
+
+.END
