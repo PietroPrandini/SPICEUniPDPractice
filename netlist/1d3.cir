@@ -16,7 +16,7 @@
 XU1 V+ V- A+ A- Vo LT1028
 
 * Capacitances
-C2 V+ Vi 100n
+C2 Vi V+ 100n
 
 * Generators
 Vin Vi 0 DC 0 AC 1 sin(0 10mV {F} 0 0 0)

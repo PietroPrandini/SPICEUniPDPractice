@@ -39,39 +39,71 @@ USA.}
   \centering
   \includegraphics[width=8cm]{schematics/1d1.jpg}
   \caption{Audio amplifier - Ideal op. amp.}
-  \label{1d1}
+  \label{1d1schematics}
 \end{figure}
 
-$$V_+ = V_{in}\frac{R_2\frac{1}{sC_2}}{R_2+\frac{1}{sC_2}} =
-V_{in}\frac{R_2\frac{1}{sC_2}}{R_2+\frac{1}{sC_2}}\frac{sC_2}{sC_2} =
-V_{in}\frac{R_2}{1+sC_2R_2}$$
+\begin{equation} \label{eq:V_+}
+V_+ = V_{in}\frac{R_2}{R_2+\frac{1}{sC_2}} =
+V_{in}\frac{R_2}{R_2+\frac{1}{sC_2}}\frac{sC_2}{sC_2} =
+V_{in}\frac{sC_2R_2}{1+sC_2R_2}
+\end{equation}
 
-$$V_- = V_+$$
-$$I_{R_3} = \frac{V_-}{R_3} = \frac{V_+}{R_3} = V_{in}\frac{R_2}{1+sC_2R_2}\frac{1}{R_3}$$
-$$I_{R_4} = I_{R_3}$$
+\begin{equation} \label{eq:V_-}
+V_- = V_+
+\end{equation}
 
-$$V_o = V_+ + R_4I_{R_4} =
-V_{in}\frac{R_2}{1+sC_2R_2} + V_{in}\frac{R_2}{1+sC_2R_2}\frac{R_4}{R_3} =
-V_{in}\frac{R_2}{1+sC_2R_2}\left(1+\frac{R_4}{R_3}\right)$$
+\begin{equation} \label{eq:I_R3}
+I_{R_3} = \frac{V_-}{R_3} = \frac{V_+}{R_3}
+\end{equation}
 
-$$\frac{V_o}{V_{in}} = \frac{R_2}{1+sC_2R_2}\left(1+\frac{R_4}{R_3}\right) =
-\frac{R_2}{1+sC_2R_2}\frac{R_3+R_4}{R_3} = \frac{R_2(R_3+R_4)}{R_3(1+sC_2R_2)} =
-\frac{R_2(R_3+R_4)}{R_3}\frac{1}{1+sC_2R_2}$$
-$$ K = \frac{R_2(R_3+R_4)}{R_3} = \frac{100 \cdot 10^3(1 \cdot 10^3 + 10 \cdot 10^3)}{1 \cdot 10^3} = 1.1 \cdot 10^6$$
+\begin{equation} \label{eq:I_R4}
+I_{R_4} = I_{R_3}
+\end{equation}
 
-$$ \log_{10}(K) = \log{10}(1.1 \cdot 10^6) \simeq 6$$
+\begin{equation} \label{eq:V_o}
+V_o = V_+ + R_4I_{R_4} = V_+ + R_4 I_{R_3} = V_+ + R_4 \cdot \frac{V_+}{R_3} =
+V_+ \cdot \left(1 + \frac{R_4}{R_3} \right) =
+V_{in}\frac{sC_2R_2}{1+sC_2R_2} \cdot \left(1 + \frac{R_4}{R_3} \right)
+\end{equation}
 
-$$ \omega_1 = \frac{1}{C_2R_2} =
-\frac{1}{100 \cdot 10^{-9} \cdot 100 \cdot 10^3} = 100$$
+\begin{equation} \label{eq:TF}
+\frac{V_o}{V_{in}} = \frac{sC_2R_2}{1+sC_2R_2}\left(1+\frac{R_4}{R_3}\right)
+\end{equation}
 
-$$\log_{10} (\omega_1) = \log_{10} (100) = 2$$
+\begin{equation} \label{eq:K}
+K = C_2R_2 \cdot \left(1+\frac{R_4}{R_3}\right)
+\end{equation}
+
+\begin{equation} \label{eq:omega_1}
+ \omega_1 = \frac{1}{C_2R_2}
+\end{equation}
+
+\begin{equation} \label{eq:TFBode}
+\frac{V_o}{V_{in}} = K \frac{s}{1+\frac{1}{\omega_1}}
+\end{equation}
+
+\begin{equation} \label{eq:KdB}
+ K|_{dB} = 20\log_{10}|K| = \log_{10}\left|C_2R_2 \cdot \left(1+\frac{R_4}{R_3}\right)\right| = -19.1722 dB
+\end{equation}
+
+\begin{equation} \label{eq:omega_1dB}
+\omega_1|_{dB} = \log_{10} |\omega_1| = \log_{10} \left| \frac{1}{C_2R_2} \right|= 2.0000dB
+\end{equation}
+
+\subsubsection{Bode diagram}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=14cm]{graph/1d1.jpg}
+  \caption{Audio amplifier - Ideal op. amp.}
+  \label{1d1graph}
+\end{figure}
 
 \subsection{Voltage output waveform - LT1028 op. amp.}
 \begin{figure}[h]
   \centering
   \includegraphics[width=10cm]{schematics/1d2.jpg}
   \caption{Audio amplifier - LT1028 op. amp.}
-  \label{1d2}
+  \label{1d2schematics}
 \end{figure}
 
 \subsubsection{Netlist}
@@ -82,7 +114,7 @@ $$\log_{10} (\omega_1) = \log_{10} (100) = 2$$
   \centering
   \includegraphics[width=14cm]{graph/1d2.jpg}
   \caption{Audio Amplifier - Voltage output waveform}
-  \label{1d2}
+  \label{1d2graph}
 \end{figure}
 
 \subsection{Bode diagram - LT1028 op. amp.}
@@ -94,7 +126,7 @@ $$\log_{10} (\omega_1) = \log_{10} (100) = 2$$
   \centering
   \includegraphics[width=14cm]{graph/1d3.jpg}
   \caption{Audio Amplifier - Bode diagram}
-  \label{1d3}
+  \label{1d3graph}
 \end{figure}
 
 \end{document}
