@@ -178,21 +178,60 @@ For example with $\omega = 10Hz \cdot 2\pi$ the maximum value of the input volta
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{graph/1d4b.jpg}
-  \caption{Audio Amplifier - Output voltage with an amplitude of the imput voltage equal to $1.36701V$, frequency equal to 10Hz}
+  \caption{Audio Amplifier - Output voltage with an amplitude of the imput voltage equal to $1.36701V$, frequency equal to $10Hz$}
   \label{1d4bgraph}
 \end{figure}
 
 \subsubsection{Output voltage waveform - $V_{in} = 2 \cdot |V_{in MAX} |$}
-The netlist used for plot the output voltage waveform with an input voltage dobled relatively to the maximum input voltage calculated is:\\
+The netlist used for plot the output voltage waveform with a double input voltage relatively to the maximum input voltage calculated is:\\
 \lstinputlisting{netlist/1d4c.cir}
-
-The graph generated is presented on the figure \ref{1d4cgraph}.\\
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{graph/1d4c.jpg}
-  \caption{Audio Amplifier - Output voltage with an amplitude of the imput voltage equal to $2*1.36701V$, frequency equal to 10Hz}
+  \caption{Audio Amplifier - Output voltage with an amplitude of the imput voltage equal to $2 \cdot 1.36701V$, frequency equal to $10Hz$}
   \label{1d4cgraph}
 \end{figure}
+
+The graph generated is presented on the figure \ref{1d4cgraph}.\\
+
+\subsection{Saturation - LT1028 op. amp. - $R_2 = 109775.2\Omega$}
+Using the equation \ref{eq:V_inSat} and setting $\omega = 10Hz \cdot 2\pi$ the maximum value of the input voltage is $|V_{in}| \leq 1.28091V$ (output voltage graph on figure \ref{1d5graph})
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{graph/1d5.jpg}
+  \caption{Audio Amplifier - Output voltage with an amplitude of the imput voltage equal to $1.28091V$, frequency equal to $10Hz$, $R_2$ equal to $109775.2\Omega$}
+  \label{1d5graph}
+\end{figure}
+
+\subsubsection{Output voltage waveform - $R_2 = 109775.2\Omega$ - $V_{in} = 2 \cdot |V_{in MAX} |$}
+The netlist used for plot the output voltage waveform with a double input voltage relatively to the maximum input voltage calculated is:\\
+\lstinputlisting{netlist/1d5b.cir}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{graph/1d5b.jpg}
+  \caption{Audio Amplifier - Output voltage with an amplitude of the imput voltage equal to $2 \cdot 1.28091V$, frequency equal to $10Hz$, $R_2$ equal to $109775.2\Omega$}
+  \label{1d5bgraph}
+\end{figure}
+
+The graph generated is presented on the figure \ref{1d5bgraph}.\\
+
+\subsection{Power delivered to the amplifier}
+
+\begin{equation}
+P_{DC} = V_{dd} \cdot I_{dd} + V_{ss} \cdot I_{ss}
+\end{equation}
+
+\subsubsection{Case A - $R_2 = 100k\Omega$ $V_{in} = 2 \cdot 1.36701V$}
+\lstinputlisting{netlist/1d6.cir}
+
+$$P_{DC} = 10V \cdot (-0.00736621A) + (-10V) \cdot (+0.00736621 A) = -0.14732420W$$
+
+\subsubsection{Case B - $R_2 = 109775.2\Omega$ $V_{in} = 2 \cdot 1.28091V$}
+\lstinputlisting{netlist/1d6b.cir}
+
+$$P_{DC} = 10V \cdot (-0.00736621A) + (-10V) \cdot (+0.00736621 A) = -0.14732420W$$
 
 \end{document}

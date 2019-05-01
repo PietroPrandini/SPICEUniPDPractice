@@ -1,4 +1,4 @@
-* Audio Amplifier - Operating Point R2 = 109775.2 Vin = 2*1.28091V
+* Audio Amplifier - Waveform R2 = 109775.2 Vin = 2*VinMax
 ********************************************************************************
 * 1st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - 1 of 4 *
 *                        Pietro Prandini - mat. 1097752                        *
@@ -29,6 +29,6 @@ R3 V- 0 1k
 R4 Vo V- 10k
 
 * Analysis
-.op
+.tran 0 250m 0 1m uic
 
 .END
