@@ -42,34 +42,49 @@ USA.}
   \label{1d1schematics}
 \end{figure}
 
+By the analysis of the figure \ref{1d1schematics}'s circuit, It's possible to
+calculate the node $V_+$ voltage from the ratio of the voltage divider formed by
+$R_2$ and $C_2$, infact the node $V_+$ voltage is the same voltage of the
+resistance $R_2$ (equation \ref{eq:V_+}).\\
 \begin{equation} \label{eq:V_+}
-V_+ = V_{in}\frac{R_2}{R_2+\frac{1}{sC_2}} =
-V_{in}\frac{R_2}{R_2+\frac{1}{sC_2}}\frac{sC_2}{sC_2} =
-V_{in}\frac{sC_2R_2}{1+sC_2R_2}
+V_+(s) = V_{in}(s)\frac{R_2}{R_2+\frac{1}{sC_2}} =
+V_{in}(s)\frac{R_2}{R_2+\frac{1}{sC_2}}\frac{sC_2}{sC_2} =
+V_{in}(s)\frac{sC_2R_2}{1+sC_2R_2}
 \end{equation}
 
+The negative feedback produces the virtual short circuit effect, so the $V_-$
+and the $V_+$ voltages have virtually the same value (equation \ref{eq:V_-}),
+and, because of the fact that the ideal operational amplifier $U_1$ isn't
+absorbe current from the $V_-$ and the $V_+$ nodes, the current of $I_{R_4}$ is
+the same current of $I_{R_3}$ (equation \ref{eq:I_R4}).\\
+The current $I_{R_3}$ is calculated by the Ohm law (equation \ref{eq:I_R3}).\\
 \begin{equation} \label{eq:V_-}
 V_- = V_+
-\end{equation}
-
-\begin{equation} \label{eq:I_R3}
-I_{R_3} = \frac{V_-}{R_3} = \frac{V_+}{R_3}
 \end{equation}
 
 \begin{equation} \label{eq:I_R4}
 I_{R_4} = I_{R_3}
 \end{equation}
 
+\begin{equation} \label{eq:I_R3}
+I_{R_3} = \frac{V_-}{R_3} = \frac{V_+}{R_3}
+\end{equation}
+
+By combining the past considerations it's possible to define the output voltage
+$V_o$ relating to the voltage input $V_{in}$ (equation \ref{eq:V_o}).\\
 \begin{equation} \label{eq:V_o}
-V_o = V_+ + R_4I_{R_4} = V_+ + R_4 I_{R_3} = V_+ + R_4 \cdot \frac{V_+}{R_3} =
-V_+ \cdot \left(1 + \frac{R_4}{R_3} \right) =
-V_{in}\frac{sC_2R_2}{1+sC_2R_2} \cdot \left(1 + \frac{R_4}{R_3} \right)
+V_o(s) = V_+(s) + R_4I_{R_4} = V_+(s) + R_4 I_{R_3} = V_+(s) + R_4 \cdot \frac{V_+(s)}{R_3} =
+V_+(s) \cdot \left(1 + \frac{R_4}{R_3} \right) =
+V_{in}(s)\frac{sC_2R_2}{1+sC_2R_2} \cdot \left(1 + \frac{R_4}{R_3} \right)
 \end{equation}
 
+Conseguently of the equation \ref{eq:V_o}, the transfer funtion
+$V_o(s)/V_{in}(s)$ is descripted by the equation \ref{eq:TF}.\\
 \begin{equation} \label{eq:TF}
-\frac{V_o}{V_{in}} = \frac{sC_2R_2}{1+sC_2R_2}\left(1+\frac{R_4}{R_3}\right)
+\frac{V_o(s)}{V_{in}(s)} = \frac{sC_2R_2}{1+sC_2R_2}\left(1+\frac{R_4}{R_3}\right)
 \end{equation}
 
+Defining $K$ as in the equation \ref{eq:K} and $\omega_1$ as in the equation \ref{eq:omega_1}, the transfer function $V_o(s)/V_{in}(s)$ became in the Bode form (equation \ref{eq:TFBode}).\\
 \begin{equation} \label{eq:K}
 K = C_2R_2 \cdot \left(1+\frac{R_4}{R_3}\right)
 \end{equation}
@@ -79,9 +94,10 @@ K = C_2R_2 \cdot \left(1+\frac{R_4}{R_3}\right)
 \end{equation}
 
 \begin{equation} \label{eq:TFBode}
-\frac{V_o}{V_{in}} = K \frac{s}{1+\frac{1}{\omega_1}}
+\frac{V_o(s)}{V_{in}(s)} = K \frac{s}{1+s\frac{1}{\omega_1}}
 \end{equation}
 
+Finally it's possible to calculate the frequency domain by the analysis of the transfer function's Bode form (equations \ref{eq:KdB} and \ref{eq:omega_1log}).\\
 \begin{equation} \label{eq:KdB}
  K|_{dB} = 20\log_{10}|K| = \log_{10}\left|C_2R_2 \cdot \left(1+\frac{R_4}{R_3}\right)\right| = -19.1722 dB
 \end{equation}
@@ -99,10 +115,16 @@ K = C_2R_2 \cdot \left(1+\frac{R_4}{R_3}\right)
   \label{1d2schematics}
 \end{figure}
 
+From now it's considered the circuit of the figure \ref{1d2schematics}.\par
+\medskip
+In order to simulate the waveform output voltage with a sinusoidal voltage input $V_{in}$ with an amplitude of $10mV$ and the frequencies of $1Hz$, $10Hz$ and $10kHz$, it's possible to use a SPICE transient analysis.\\
+
 \subsubsection{Netlist}
+It's presented the netlist for the SPICE analysis requested.
 \lstinputlisting{netlist/1d2.cir}
 
 \subsubsection{Graph}
+This graph is the output of the last netlist presented. There are three curves, one for every frequency analyzed ($1Hz$, $10Hz$ and $10kHz$).
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{graph/1d2.jpg}
@@ -110,16 +132,24 @@ K = C_2R_2 \cdot \left(1+\frac{R_4}{R_3}\right)
   \label{1d2graph}
 \end{figure}
 
-\subsection{Bode diagram - LT1028 op. amp.}
+\subsection{Bode plot - LT1028 op. amp.}
+The Bode plot could be generated with a SPICE small signal AC analysis.\par
+
 \subsubsection{Netlist}
+It's presented the netlist for the SPICE analysis requested.
 \lstinputlisting{netlist/1d3.cir}
 
 \subsubsection{Graph}
+The Bode plot generated could be visible in the figure \ref{1d3graph}.
+The continuos line represents the module of the transfer function and the dashed line represents the phase.\\
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{graph/1d3.jpg}
-  \caption{Audio Amplifier - Bode diagram}
+  \caption{Audio Amplifier - Bode plot}
   \label{1d3graph}
 \end{figure}
+
+\subsection{Saturation - LT1028 op. amp.}
+
 
 \end{document}
