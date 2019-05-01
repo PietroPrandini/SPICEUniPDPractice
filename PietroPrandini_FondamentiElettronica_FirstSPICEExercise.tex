@@ -141,7 +141,7 @@ It's presented the netlist for the SPICE analysis requested.
 
 \subsubsection{Graph}
 The Bode plot generated could be visible in the figure \ref{1d3graph}.
-The continuos line represents the module of the transfer function and the dashed line represents the phase.\\
+The continuos line represents the magnitude and the dashed line represents the phase frequency.\\
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{graph/1d3.jpg}
@@ -150,6 +150,26 @@ The continuos line represents the module of the transfer function and the dashed
 \end{figure}
 
 \subsection{Saturation - LT1028 op. amp.}
+The voltage output saturation could be analized by giving an abnormally high voltage input to the input.\\
+The next netlist analyzes the voltage output with an input with $100V$ amplitude.\\
 
+\lstinputlisting{netlist/1d4.cir}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{graph/1d4.jpg}
+  \caption{Audio Amplifier - Output voltage saturation}
+  \label{1d4graph}
+\end{figure}
+The graph generated (figure \ref{1d4graph}) makes clear the fact that the voltage output saturation is on $\pm8V$.\\
+So it's possible to calculate wich is the highest signal it's accepted by the circuit that avoids the saturation.\\
+
+\begin{equation}
+|V_o(j\omega )| \leq 8V
+\end{equation}
+
+\begin{equation}
+\left|V_{in}(j\omega )\frac{j\omega C_2R_2}{1+j\omega C_2R_2} \cdot \left(1 + \frac{R_4}{R_3} \right) \right| \leq 8V
+\end{equation}
 
 \end{document}
