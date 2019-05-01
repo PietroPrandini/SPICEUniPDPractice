@@ -234,4 +234,61 @@ $$P_{DC} = 10V \cdot (-0.00736621A) + (-10V) \cdot (+0.00736621 A) = -0.14732420
 
 $$P_{DC} = 10V \cdot (-0.00736621A) + (-10V) \cdot (+0.00736621 A) = -0.14732420W$$
 
+\section{Band Pass Amplifier}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=10cm]{schematics/2d1.jpg}
+  \caption{Band pass amplifier - Circuit schematics}
+  \label{2d1schematics}
+\end{figure}
+
+\subsection{Transfer function}
+
+\begin{align}
+V_o(s) = - (C_2 \parallel R_2) \cdot \frac{V_i(s)}{\frac{1}{sC_1}+R_1} \nonumber \\
+V_o(s) = - \frac{\frac{1}{sC_2} \cdot R_2}{\frac{1}{sC_2}+R_2} \cdot \frac{sC_2}{sC_2} \cdot \frac{V_i(s)}{\frac{1}{sC_1}+R_1} \cdot \frac{sC_1}{sC_1} \nonumber \\
+V_o(s) = - \frac{R_2}{1+sC_2R_2} \cdot \frac{V_i(s) \cdot sC_1}{1+sC_1R_1} \nonumber \\
+\frac{V_o(s)}{V_i(s)} = - \frac{sC_1R_2}{(1+sC_1R_1)(1+sC_2R_2)}
+\end{align}
+
+\subsection{Determining capacitances and resistances}
+The conditions to respect are described by the system \ref{eq:conditions}.
+\begin{equation}
+\left\{
+\begin{array}{l}
+R_1 = 1097752\Omega/1000 \\
+\omega_1 = \frac{1}{C_1R_2} = 10 \\
+\omega_2 = \frac{1}{C_1R_1} = 10^3 \\
+\omega_3 = \frac{1}{C_2R_2} = 10^6
+\end{array}
+\right. \label{eq:conditions}
+\end{equation}
+
+Resolving the system it's possible to find the value of the circuit's capacitances and resistances (system \ref{eq:cap_n_res}).
+\begin{equation}
+\left\{
+\begin{array}{l}
+R_1 = 1097.752\Omega\\
+R_2 = 109775.2\Omega\\
+C_1 = 910.95256nF\\
+C_2 = 9.10953pF\\
+\end{array}
+\right. \label{eq:cap_n_res}
+\end{equation}
+
+\subsection{Bode plot}
+\subsubsection{Netlist}
+\lstinputlisting{netlist/2d3.cir}
+
+\subsubsection{Graph}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{graph/2d3.jpg}
+  \caption{Band pass amplifier - Bode plot}
+  \label{2d3graph}
+\end{figure}
+
+
+
 \end{document}

@@ -13,3 +13,9 @@
 \BOOKMARK [2][-]{subsection.1.6}{Power delivered to the amplifier}{section.1}% 13
 \BOOKMARK [3][-]{subsubsection.1.6.1}{Case A - R2 = 100k Vin = 2 1.36701V}{subsection.1.6}% 14
 \BOOKMARK [3][-]{subsubsection.1.6.2}{Case B - R2 = 109775.2 Vin = 2 1.28091V}{subsection.1.6}% 15
+\BOOKMARK [1][-]{section.2}{Band Pass Amplifier}{}% 16
+\BOOKMARK [2][-]{subsection.2.1}{Transfer function}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.2}{Determining capacitances and resistances}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.3}{Bode plot}{section.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Netlist}{subsection.2.3}% 20
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Graph}{subsection.2.3}% 21
