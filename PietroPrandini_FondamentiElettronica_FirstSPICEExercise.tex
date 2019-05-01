@@ -141,7 +141,7 @@ It's presented the netlist for the SPICE analysis requested.
 
 \subsubsection{Graph}
 The Bode plot generated could be visible in the figure \ref{1d3graph}.
-The continuos line represents the magnitude and the dashed line represents the phase frequency.\\
+The continuous line represents the magnitude and the dashed line represents the phase frequency.\\
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{graph/1d3.jpg}
@@ -162,14 +162,37 @@ The next netlist analyzes the voltage output with an input with $100V$ amplitude
   \label{1d4graph}
 \end{figure}
 The graph generated (figure \ref{1d4graph}) makes clear the fact that the voltage output saturation is on $\pm8V$.\\
-So it's possible to calculate wich is the highest signal it's accepted by the circuit that avoids the saturation.\\
+So it's possible to calculate wich is the highest input signal that avoids the saturation (equation \ref{eq:V_inSat}).\\
 
-\begin{equation}
-|V_o(j\omega )| \leq 8V
-\end{equation}
+\begin{align}
+|V_o| \leq 8V \nonumber \\
+\left|V_{in}\cdot \frac{j\omega C_2R_2}{1+j\omega C_2R_2} \cdot \left(1 + \frac{R_4}{R_3} \right) \right| \leq 8V \nonumber \\
+|V_{in}|\cdot \left|\frac{j\omega C_2R_2}{1+j\omega C_2R_2} \right| \cdot \left| \left(1 + \frac{R_4}{R_3} \right) \right| \leq 8V \nonumber \\
+|V_{in}|\cdot \frac{\sqrt{(\omega C_2R_2)^2}}{\sqrt{1+(\omega C_2R_2)^2}} \cdot \frac{R_3 + R_4}{R_3} \leq 8V \nonumber \\
+|V_{in}| \leq 8V \cdot \frac{\sqrt{1+(\omega C_2R_2)^2}}{\omega C_2R_2} \cdot \frac{R_3}{R_3 + R_4} \label{eq:V_inSat}
+\end{align}
 
-\begin{equation}
-\left|V_{in}(j\omega )\frac{j\omega C_2R_2}{1+j\omega C_2R_2} \cdot \left(1 + \frac{R_4}{R_3} \right) \right| \leq 8V
-\end{equation}
+In order to have a maximum value of the input voltage $V_{in}$, the $\omega$ could be setted to a static value.\\
+For example with $\omega = 10Hz \cdot 2\pi$ the maximum value of the input voltage is $|V_{in}| \leq 1.36701V$ (output voltage graph on figure \ref{1d4bgraph}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{graph/1d4b.jpg}
+  \caption{Audio Amplifier - Output voltage with an amplitude of the imput voltage equal to $1.36701V$, frequency equal to 10Hz}
+  \label{1d4bgraph}
+\end{figure}
+
+\subsubsection{Output voltage waveform - $V_{in} = 2 \cdot |V_{in MAX} |$}
+The netlist used for plot the output voltage waveform with an input voltage dobled relatively to the maximum input voltage calculated is:\\
+\lstinputlisting{netlist/1d4c.cir}
+
+The graph generated is presented on the figure \ref{1d4cgraph}.\\
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{graph/1d4c.jpg}
+  \caption{Audio Amplifier - Output voltage with an amplitude of the imput voltage equal to $2*1.36701V$, frequency equal to 10Hz}
+  \label{1d4cgraph}
+\end{figure}
 
 \end{document}

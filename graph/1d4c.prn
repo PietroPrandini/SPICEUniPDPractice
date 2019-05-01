@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0
 %cupsJobTicket: media=8x12
 %%Creator: Wine PostScript Driver
-%%Title: 1d4.cir
+%%Title: 1d4c.cir
 %%BoundingBox: 0 0 576 864
 %%Pages: (atend)
 %%Orientation: Landscape
@@ -2640,30 +2640,26 @@ stroke
 stroke
 0.00 0.00 0.00 setrgbcolor
 111 1155 moveto
-111 1157 lineto
+111 1158 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1157 moveto
+111 1158 moveto
 111 1160 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
 111 1160 moveto
-111 1162 lineto
+111 1163 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1162 moveto
-111 1164 lineto
+111 1163 moveto
+111 1165 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1164 moveto
-111 1167 lineto
+111 1165 moveto
+111 1168 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1167 moveto
-111 1169 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-111 1169 moveto
+111 1168 moveto
 111 1171 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
@@ -2676,6 +2672,14 @@ stroke
 stroke
 0.00 0.00 0.00 setrgbcolor
 111 1175 moveto
+111 1177 lineto
+stroke
+0.00 0.00 0.00 setrgbcolor
+111 1177 moveto
+111 1174 lineto
+stroke
+0.00 0.00 0.00 setrgbcolor
+111 1174 moveto
 111 1172 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
@@ -2696,22 +2700,6 @@ stroke
 stroke
 0.00 0.00 0.00 setrgbcolor
 111 1163 moveto
-111 1161 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-111 1161 moveto
-111 1159 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-111 1159 moveto
-111 1161 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-111 1161 moveto
-111 1163 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-111 1163 moveto
 111 1165 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
@@ -2720,1601 +2708,1105 @@ stroke
 stroke
 0.00 0.00 0.00 setrgbcolor
 111 1167 moveto
-111 1165 lineto
+111 1170 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1165 moveto
-111 1162 lineto
+111 1170 moveto
+111 1172 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1162 moveto
-111 1160 lineto
+111 1172 moveto
+111 1174 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1160 moveto
-111 1158 lineto
+111 1174 moveto
+111 1172 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1158 moveto
-111 1160 lineto
+111 1172 moveto
+111 1170 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1160 moveto
-111 1162 lineto
+111 1170 moveto
+111 1168 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1162 moveto
-111 1160 lineto
+111 1168 moveto
+111 1166 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1160 moveto
-111 1158 lineto
+111 1166 moveto
+111 1168 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1158 moveto
-111 1156 lineto
+111 1168 moveto
+111 1170 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1156 moveto
-111 1154 lineto
+111 1170 moveto
+111 1168 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1154 moveto
-111 1152 lineto
+111 1168 moveto
+111 1170 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1152 moveto
-111 1150 lineto
+111 1170 moveto
+111 1168 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1150 moveto
-111 1148 lineto
+111 1168 moveto
+111 1170 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1148 moveto
-111 1146 lineto
+111 1170 moveto
+111 1168 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1146 moveto
-111 1144 lineto
+111 1168 moveto
+112 1154 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1144 moveto
-111 1142 lineto
+112 1154 moveto
+113 1141 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1142 moveto
-111 1140 lineto
+113 1141 moveto
+114 1127 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1140 moveto
-111 1138 lineto
+114 1127 moveto
+115 1113 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1138 moveto
-111 1136 lineto
+115 1113 moveto
+116 1100 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1136 moveto
-111 1134 lineto
+116 1100 moveto
+117 1087 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1134 moveto
-111 1132 lineto
+117 1087 moveto
+118 1073 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1132 moveto
-111 1130 lineto
+118 1073 moveto
+118 1060 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1130 moveto
-111 1127 lineto
+118 1060 moveto
+119 1047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1127 moveto
-111 1124 lineto
+119 1047 moveto
+120 1034 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1124 moveto
-111 1121 lineto
+120 1034 moveto
+121 1022 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-111 1121 moveto
-112 808 lineto
+121 1022 moveto
+122 1009 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-112 808 moveto
-112 496 lineto
+122 1009 moveto
+132 873 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-112 496 moveto
-113 329 lineto
+132 873 moveto
+146 708 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-113 329 moveto
-113 299 lineto
+146 708 moveto
+160 559 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-113 299 moveto
-113 293 lineto
+160 559 moveto
+174 426 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-113 293 moveto
-115 292 lineto
+174 426 moveto
+187 319 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-115 292 moveto
-117 292 lineto
+187 319 moveto
+193 296 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-117 292 moveto
-119 292 lineto
+193 296 moveto
+198 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-119 292 moveto
-121 292 lineto
+198 293 moveto
+203 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-121 292 moveto
-124 292 lineto
+203 293 moveto
+207 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-124 292 moveto
-128 292 lineto
+207 292 moveto
+216 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-128 292 moveto
-147 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-147 292 moveto
-174 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-174 292 moveto
-202 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-202 292 moveto
+216 292 moveto
 229 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
 229 292 moveto
+242 292 lineto
+stroke
+0.00 0.00 0.00 setrgbcolor
+242 292 moveto
 256 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
 256 292 moveto
-284 292 lineto
+270 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-284 292 moveto
+270 292 moveto
+283 292 lineto
+stroke
+0.00 0.00 0.00 setrgbcolor
+283 292 moveto
+297 292 lineto
+stroke
+0.00 0.00 0.00 setrgbcolor
+297 292 moveto
 311 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
 311 292 moveto
-339 292 lineto
+324 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-339 292 moveto
-366 292 lineto
+324 293 moveto
+338 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-366 292 moveto
-393 292 lineto
+338 293 moveto
+352 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-393 292 moveto
-407 292 lineto
+352 293 moveto
+366 294 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-407 292 moveto
-421 292 lineto
+366 294 moveto
+379 301 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-421 292 moveto
-434 292 lineto
+379 301 moveto
+393 319 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-434 292 moveto
-448 292 lineto
+393 319 moveto
+406 350 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-448 292 moveto
-450 292 lineto
+406 350 moveto
+420 392 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-450 292 moveto
-452 292 lineto
+420 392 moveto
+434 442 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-452 292 moveto
-454 292 lineto
+434 442 moveto
+447 500 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-454 292 moveto
-456 292 lineto
+447 500 moveto
+461 564 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-456 292 moveto
-458 292 lineto
+461 564 moveto
+475 635 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-458 292 moveto
-460 292 lineto
+475 635 moveto
+488 711 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-460 292 moveto
-462 292 lineto
+488 711 moveto
+502 792 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-462 292 moveto
-464 292 lineto
+502 792 moveto
+516 877 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-464 292 moveto
-466 292 lineto
+516 877 moveto
+529 966 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-466 292 moveto
-468 292 lineto
+529 966 moveto
+543 1059 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-468 292 moveto
-470 292 lineto
+543 1059 moveto
+557 1154 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-470 292 moveto
-472 294 lineto
+557 1154 moveto
+570 1250 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-472 294 moveto
-473 296 lineto
+570 1250 moveto
+598 1448 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-473 296 moveto
-473 298 lineto
+598 1448 moveto
+625 1646 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-473 298 moveto
-473 300 lineto
+625 1646 moveto
+653 1842 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-473 300 moveto
-474 351 lineto
+653 1842 moveto
+666 1937 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-474 351 moveto
-475 405 lineto
+666 1937 moveto
+680 2021 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-475 405 moveto
-476 460 lineto
+680 2021 moveto
+687 2042 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-476 460 moveto
-476 518 lineto
+687 2042 moveto
+693 2046 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-476 518 moveto
-477 577 lineto
+693 2046 moveto
+699 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-477 577 moveto
-478 639 lineto
+699 2047 moveto
+704 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-478 639 moveto
-479 702 lineto
+704 2047 moveto
+715 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-479 702 moveto
-480 768 lineto
+715 2047 moveto
+729 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-480 768 moveto
-481 835 lineto
+729 2047 moveto
+742 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-481 835 moveto
-482 904 lineto
+742 2047 moveto
+756 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-482 904 moveto
-483 977 lineto
+756 2047 moveto
+770 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-483 977 moveto
-484 1051 lineto
+770 2047 moveto
+783 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-484 1051 moveto
-485 1128 lineto
+783 2047 moveto
+797 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-485 1128 moveto
-486 1207 lineto
+797 2047 moveto
+811 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-486 1207 moveto
-487 1288 lineto
+811 2047 moveto
+825 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-487 1288 moveto
-488 1371 lineto
+825 2047 moveto
+838 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-488 1371 moveto
-489 1457 lineto
+838 2047 moveto
+852 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-489 1457 moveto
-490 1545 lineto
+852 2047 moveto
+866 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-490 1545 moveto
-491 1635 lineto
+866 2047 moveto
+879 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-491 1635 moveto
-492 1728 lineto
+879 2047 moveto
+893 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-492 1728 moveto
-495 2033 lineto
+893 2047 moveto
+907 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-495 2033 moveto
-495 2039 lineto
+907 2047 moveto
+920 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-495 2039 moveto
-495 2041 lineto
+920 2047 moveto
+934 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-495 2041 moveto
-495 2043 lineto
+934 2047 moveto
+948 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-495 2043 moveto
-495 2045 lineto
+948 2047 moveto
+962 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-495 2045 moveto
-497 2047 lineto
+962 2047 moveto
+975 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-497 2047 moveto
-501 2047 lineto
+975 2047 moveto
+989 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-501 2047 moveto
-507 2047 lineto
+989 2047 moveto
+1003 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-507 2047 moveto
-517 2047 lineto
+1003 2047 moveto
+1016 2046 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-517 2047 moveto
-524 2047 lineto
+1016 2046 moveto
+1030 2046 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-524 2047 moveto
-529 2047 lineto
+1030 2046 moveto
+1044 2045 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-529 2047 moveto
-533 2047 lineto
+1044 2045 moveto
+1057 2042 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-533 2047 moveto
-538 2047 lineto
+1057 2042 moveto
+1071 2031 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-538 2047 moveto
-547 2047 lineto
+1071 2031 moveto
+1085 2005 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-547 2047 moveto
-574 2047 lineto
+1085 2005 moveto
+1098 1967 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-574 2047 moveto
-602 2047 lineto
+1098 1967 moveto
+1112 1921 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-602 2047 moveto
-629 2047 lineto
+1112 1921 moveto
+1126 1867 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-629 2047 moveto
-657 2047 lineto
+1126 1867 moveto
+1139 1805 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-657 2047 moveto
-684 2047 lineto
+1139 1805 moveto
+1153 1737 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-684 2047 moveto
-711 2047 lineto
+1153 1737 moveto
+1167 1664 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-711 2047 moveto
-739 2047 lineto
+1167 1664 moveto
+1181 1585 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-739 2047 moveto
-766 2047 lineto
+1181 1585 moveto
+1194 1501 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-766 2047 moveto
-794 2047 lineto
+1194 1501 moveto
+1208 1414 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-794 2047 moveto
-821 2047 lineto
+1208 1414 moveto
+1222 1323 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-821 2047 moveto
-848 2047 lineto
+1222 1323 moveto
+1235 1229 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-848 2047 moveto
-876 2047 lineto
+1235 1229 moveto
+1249 1133 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-876 2047 moveto
-903 2047 lineto
+1249 1133 moveto
+1263 1035 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-903 2047 moveto
-931 2047 lineto
+1263 1035 moveto
+1290 837 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-931 2047 moveto
-958 2047 lineto
+1290 837 moveto
+1318 639 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-958 2047 moveto
-985 2047 lineto
+1318 639 moveto
+1345 445 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-985 2047 moveto
-1013 2047 lineto
+1345 445 moveto
+1359 353 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1013 2047 moveto
-1040 2047 lineto
+1359 353 moveto
+1368 306 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1040 2047 moveto
-1067 2047 lineto
+1368 306 moveto
+1374 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1067 2047 moveto
-1081 2047 lineto
+1374 293 moveto
+1378 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1081 2047 moveto
-1095 2047 lineto
+1378 293 moveto
+1382 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1095 2047 moveto
-1109 2047 lineto
+1382 293 moveto
+1390 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1109 2047 moveto
-1122 2047 lineto
+1390 292 moveto
+1404 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1122 2047 moveto
-1136 2047 lineto
+1404 292 moveto
+1418 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1136 2047 moveto
-1138 2047 lineto
+1418 292 moveto
+1431 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1138 2047 moveto
-1140 2047 lineto
+1431 292 moveto
+1445 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1140 2047 moveto
-1142 2047 lineto
+1445 292 moveto
+1459 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1142 2047 moveto
-1144 2047 lineto
+1459 292 moveto
+1472 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1144 2047 moveto
-1146 2047 lineto
+1472 292 moveto
+1486 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1146 2047 moveto
-1148 2047 lineto
+1486 292 moveto
+1500 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1148 2047 moveto
-1150 2047 lineto
+1500 292 moveto
+1513 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1150 2047 moveto
-1152 2047 lineto
+1513 292 moveto
+1527 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1152 2047 moveto
-1154 2048 lineto
+1527 292 moveto
+1541 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1154 2048 moveto
-1156 2047 lineto
+1541 292 moveto
+1555 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1156 2047 moveto
-1157 2045 lineto
+1555 292 moveto
+1568 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1157 2045 moveto
-1157 2043 lineto
+1568 292 moveto
+1582 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1157 2043 moveto
-1158 2039 lineto
+1582 292 moveto
+1596 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1158 2039 moveto
-1159 1978 lineto
+1596 292 moveto
+1609 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1159 1978 moveto
-1160 1915 lineto
+1609 292 moveto
+1623 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1160 1915 moveto
-1161 1849 lineto
+1623 292 moveto
+1637 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1161 1849 moveto
-1162 1781 lineto
+1637 292 moveto
+1650 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1162 1781 moveto
-1163 1709 lineto
+1650 292 moveto
+1664 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1163 1709 moveto
-1164 1635 lineto
+1664 292 moveto
+1678 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1164 1635 moveto
-1165 1569 lineto
+1678 292 moveto
+1692 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1165 1569 moveto
-1166 1500 lineto
+1692 292 moveto
+1705 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1166 1500 moveto
-1167 1430 lineto
+1705 293 moveto
+1719 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1167 1430 moveto
-1168 1357 lineto
+1719 293 moveto
+1733 294 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1168 1357 moveto
-1169 1282 lineto
+1733 294 moveto
+1746 299 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1169 1282 moveto
-1170 1205 lineto
+1746 299 moveto
+1760 315 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1170 1205 moveto
-1171 1125 lineto
+1760 315 moveto
+1774 345 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1171 1125 moveto
-1172 1042 lineto
+1774 345 moveto
+1787 385 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1172 1042 moveto
-1173 958 lineto
+1787 385 moveto
+1801 434 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1173 958 moveto
-1174 871 lineto
+1801 434 moveto
+1815 491 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1174 871 moveto
-1175 782 lineto
+1815 491 moveto
+1828 554 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1175 782 moveto
-1176 690 lineto
+1828 554 moveto
+1842 624 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1176 690 moveto
-1177 597 lineto
+1842 624 moveto
+1856 699 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1177 597 moveto
-1178 501 lineto
+1856 699 moveto
+1870 780 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1178 501 moveto
-1179 403 lineto
+1870 780 moveto
+1883 865 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1179 403 moveto
-1180 303 lineto
+1883 865 moveto
+1897 953 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1180 303 moveto
-1180 299 lineto
+1897 953 moveto
+1911 1045 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1180 299 moveto
-1180 297 lineto
+1911 1045 moveto
+1924 1140 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1180 297 moveto
-1180 295 lineto
+1924 1140 moveto
+1938 1236 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1180 295 moveto
-1180 293 lineto
+1938 1236 moveto
+1952 1334 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1180 293 moveto
-1182 292 lineto
+1952 1334 moveto
+1979 1532 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1182 292 moveto
-1185 292 lineto
+1979 1532 moveto
+2007 1730 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1185 292 moveto
-1190 292 lineto
+2007 1730 moveto
+2034 1923 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1190 292 moveto
-1199 292 lineto
+2034 1923 moveto
+2048 2009 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1199 292 moveto
-1207 292 lineto
+2048 2009 moveto
+2056 2039 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1207 292 moveto
-1211 292 lineto
+2056 2039 moveto
+2063 2046 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1211 292 moveto
-1217 292 lineto
+2063 2046 moveto
+2068 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1217 292 moveto
-1243 292 lineto
+2068 2047 moveto
+2074 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1243 292 moveto
-1270 292 lineto
+2074 2047 moveto
+2084 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1270 292 moveto
-1297 292 lineto
+2084 2047 moveto
+2098 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1297 292 moveto
-1325 292 lineto
+2098 2047 moveto
+2111 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1325 292 moveto
-1352 292 lineto
+2111 2047 moveto
+2125 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1352 292 moveto
-1380 292 lineto
+2125 2047 moveto
+2139 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1380 292 moveto
-1407 292 lineto
+2139 2047 moveto
+2152 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1407 292 moveto
-1434 292 lineto
+2152 2047 moveto
+2166 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1434 292 moveto
-1462 292 lineto
+2166 2047 moveto
+2180 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1462 292 moveto
-1489 292 lineto
+2180 2047 moveto
+2194 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1489 292 moveto
-1516 292 lineto
+2194 2047 moveto
+2207 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1516 292 moveto
-1544 292 lineto
+2207 2047 moveto
+2221 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1544 292 moveto
-1571 292 lineto
+2221 2047 moveto
+2235 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1571 292 moveto
-1599 292 lineto
+2235 2047 moveto
+2248 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1599 292 moveto
-1626 292 lineto
+2248 2047 moveto
+2262 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1626 292 moveto
-1653 292 lineto
+2262 2047 moveto
+2276 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1653 292 moveto
-1681 292 lineto
+2276 2047 moveto
+2289 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1681 292 moveto
-1708 292 lineto
+2289 2047 moveto
+2303 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1708 292 moveto
-1736 292 lineto
+2303 2047 moveto
+2317 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1736 292 moveto
-1763 292 lineto
+2317 2047 moveto
+2331 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1763 292 moveto
-1777 292 lineto
+2331 2047 moveto
+2344 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1777 292 moveto
-1790 292 lineto
+2344 2047 moveto
+2358 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1790 292 moveto
-1804 292 lineto
+2358 2047 moveto
+2372 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1804 292 moveto
-1818 292 lineto
+2372 2047 moveto
+2385 2046 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1818 292 moveto
-1820 292 lineto
+2385 2046 moveto
+2399 2046 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1820 292 moveto
-1822 292 lineto
+2399 2046 moveto
+2413 2045 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1822 292 moveto
-1824 292 lineto
+2413 2045 moveto
+2426 2043 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1824 292 moveto
-1826 292 lineto
+2426 2043 moveto
+2440 2032 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1826 292 moveto
-1828 292 lineto
+2440 2032 moveto
+2454 2006 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1828 292 moveto
-1830 292 lineto
+2454 2006 moveto
+2468 1969 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1830 292 moveto
-1832 292 lineto
+2468 1969 moveto
+2481 1923 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1832 292 moveto
-1834 292 lineto
+2481 1923 moveto
+2495 1869 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1834 292 moveto
-1836 292 lineto
+2495 1869 moveto
+2509 1808 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1836 292 moveto
-1838 292 lineto
+2509 1808 moveto
+2522 1740 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1838 292 moveto
-1840 293 lineto
+2522 1740 moveto
+2536 1666 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1840 293 moveto
-1842 293 lineto
+2536 1666 moveto
+2550 1588 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1842 293 moveto
-1842 296 lineto
+2550 1588 moveto
+2563 1504 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1842 296 moveto
-1842 298 lineto
+2563 1504 moveto
+2577 1417 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1842 298 moveto
-1842 300 lineto
+2577 1417 moveto
+2591 1326 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1842 300 moveto
-1843 359 lineto
+2591 1326 moveto
+2604 1232 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1843 359 moveto
-1844 420 lineto
+2604 1232 moveto
+2618 1136 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1844 420 moveto
-1846 484 lineto
+2618 1136 moveto
+2632 1039 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1846 484 moveto
-1847 551 lineto
+2632 1039 moveto
+2659 841 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1847 551 moveto
-1848 621 lineto
+2659 841 moveto
+2687 643 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1848 621 moveto
-1849 693 lineto
+2687 643 moveto
+2714 448 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1849 693 moveto
-1850 768 lineto
+2714 448 moveto
+2728 362 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1850 768 moveto
-1851 846 lineto
+2728 362 moveto
+2741 308 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1851 846 moveto
-1852 915 lineto
+2741 308 moveto
+2754 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1852 915 moveto
-1853 986 lineto
+2754 293 moveto
+2761 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1853 986 moveto
-1854 1059 lineto
+2761 292 moveto
+2768 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1854 1059 moveto
-1855 1135 lineto
+2768 292 moveto
+2781 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1855 1135 moveto
-1856 1213 lineto
+2781 292 moveto
+2795 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1856 1213 moveto
-1857 1293 lineto
+2795 292 moveto
+2809 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1857 1293 moveto
-1858 1376 lineto
+2809 292 moveto
+2823 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1858 1376 moveto
-1859 1461 lineto
+2823 292 moveto
+2836 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1859 1461 moveto
-1860 1551 lineto
+2836 292 moveto
+2850 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1860 1551 moveto
-1861 1643 lineto
+2850 292 moveto
+2864 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1861 1643 moveto
-1862 1737 lineto
+2864 292 moveto
+2877 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1862 1737 moveto
-1863 1832 lineto
+2877 292 moveto
+2891 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1863 1832 moveto
-1864 1930 lineto
+2891 292 moveto
+2905 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1864 1930 moveto
-1865 2029 lineto
+2905 292 moveto
+2918 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1865 2029 moveto
-1865 2038 lineto
+2918 292 moveto
+2932 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1865 2038 moveto
-1865 2041 lineto
+2932 292 moveto
+2946 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1865 2041 moveto
-1865 2043 lineto
+2946 292 moveto
+2959 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1865 2043 moveto
-1865 2045 lineto
+2959 292 moveto
+2973 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1865 2045 moveto
-1867 2047 lineto
+2973 292 moveto
+2987 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1867 2047 moveto
-1871 2047 lineto
+2987 292 moveto
+3001 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1871 2047 moveto
-1878 2047 lineto
+3001 292 moveto
+3014 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1878 2047 moveto
-1890 2047 lineto
+3014 292 moveto
+3028 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1890 2047 moveto
-1896 2047 lineto
+3028 292 moveto
+3042 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1896 2047 moveto
-1903 2047 lineto
+3042 292 moveto
+3055 292 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1903 2047 moveto
-1908 2047 lineto
+3055 292 moveto
+3069 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1908 2047 moveto
-1915 2047 lineto
+3069 293 moveto
+3083 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1915 2047 moveto
-1928 2047 lineto
+3083 293 moveto
+3096 293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1928 2047 moveto
-1956 2047 lineto
+3096 293 moveto
+3110 296 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1956 2047 moveto
-1983 2047 lineto
+3110 296 moveto
+3124 306 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-1983 2047 moveto
-2010 2047 lineto
+3124 306 moveto
+3138 330 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2010 2047 moveto
-2038 2047 lineto
+3138 330 moveto
+3151 367 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2038 2047 moveto
-2065 2047 lineto
+3151 367 moveto
+3165 412 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2065 2047 moveto
-2092 2047 lineto
+3165 412 moveto
+3179 466 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2092 2047 moveto
-2120 2047 lineto
+3179 466 moveto
+3192 526 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2120 2047 moveto
-2147 2047 lineto
+3192 526 moveto
+3206 593 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2147 2047 moveto
-2175 2047 lineto
+3206 593 moveto
+3220 667 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2175 2047 moveto
-2202 2047 lineto
+3220 667 moveto
+3233 745 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2202 2047 moveto
-2229 2047 lineto
+3233 745 moveto
+3247 828 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2229 2047 moveto
-2257 2047 lineto
+3247 828 moveto
+3261 915 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2257 2047 moveto
-2284 2047 lineto
+3261 915 moveto
+3274 1006 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2284 2047 moveto
-2312 2047 lineto
+3274 1006 moveto
+3288 1099 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2312 2047 moveto
-2339 2047 lineto
+3288 1099 moveto
+3302 1195 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2339 2047 moveto
-2366 2047 lineto
+3302 1195 moveto
+3316 1293 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2366 2047 moveto
-2394 2047 lineto
+3316 1293 moveto
+3343 1491 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2394 2047 moveto
-2421 2047 lineto
+3343 1491 moveto
+3370 1689 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2421 2047 moveto
-2449 2047 lineto
+3370 1689 moveto
+3398 1883 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2449 2047 moveto
-2462 2047 lineto
+3398 1883 moveto
+3411 1971 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2462 2047 moveto
-2476 2047 lineto
+3411 1971 moveto
+3425 2032 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2476 2047 moveto
-2490 2047 lineto
+3425 2032 moveto
+3435 2046 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2490 2047 moveto
-2503 2047 lineto
+3435 2046 moveto
+3441 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2503 2047 moveto
-2505 2047 lineto
+3441 2047 moveto
+3446 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2505 2047 moveto
-2507 2047 lineto
+3446 2047 moveto
+3457 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2507 2047 moveto
-2509 2047 lineto
+3457 2047 moveto
+3471 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2509 2047 moveto
-2511 2047 lineto
+3471 2047 moveto
+3484 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2511 2047 moveto
-2513 2047 lineto
+3484 2047 moveto
+3498 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2513 2047 moveto
-2515 2047 lineto
+3498 2047 moveto
+3512 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2515 2047 moveto
-2517 2047 lineto
+3512 2047 moveto
+3525 2047 lineto
 stroke
 0.00 0.00 0.00 setrgbcolor
-2517 2047 moveto
-2519 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2519 2047 moveto
-2521 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2521 2047 moveto
-2523 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2523 2047 moveto
-2525 2046 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2525 2046 moveto
-2527 2044 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2527 2044 moveto
-2527 2042 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2527 2042 moveto
-2527 2040 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2527 2040 moveto
-2528 1981 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2528 1981 moveto
-2529 1920 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2529 1920 moveto
-2530 1856 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2530 1856 moveto
-2531 1789 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2531 1789 moveto
-2532 1720 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2532 1720 moveto
-2533 1648 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2533 1648 moveto
-2534 1573 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2534 1573 moveto
-2535 1496 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2535 1496 moveto
-2537 1416 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2537 1416 moveto
-2538 1333 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2538 1333 moveto
-2539 1259 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2539 1259 moveto
-2540 1184 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2540 1184 moveto
-2541 1106 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2541 1106 moveto
-2542 1025 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2542 1025 moveto
-2543 943 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2543 943 moveto
-2544 859 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2544 859 moveto
-2545 772 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2545 772 moveto
-2546 683 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2546 683 moveto
-2547 592 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2547 592 moveto
-2548 499 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2548 499 moveto
-2549 403 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2549 403 moveto
-2550 305 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2550 305 moveto
-2550 301 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2550 301 moveto
-2550 299 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2550 299 moveto
-2550 297 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2550 297 moveto
-2550 295 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2550 295 moveto
-2550 293 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2550 293 moveto
-2553 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2553 292 moveto
-2556 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2556 292 moveto
-2561 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2561 292 moveto
-2572 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2572 292 moveto
-2578 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2578 292 moveto
-2584 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2584 292 moveto
-2588 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2588 292 moveto
-2593 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2593 292 moveto
-2602 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2602 292 moveto
-2630 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2630 292 moveto
-2657 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2657 292 moveto
-2684 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2684 292 moveto
-2712 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2712 292 moveto
-2739 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2739 292 moveto
-2766 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2766 292 moveto
-2794 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2794 292 moveto
-2821 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2821 292 moveto
-2849 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2849 292 moveto
-2876 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2876 292 moveto
-2903 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2903 292 moveto
-2931 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2931 292 moveto
-2958 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2958 292 moveto
-2986 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-2986 292 moveto
-3013 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3013 292 moveto
-3040 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3040 292 moveto
-3068 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3068 292 moveto
-3095 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3095 292 moveto
-3123 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3123 292 moveto
-3136 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3136 292 moveto
-3150 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3150 292 moveto
-3164 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3164 292 moveto
-3177 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3177 292 moveto
-3191 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3191 292 moveto
-3193 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3193 292 moveto
-3195 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3195 292 moveto
-3197 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3197 292 moveto
-3199 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3199 292 moveto
-3201 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3201 292 moveto
-3203 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3203 292 moveto
-3205 292 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3205 292 moveto
-3207 293 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3207 293 moveto
-3209 290 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3209 290 moveto
-3211 291 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3211 291 moveto
-3212 295 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3212 295 moveto
-3212 297 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3212 297 moveto
-3212 299 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3212 299 moveto
-3213 361 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3213 361 moveto
-3214 425 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3214 425 moveto
-3215 493 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3215 493 moveto
-3216 563 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3216 563 moveto
-3217 636 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3217 636 moveto
-3219 712 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3219 712 moveto
-3220 791 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3220 791 moveto
-3221 872 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3221 872 moveto
-3222 957 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3222 957 moveto
-3223 1045 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3223 1045 moveto
-3224 1114 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3224 1114 moveto
-3225 1186 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3225 1186 moveto
-3226 1260 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3226 1260 moveto
-3227 1336 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3227 1336 moveto
-3228 1414 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3228 1414 moveto
-3228 1494 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3228 1494 moveto
-3229 1576 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3229 1576 moveto
-3230 1660 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3230 1660 moveto
-3231 1746 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3231 1746 moveto
-3232 1834 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3232 1834 moveto
-3233 1924 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3233 1924 moveto
-3234 2016 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3234 2016 moveto
-3234 2035 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3234 2035 moveto
-3234 2041 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3234 2041 moveto
-3234 2043 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3234 2043 moveto
-3235 2045 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3235 2045 moveto
-3236 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3236 2047 moveto
-3238 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3238 2047 moveto
-3242 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3242 2047 moveto
-3248 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3248 2047 moveto
-3262 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3262 2047 moveto
-3267 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3267 2047 moveto
-3273 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3273 2047 moveto
-3279 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3279 2047 moveto
-3289 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3289 2047 moveto
-3316 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3316 2047 moveto
-3344 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3344 2047 moveto
-3371 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3371 2047 moveto
-3398 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3398 2047 moveto
-3426 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3426 2047 moveto
-3453 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3453 2047 moveto
-3481 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3481 2047 moveto
-3508 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3508 2047 moveto
-3522 2047 lineto
-stroke
-0.00 0.00 0.00 setrgbcolor
-3522 2047 moveto
+3525 2047 moveto
 3535 2047 lineto
 stroke
 gsave
-468 2349 moveto
-2711 0 rlineto
+454 2349 moveto
+2739 0 rlineto
 0 56 rlineto
--2711 0 rlineto
+-2739 0 rlineto
 closepath
 1.00 1.00 1.00 setrgbcolor
 fill
@@ -4324,7 +3816,7 @@ grestore
 [50 0 0 -50 0 0]
 makefont setfont
 1.00 1.00 1.00 setrgbcolor
-468 2394 moveto
+454 2394 moveto
 9 76
 <>
 /LiberationSans-Bold findfont exch 1 index
@@ -5006,6 +4498,7 @@ pop pop
 /one glyphshow
 /d glyphshow
 /four glyphshow
+/c glyphshow
 9 2876
 <0001008b000001ac013100030017400a
 030000040500019b5b00002f2b111201
