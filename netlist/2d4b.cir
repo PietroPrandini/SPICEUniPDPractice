@@ -1,0 +1,33 @@
+* Amplifier pass-band - Output Voltage - Vin frequency 1kHz 10kHz 100kHz
+********************************************************************************
+* 1st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - 2 of 4 *
+*                        Pietro Prandini - mat. 1097752                        *
+*                                                                              *
+* This work is licensed under the Creative Commons Attribution-ShareAlike 4.0  *
+* International License. To view a copy of this license, visit                 *
+* http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative  *
+* Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
+********************************************************************************
+
+* Ideal Operational Amplifier subcircuit
+.LIB opamp.sub
+
+* Amplifiers
+XU1 V- 0 Vo opamp Aol=100k GBW=10meg
+
+* Capacitances
+C1 Vi N001 910.95256n
+C2 Vo V- 9.10953p
+
+* Generators
+Vin Vi 0 DC 0 AC 1 sin(0 100mV {F} 0 0 0)
+
+* Resistances
+R1 N001 V- 1097.752
+R2 Vo V- 109775.2
+
+* Analysis
+.step param F list 1kHz 10kHz 100kHz
+.tran 0 2m 0 1m uic
+
+.END

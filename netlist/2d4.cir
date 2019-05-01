@@ -1,4 +1,4 @@
-* Amplifier pass-band
+* Amplifier pass-band - Output Voltage
 ********************************************************************************
 * 1st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - 2 of 4 *
 *                        Pietro Prandini - mat. 1097752                        *
@@ -16,20 +16,18 @@
 XU1 V- 0 Vo opamp Aol=100k GBW=10meg
 
 * Capacitances
-C1 Vi N01 911n
-C2 Vo V- 91.1f
+C1 Vi N001 910.95256n
+C2 Vo V- 9.10953p
 
 * Generators
 Vin Vi 0 DC 0 AC 1 sin(0 100mV {F} 0 0 0)
 
 * Resistances
-R1 N01 V- 1.1k
-*R2 Vo V- {109.8k*{P}}
-R2 Vo V- 109.8k
+R1 N001 V- 1097.752
+R2 Vo V- 109775.2
 
 * Analysis
-*.step param P list 0.01 0.1 10 100 1000
 .step param F list 10Hz 100Hz 1kHz 10kHz 100kHz 1MEGHz 10MEGHz 100MEGHz
-.tran 0 250m 0 1m uic
+.tran 0 20m 0 1m uic
 
 .END

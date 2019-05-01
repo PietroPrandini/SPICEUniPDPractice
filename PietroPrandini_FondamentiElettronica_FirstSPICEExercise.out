@@ -19,3 +19,7 @@
 \BOOKMARK [2][-]{subsection.2.3}{Bode plot}{section.2}% 19
 \BOOKMARK [3][-]{subsubsection.2.3.1}{Netlist}{subsection.2.3}% 20
 \BOOKMARK [3][-]{subsubsection.2.3.2}{Graph}{subsection.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.4}{Output voltage}{section.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Vin frequency 10Hz 100Hz}{subsection.2.4}% 23
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Vin frequency 1kHz 10kHz 100kHz}{subsection.2.4}% 24
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Vin frequency 1MEGHz 10MEGHz 100MEGHz}{subsection.2.4}% 25
