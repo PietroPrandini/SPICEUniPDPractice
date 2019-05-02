@@ -1,0 +1,37 @@
+* Front-end amplifier for resistive bridge with resistometric sensor
+********************************************************************************
+* 1st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - 3 of 4 *
+*                        Pietro Prandini - mat. 1097752                        *
+*                                                                              *
+* This work is licensed under the Creative Commons Attribution-ShareAlike 4.0  *
+* International License. To view a copy of this license, visit                 *
+* http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative  *
+* Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
+********************************************************************************
+
+* Ideal Operational Amplifier subcircuit
+.LIB opamp.sub
+
+* Amplifiers
+XA1 V-1 0 Vo1 opamp Aol=100k GBW=10meg
+XA2 V-2 0 Vo opamp Aol=100k GBW=10meg
+
+* Generators
+Vref N1 0 15
+
+* Resistances
+R1 N1 V-2 2.74438k
+R2 Vo V-2 54.88760k
+R3 N1 V-1 2.74438k
+R4 Vo1 V-1 {R+D*R}
+R5 Vo1 V-2 {R}
+
+* Parameters
+.param R = 1k D = 10
+
+* Analysis
+*.step param D list  0 2.5 5 7.5 10
+*.tran 0 250m 0 1m uic
+.op
+
+.END
