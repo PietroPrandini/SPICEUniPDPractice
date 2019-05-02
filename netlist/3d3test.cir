@@ -20,9 +20,9 @@ XA2 V-2 0 Vo opamp Aol=100k GBW=10meg
 Vref N1 0 15
 
 * Resistances
-R1 N1 V-2 2.74438k
+R1 N1 V-2 41.16570k
 R2 Vo V-2 54.88760k
-R3 N1 V-1 2.74438k
+R3 N1 V-1 41.16570k
 R4 Vo1 V-1 {R+D*R}
 R5 Vo1 V-2 {R}
 
