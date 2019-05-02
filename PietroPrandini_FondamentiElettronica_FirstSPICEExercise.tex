@@ -319,7 +319,7 @@ Resolving the system it's possible to find the value of the circuit's capacitanc
   \centering
   \includegraphics[width=12cm]{schematics/3d1.jpg}
   \caption{Front-end amplifier for resistive bridge with resistometric sensor}
-  \label{3d1graph}
+  \label{3d1schematics}
 \end{figure}
 
 \subsection{Output voltage - $V_o$}
@@ -369,5 +369,23 @@ Conditions:
     \end{array}
   \right.
 \end{equation}
+
+\subsection{Graph of the output voltage - $V_o$}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=12cm]{schematics/3d3.jpg}
+  \caption{Front-end amplifier for resistive bridge with resistometric sensor - SPICE compatible schematics}
+  \label{3d3schematics}
+\end{figure}
+
+\lstinputlisting{netlist/3d3.cir}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=14cm]{graph/3d3.jpg}
+  \caption{Front-end amplifier for resistive bridge with resistometric sensor - $V_o$ with $R = 1k\Omega$ and $\delta = 0$, $\delta = 2.5$, $\delta = 5$ $\delta = 7.5$, $\delta = 10$}
+  \label{3d3graph}
+\end{figure}
 
 \end{document}
