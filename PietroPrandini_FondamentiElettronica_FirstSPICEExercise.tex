@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt,a4paper]{book}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -24,14 +24,17 @@ University of Padua (Italy)}}}
 \begin{document}
 \maketitle
 
+\vspace*{\fill}
 % License
 \begin{center}
 \tiny{This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit \href{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/} or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.}
 \end{center}
 
-\section{Audio amplifier}
-\subsection{Voltage gain and frequency domain - Ideal op. amp.}
-\begin{figure}[h]
+\tableofcontents
+
+\chapter{Audio amplifier}
+\section{Voltage gain and frequency domain - Ideal op. amp.}
+\begin{figure}[H]
   \centering
   \includegraphics[width=8cm]{schematics/1d1.jpg}
   \caption{Audio amplifier - Ideal op. amp.}
@@ -98,8 +101,8 @@ Finally it's possible to calculate the frequency domain by the analysis of the t
   \log_{10} \left| \frac{1}{C_2R_2} \right|= 2.0000
 \end{equation}
 
-\subsection{Voltage output waveform - LT1028 op. amp.}
-\begin{figure}[h]
+\section{Voltage output waveform - LT1028 op. amp.}
+\begin{figure}[H]
   \centering
   \includegraphics[width=10cm]{schematics/1d2.jpg}
   \caption{Audio amplifier - LT1028 op. amp.}
@@ -110,11 +113,11 @@ From now it's considered the circuit of the figure \ref{1d2schematics}.\par
 \medskip
 In order to simulate the waveform output voltage with a sinusoidal voltage input $V_{in}$ with an amplitude of $10mV$ and the frequencies of $1Hz$, $10Hz$ and $10kHz$, it's possible to use a SPICE transient analysis.\\
 
-\subsubsection{Netlist}
+\subsection{Netlist}
 It's presented the netlist for the SPICE analysis requested.\\
 \lstinputlisting{netlist/1d2.cir}
 
-\subsubsection{Graph}
+\subsection{Graph}
 This graph is the output of the last netlist presented. There are three curves, one for every frequency analyzed ($1Hz$, $10Hz$ and $10kHz$).\\
 
 \begin{figure}[H]
@@ -124,15 +127,15 @@ This graph is the output of the last netlist presented. There are three curves, 
   \label{1d2graph}
 \end{figure}
 
-\subsection{Bode plot - LT1028 op. amp.}
+\section{Bode plot - LT1028 op. amp.}
 The Bode plot could be generated with a SPICE small signal AC analysis.\par
 
-\subsubsection{Netlist}
+\subsection{Netlist}
 It's presented the netlist for the SPICE analysis requested.\\
 
 \lstinputlisting{netlist/1d3.cir}
 
-\subsubsection{Graph}
+\subsection{Graph}
 The Bode plot generated could be visible in the figure \ref{1d3graph}. The continuous line represents the magnitude and the dashed line represents the phase frequency.\\
 
 \begin{figure}[H]
@@ -142,7 +145,7 @@ The Bode plot generated could be visible in the figure \ref{1d3graph}. The conti
   \label{1d3graph}
 \end{figure}
 
-\subsection{Saturation - LT1028 op. amp.}
+\section{Saturation - LT1028 op. amp.}
 The voltage output saturation could be analized by giving an abnormally high voltage input to the input.\\
 The next netlist analyzes the voltage output with an input with $100V$ amplitude.\\
 
@@ -175,7 +178,7 @@ For example with $\omega = 10Hz \cdot 2\pi$ the maximum value of the input volta
   \label{1d4bgraph}
 \end{figure}
 
-\subsubsection{Output voltage waveform - $V_{in} = 2 \cdot |V_{in MAX} |$}
+\subsection{Output voltage waveform - $V_{in} = 2 \cdot |V_{in MAX} |$}
 The netlist used for plot the output voltage waveform with a double input voltage relatively to the maximum input voltage calculated is:\\
 \lstinputlisting{netlist/1d4c.cir}
 
@@ -188,7 +191,7 @@ The netlist used for plot the output voltage waveform with a double input voltag
 
 The graph generated is presented on the figure \ref{1d4cgraph}.\\
 
-\subsection{Saturation - LT1028 op. amp. - $R_2 = 109775.2\Omega$}
+\section{Saturation - LT1028 op. amp. - $R_2 = 109775.2\Omega$}
 Using the equation \ref{eq:V_inSat} and setting $\omega = 10Hz \cdot 2\pi$ the maximum value of the input voltage is $|V_{in}| \leq 1.28091V$ (output voltage graph on figure \ref{1d5graph})
 
 \begin{figure}[H]
@@ -198,7 +201,7 @@ Using the equation \ref{eq:V_inSat} and setting $\omega = 10Hz \cdot 2\pi$ the m
   \label{1d5graph}
 \end{figure}
 
-\subsubsection{Output voltage waveform - $R_2 = 109775.2\Omega$ - $V_{in} = 2 \cdot |V_{in MAX} |$}
+\subsection{Output voltage waveform - $R_2 = 109775.2\Omega$ - $V_{in} = 2 \cdot |V_{in MAX} |$}
 The netlist used for plot the output voltage waveform with a double input voltage relatively to the maximum input voltage calculated is:\\
 \lstinputlisting{netlist/1d5b.cir}
 
@@ -211,23 +214,23 @@ The netlist used for plot the output voltage waveform with a double input voltag
 
 The graph generated is presented on the figure \ref{1d5bgraph}.\\
 
-\subsection{Power delivered to the amplifier}
+\section{Power delivered to the amplifier}
 
 \begin{equation}
   P_{DC} = V_{dd} \cdot I_{dd} + V_{ss} \cdot I_{ss}
 \end{equation}
 
-\subsubsection{Case A - $R_2 = 100k\Omega$ $V_{in} = 2 \cdot 1.36701V$}
+\subsection{Case A - $R_2 = 100k\Omega$ $V_{in} = 2 \cdot 1.36701V$}
 \lstinputlisting{netlist/1d6.cir}
 
 $$P_{DC} = 10V \cdot (-0.00736621A) + (-10V) \cdot (+0.00736621 A) = -0.14732420W$$
 
-\subsubsection{Case B - $R_2 = 109775.2\Omega$ $V_{in} = 2 \cdot 1.28091V$}
+\subsection{Case B - $R_2 = 109775.2\Omega$ $V_{in} = 2 \cdot 1.28091V$}
 \lstinputlisting{netlist/1d6b.cir}
 
 $$P_{DC} = 10V \cdot (-0.00736621A) + (-10V) \cdot (+0.00736621 A) = -0.14732420W$$
 
-\section{Band Pass Amplifier}
+\chapter{Band Pass Amplifier}
 
 \begin{figure}[H]
   \centering
@@ -236,7 +239,7 @@ $$P_{DC} = 10V \cdot (-0.00736621A) + (-10V) \cdot (+0.00736621 A) = -0.14732420
   \label{2d1schematics}
 \end{figure}
 
-\subsection{Transfer function}
+\section{Transfer function}
 
 \begin{align}
   V_o(s) = - (C_2 \parallel R_2) \cdot \frac{V_i(s)}{\frac{1}{sC_1}+R_1} \nonumber \\
@@ -245,7 +248,7 @@ $$P_{DC} = 10V \cdot (-0.00736621A) + (-10V) \cdot (+0.00736621 A) = -0.14732420
   \frac{V_o(s)}{V_i(s)} = - \frac{sC_1R_2}{(1+sC_1R_1)(1+sC_2R_2)}
 \end{align}
 
-\subsection{Determining capacitances and resistances}
+\section{Determining capacitances and resistances}
 The conditions to respect are described by the system \ref{eq:conditions}.
 \begin{equation}
   \left\{
@@ -270,11 +273,11 @@ Resolving the system it's possible to find the value of the circuit's capacitanc
   \right. \label{eq:cap_n_res}
 \end{equation}
 
-\subsection{Bode plot}
-\subsubsection{Netlist}
+\section{Bode plot}
+\subsection{Netlist}
 \lstinputlisting{netlist/2d3.cir}
 
-\subsubsection{Graph}
+\subsection{Graph}
 \begin{figure}[H]
   \centering
   \includegraphics[width=14cm]{graph/2d3.jpg}
@@ -282,8 +285,8 @@ Resolving the system it's possible to find the value of the circuit's capacitanc
   \label{2d3graph}
 \end{figure}
 
-\subsection{Output voltage}
-\subsubsection{$Vin$ frequency $10Hz$ $100Hz$}
+\section{Output voltage}
+\subsection{$Vin$ frequency $10Hz$ $100Hz$}
 \lstinputlisting{netlist/2d4a.cir}
 
 \begin{figure}[H]
@@ -293,7 +296,7 @@ Resolving the system it's possible to find the value of the circuit's capacitanc
   \label{2d4agraph}
 \end{figure}
 
-\subsubsection{$Vin$ frequency $1kHz$ $10kHz$ $100kHz$}
+\subsection{$Vin$ frequency $1kHz$ $10kHz$ $100kHz$}
 \lstinputlisting{netlist/2d4b.cir}
 
 \begin{figure}[H]
@@ -303,7 +306,7 @@ Resolving the system it's possible to find the value of the circuit's capacitanc
   \label{2d4bgraph}
 \end{figure}
 
-\subsubsection{$Vin$ frequency $1MEGHz$ $10MEGHz$ $100MEGHz$}
+\subsection{$Vin$ frequency $1MEGHz$ $10MEGHz$ $100MEGHz$}
 \lstinputlisting{netlist/2d4c.cir}
 
 \begin{figure}[H]
@@ -313,7 +316,7 @@ Resolving the system it's possible to find the value of the circuit's capacitanc
   \label{2d4cgraph}
 \end{figure}
 
-\section{Front-end amplifier for resistive bridge with resistometric sensor}
+\chapter{Front-end amplifier for resistive bridge with resistometric sensor}
 
 \begin{figure}[H]
   \centering
@@ -322,7 +325,7 @@ Resolving the system it's possible to find the value of the circuit's capacitanc
   \label{3d1schematics}
 \end{figure}
 
-\subsection{Output voltage - $V_o$}
+\section{Output voltage - $V_o$}
 
 \begin{equation} \label{I_R1}
   I_{R_1} = \frac{V_{ref}}{R_1} = - I_{R+\delta R}
@@ -350,7 +353,7 @@ Resolving the system it's possible to find the value of the circuit's capacitanc
   &= V_{ref}\frac{R_2}{R_1}\delta \label{V_o}
 \end{align}
 
-\subsection{Defining $R_2$ and $R_1$}
+\section{Defining $R_2$ and $R_1$}
 Conditions:
 \begin{equation} \label{eq:conditions3}
   \left\{
@@ -372,7 +375,7 @@ Conditions:
   \right.
 \end{equation}
 
-\subsection{Graph of the output voltage - $V_o$}
+\section{Graph of the output voltage - $V_o$}
 
 \begin{figure}[H]
   \centering
