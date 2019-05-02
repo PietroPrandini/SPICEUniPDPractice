@@ -313,4 +313,61 @@ Resolving the system it's possible to find the value of the circuit's capacitanc
   \label{2d4cgraph}
 \end{figure}
 
+\section{Front-end amplifier for resistive bridge with resistometric sensor}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=12cm]{schematics/3d1.jpg}
+  \caption{Front-end amplifier for resistive bridge with resistometric sensor}
+  \label{3d1graph}
+\end{figure}
+
+\subsection{Output voltage - $V_o$}
+
+\begin{equation} \label{I_R1}
+  I_{R_1} = \frac{V_{ref}}{R_1} = - I_{R+\delta R}
+\end{equation}
+
+\begin{equation} \label{V_o1}
+  V_{o_1} = (R+\delta R) \cdot I_{R+\delta R}
+  = (R+\delta R) \cdot \frac{V_{ref}}{R_1}
+  = V_{ref} \cdot \frac{R+\delta R}{R_1}
+\end{equation}
+
+\begin{equation} \label{I_R}
+  I_R = \frac{V_{o_1}}{R} = V_{ref} \cdot \frac{R+\delta R}{R_1R}
+  = V_{ref} \cdot \frac{1+\delta}{R_1}
+\end{equation}
+
+\begin{equation} \label{I_R2}
+  I_{R_2} = I_{R_1} + I_R
+\end{equation}
+
+\begin{align}
+  V_o &= R_2 I_{R_2} = R_2 (I_{R_1} + I_R) \nonumber \\
+  &= R_2 \left(- \frac{V_{ref}}{R_1} + V_{ref} \cdot \frac{1+\delta}{R_1} \right) \nonumber \\ 
+  &= R_2 V_{ref} \left( \frac{-1+1+\delta}{R_1} \right) \nonumber \\
+  &= V_{ref}\frac{R_2}{R_1}\delta \label{V_o}
+\end{align}
+
+\subsection{Defining $R_2$ and $R_1$}
+Conditions:
+\begin{equation} \label{eq:conditions3}
+  \left\{
+    \begin{array}{l}
+      R_2 = \frac{1097752}{20}\Omega \\
+      \frac{R_2}{R_1} = 20
+    \end{array}
+  \right.
+\end{equation}
+
+\begin{equation} \label{eq:R2R1_3}
+  \left\{
+    \begin{array}{l}
+      R_1 = 2.74438k\Omega \\
+      R_2 = 54.88760k\Omega
+    \end{array}
+  \right.
+\end{equation}
+
 \end{document}

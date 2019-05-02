@@ -23,3 +23,6 @@
 \BOOKMARK [3][-]{subsubsection.2.4.1}{Vin frequency 10Hz 100Hz}{subsection.2.4}% 23
 \BOOKMARK [3][-]{subsubsection.2.4.2}{Vin frequency 1kHz 10kHz 100kHz}{subsection.2.4}% 24
 \BOOKMARK [3][-]{subsubsection.2.4.3}{Vin frequency 1MEGHz 10MEGHz 100MEGHz}{subsection.2.4}% 25
+\BOOKMARK [1][-]{section.3}{Front-end amplifier for resistive bridge with resistometric sensor}{}% 26
+\BOOKMARK [2][-]{subsection.3.1}{Output voltage - Vo}{section.3}% 27
+\BOOKMARK [2][-]{subsection.3.2}{Defining R2 and R1}{section.3}% 28
