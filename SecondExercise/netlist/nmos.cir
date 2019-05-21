@@ -1,0 +1,39 @@
+* NMOS amplifier
+********************************************************************************
+* 2st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
+*                        Pietro Prandini - mat. 1097752                        *
+*                                                                              *
+* This work is licensed under the Creative Commons Attribution-ShareAlike 4.0  *
+* International License. To view a copy of this license, visit                 *
+* http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative  *
+* Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
+********************************************************************************
+
+* NMOS model
+.model NMOS NMOS VT0 = 1V KN = 4m LAMBDA = 0
+
+* Capacitances
+C1 VG Vi C
+C2 Vo VD C
+CS VS 0 C
+
+* Generators
+Vsig N001 0 V
+
+* Resistances
+Rsig Vi N001 200k
+RG1 VDD VG R
+RG2 VG 0 1097752
+RD VDD VD R
+RS VS 0 R
+RL Vo 0 8k
+
+* Transistors
+M1 VD VG VS VS NMOS
+
+* Initial conditions
+.ic V(VDD) = 15V
+
+* Analysis
+
+.END
