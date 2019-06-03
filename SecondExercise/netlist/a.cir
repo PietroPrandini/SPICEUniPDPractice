@@ -12,17 +12,14 @@
 * NMOS model
 .model NMOS NMOS VT0 = 1V KP = 4m LAMBDA = 0
 
-* Generators
-*VDD NDD 0 15V
-
 * Resistances
-RG1 VDD VG 2.19550MEG
-RG2 VG 0 1097752
-RD VDD VD 8K
-RS VS 0 7K
+RG1 VDD G 2.19550MEG
+RG2 G 0 1097752
+RD VDD D 8K
+RS S 0 7K
 
 * Transistors
-M1 VD VG VS VS NMOS
+M1 D G S S NMOS
 
 * Initial conditions
 .ic V(VDD) = 15V
