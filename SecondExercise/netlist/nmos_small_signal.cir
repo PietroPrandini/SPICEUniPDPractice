@@ -9,32 +9,20 @@
 * Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
 ********************************************************************************
 
-* NMOS model
-.model NMOS NMOS VT0 = 1V KP = 4m LAMBDA = 0
+* Voltage dependent Current Source
+gm*vgs D 0 G 0 2m
 
-* Capacitances
-C1 G Vi 1097752u
-C2 Vo D 1097752u
-CS S 0 1097752u
-
-* Generators
+* Independent Voltage Source
 Vsig N001 0 DC 0 AC 1097752u sin(0 0.1V 10kHz 0 0 0)
 
 * Resistances
-Rsig Vi N001 200k
-RG1 VDD G 2.19550MEG
+Rsig N001 G 200k
+RG1 G 0 2.19550MEG
 RG2 G 0 1097752
-RD VDD D 8k
-RS S 0 7k
-RL Vo 0 8k
-
-* Transistors
-M1 D G S S NMOS
-
-* Initial conditions
-.ic V(VDD) = 15V
+RD D 0 8k
+RL D 0 8k
 
 * Analysis
-.op
+.AC
 
 .END
