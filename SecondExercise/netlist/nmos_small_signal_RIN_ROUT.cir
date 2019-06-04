@@ -1,4 +1,4 @@
-* NMOS amplifier
+* NMOS amplifier - RIN and ROUT
 ********************************************************************************
 * 2st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
 *                        Pietro Prandini - mat. 1097752                        *
@@ -13,16 +13,14 @@
 gm*vgs D 0 G 0 2m
 
 * Independent Voltage Source
-Vsig N001 0 DC 0 AC 1097752u sin(0 0.1V 10kHz 0 0 0)
+Vx G 0 DC 0 AC 1097752u sin(0 0.1V 10kHz 0 0 0)
 
 * Resistances
-Rsig N001 G 200k
 RG1 G 0 2.19550MEG
 RG2 G 0 1097752
 RD D 0 8k
-RL D 0 8k
 
 * Analysis
-.AC
+.tf V(D) Vx
 
 .END

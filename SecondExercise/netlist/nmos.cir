@@ -35,6 +35,6 @@ M1 D G S S NMOS
 .ic V(VDD) = 15V
 
 * Analysis
-.op
+.TRAN 1u 250u 0 1u
 
 .END

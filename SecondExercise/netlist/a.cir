@@ -1,4 +1,4 @@
-* NMOS amplifier
+* NMOS amplifier - DC analysis
 ********************************************************************************
 * 2st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
 *                        Pietro Prandini - mat. 1097752                        *
@@ -9,8 +9,13 @@
 * Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
 ********************************************************************************
 
+* Parameters
+.param Vt = 1V
+.param Kn = 4m
+.param lambda = 0
+
 * NMOS model
-.model NMOS NMOS VT0 = 1V KP = 4m LAMBDA = 0
+.model NMOS NMOS VT0 = Vt KP = Kn LAMBDA = lambda
 
 * Resistances
 RG1 VDD G 2.19550MEG
