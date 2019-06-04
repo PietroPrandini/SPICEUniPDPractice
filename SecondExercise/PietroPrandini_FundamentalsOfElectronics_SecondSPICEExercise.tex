@@ -11,6 +11,8 @@
 \usepackage{listings} % Used for source code listing
 \usepackage{mathtools}
 
+\setcounter{tocdepth}{3}
+
 % Source code listing's parameters
 \lstset{
   frame=single,
@@ -33,8 +35,7 @@ University of Padua (Italy)}}}
 
 \tableofcontents
 
-\chapter{Analytic solution}
-
+\chapter{NMOS common source amplifier with bypass capacitances}
 \begin{figure}[h]
   \centering
   \includegraphics[width=12cm]{schematics/nmos.jpg}
@@ -46,7 +47,9 @@ Designing the common source amplifier of the figure \ref{nmos} .\\
 The MOSFET should have a $V_t = 1V$, a $K_n = 4mA/V$ and a $\lambda = 0$.\\
 Other requested parameters are: $I_{DQ} = 0.5mA$, $V_S = 3.5V$, $V_D = 11V$, $V_{DD} = 15V$ and $R_{G2} = 1097752\Omega$.\par
 
-\section{Designing by a DC analysis}
+\section{Analytic solutions}
+
+\subsection{DC analysis}
 On a Direct Current analysis the capacitances can be considered as open circuits, the inductances can be considered as short circuits, the signal and the load are removed and the alternate current inputs are not considered.\\
 The figure \ref{nmos_DC} represents the circuit for the DC analysis.\par
 
@@ -57,21 +60,21 @@ The figure \ref{nmos_DC} represents the circuit for the DC analysis.\par
   \label{nmos_DC}
 \end{figure}
 
-\subsection{$R_D$}
+\subsubsection{$R_D$}
 \begin{align}
 V_{D} &= V_{DD} - R_D I_D\\
 R_D &= \frac{V_{DD} - V_D}{I_D}\\
 R_D &= \frac{15V - 11V}{0.5mA} = 8k\Omega
 \end{align}
 
-\subsection{$R_S$}
+\subsubsection{$R_S$}
 \begin{align}
 V_S = R_S I_D \implies 
 R_S = \frac{V_S}{I_D}\\
 R_S = \frac{3.5V}{0.5mA} = 7k\Omega
 \end{align}
 
-\subsection{$V_{GS}$}
+\subsubsection{$V_{GS}$}
 \begin{align}
 I_D = \frac{1}{2}K_nV_{ov}^2 \implies
 V_{ov} = \pm \sqrt{\frac{2 I_D}{K_n}}\\
@@ -88,7 +91,7 @@ V_{GS} = V_{ov} + V_{t}\\
 V_{GS} = 0.5V + 1V = 1.5V
 \end{align}
 
-\subsection{$R_{G1}$}
+\subsubsection{$R_{G1}$}
 \begin{align}
 V_{GS} = V_G - V_S \implies
 V_G = V_{GS} + V_S\\
@@ -107,18 +110,18 @@ R_{G1} &= \frac{V_{DD} - V_G}{I_G}\\
 &=2.19550 M\Omega \simeq 2.20 M\Omega
 \end{align}
 
-\subsection{$g_m$}
+\subsubsection{$g_m$}
 \begin{align}
 g_m = K_n V_{ov} = 4 mA/V^2 \cdot 0.5V = 2 mA/V
 \end{align}
 
-\subsection{$r_0$}
+\subsubsection{$r_0$}
 \begin{gather}
 r_0 = \frac{1}{\lambda I_D} \xRightarrow{\lambda = 0} r_0 = \infty  \quad r_0 \text{ is considered as an open circuit.}
 \end{gather}
 
 
-\section{AC analysis}
+\subsection{AC analysis}
 On an Alternate Current analysis the capacitances can be considered as short circuits, the inductances can be considered as open circuits and the direct current inputs are not considered.\\
 The figure \ref{nmos_AC} represents the circuit for the AC analysis.\\
 Other requested parameters are: $R_{sig} = 200k\Omega$ and $R_L = 8k\Omega$.\par
@@ -130,7 +133,7 @@ Other requested parameters are: $R_{sig} = 200k\Omega$ and $R_L = 8k\Omega$.\par
   \label{nmos_AC}
 \end{figure}
 
-\subsection{Hybrid $\pi$ model}
+\subsubsection{Hybrid $\pi$ model}
 For a small signal analysis it can be used an equivalent model to represent the behaviour of the transistor.\\
 In this case it is used the hybrid $\pi$ model (figure \ref{nmos_pi}).\par
 
@@ -141,7 +144,7 @@ In this case it is used the hybrid $\pi$ model (figure \ref{nmos_pi}).\par
   \label{nmos_pi}
 \end{figure}
 
-\subsection{$R_{IN}$ from $G$}
+\subsubsection{$R_{IN}$ from $G$}
 
 \begin{figure}[h]
   \centering
@@ -165,7 +168,7 @@ R_{IN} &= \frac{R_{G1} R_{G2}}{R_{G1} + R_{G2}}\\
 &= 733.16756k\Omega \simeq 733.2k\Omega
 \end{align}
 
-\subsection{$R_{OUT}$ from D}
+\subsubsection{$R_{OUT}$ from D}
 
 Removing the signal, the load and applying a test voltage source as in figure \ref{nmos_pi_ROUT} it is possible to calculate the output's resistance $R_{OUT}$.\\
 
@@ -186,7 +189,7 @@ I_x = \frac{V_x}{R_D} \implies R_D = \frac{V_x}{I_x} \implies R_{OUT} = R_D
 R_{OUT} = 8k\Omega
 \end{align}
 
-\subsection{Voltage Gain - without $R_{sig}$ and $R_L$}
+\subsubsection{Voltage Gain - without $R_{sig}$ and $R_L$}
 Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_without_resistances}.
 
 \begin{figure}[h]
@@ -209,7 +212,7 @@ A_v = \frac{v_o}{v_{in}} = \frac{- g_m v_{gs} R_D}{v_{gs}} = - g_m R_D = 2mA/V \
 A_v|_{dB} = 20 log_{10} |A_v| = 20 log_{10} |-16| = 24.08240 dB \simeq 24.1 dB
 \end{align}
 
-\subsection{Voltage Gain - with $R_{sig}$ and $R_L$}
+\subsubsection{Voltage Gain - with $R_{sig}$ and $R_L$}
 Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_with_resistances}.
 
 \begin{figure}[h]
@@ -241,6 +244,6 @@ G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{si
 G_v|_{dB} = 20 log_{10} |G_v| = 20 log_{10} |-6.28296| = 15.96329 dB \simeq 16 dB
 \end{align}
 
-\chapter{SPICE simulations}
+\section{SPICE simulations}
 
 \end{document}
