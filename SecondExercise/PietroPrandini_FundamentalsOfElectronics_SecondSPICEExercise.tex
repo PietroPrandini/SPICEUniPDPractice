@@ -395,4 +395,71 @@ The result confirm the analysis (result calculated in the section \ref{AvSecNoCs
 The result confirm the analysis (result calculated in the section \ref{GvSecNoCs}, expression \ref{GvNoCs}).
 \lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_with_Rs_Rl_no_Cs.tf}
 
+\chapter{NMOS common source amplifier with source follower}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=16cm]{schematics/nmosWithSourceFollower.jpg}
+  \caption{NMOS amplifier}
+  \label{NMOS common source amplifier with source follower}
+\end{figure}
+\section{Analytic solutions}
+\subsection{DC analysis}\label{SFDC}
+The DC analysis is the same as the section \ref{DCsec} also for the source follower amplifier.\par
+
+\subsection{AC analysis}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=17cm]{schematics/nmos_small_signal_WithSourceFollower.jpg}
+  \caption{NMOS common source amplifier with source follower - AC analysis}
+  \label{SFACpi}
+\end{figure}
+
+\subsubsection{Voltage Gain - $G_v$} \label{SFGV}
+\begin{align}
+v_{g_2} &= -g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + \left(\frac{R_{G1}R_{G2}}{R_{G1}+R_{G2}}\right)}\right) \left(R_{D} \parallel R_{G3} \parallel R_{G4}\right)
+\end{align}
+
+\begin{align}
+{v_g}_2 = v_{{g_2} {s_2}} + {v_s}_2\\
+{v_g}_2 = v_{{g_2} {s_2}} + g_m v_{{g_2} {s_2}} (R_{S2} R_{L2}) \implies
+v_{{g_2} {s_2}} = \frac{{v_g}_2}{1+g_m(R_{S2} R_{L2})}
+\end{align}
+
+
+\begin{align}
+V_o &= g_m v_{g_2 s_2} (R_{S2} R_{L2})
+\end{align}
+
+\begin{align}
+G_v &= \frac{V_o}{V_{sig}} = \frac{g_m v_{g_2 s_2} (R_{S2} R_{L2})}{v_{sig}}\\
+&= g_m \left( \frac{{v_g}_2}{1+g_m(R_{S2} R_{L2})} \right) (R_{S2} R_{L2})\frac{1}{v_{sig}}\\
+&= g_m \left( -g_m \left(1 - R_{sig} \frac{1}{R_{sig} + \left(\frac{R_{G1}R_{G2}}{R_{G1}+R_{G2}}\right)}\right) \left(R_{D} \parallel R_{G3} \parallel R_{G4}\right)  \frac{1}{1+g_m(R_{S2} R_{L2})} \right) (R_{S2} R_{L2}) 
+\end{align}
+
+\begin{align}
+R_{G1} = R_{G3}\\
+R_{G2} = R_{G4}\\
+R_{S} = R_{S2}\\
+R_{L} = R_{L2}
+\end{align}
+
+\begin{align}
+G_v &= -g_m^2 \left(1 - \frac{ R_{sig}}{R_{sig} + \left(\frac{R_{G1}R_{G2}}{R_{G1}+R_{G2}}\right)}\right) \left(\frac{1}{R_D}+\frac{1}{R_{G1}}+\frac{1}{R_{G2}}\right)^{-1} \frac{R_{S} R_{L}}{1+g_m(R_{S} R_{L})}\\
+&= -g_m^2 \left(1 - \frac{ R_{sig}}{R_{sig} + \left(\frac{R_{G1}R_{G2}}{R_{G1}+R_{G2}}\right)}\right) \left(\frac{R_{G1} R_{G2}+R_D R_{G2}+R_D R_{G1}}{R_D R_{G1} R_{G2}}\right)^{-1} \frac{R_{S} R_{L}}{1+g_m(R_{S} R_{L})}\\
+&= -g_m^2 \left(1 - \frac{ R_{sig}}{R_{sig} + \left(\frac{R_{G1}R_{G2}}{R_{G1}+R_{G2}}\right)}\right) \left(\frac{R_D R_{G1} R_{G2}}{R_{G1} R_{G2}+R_D R_{G2}+R_D R_{G1}}\right) \frac{R_{S} R_{L}}{1+g_m(R_{S} R_{L})} \label{SFGVexp}
+\end{align}
+
+\clearpage
+\section{SPICE simulations}
+\subsection{DC simulation - Operating Point}
+\lstinputlisting{netlist/nmosWithSourceFollower.cir}
+The results confirm the DC analysis (results calculated in the section \ref{SFDC}).
+\lstinputlisting{netlist/nmosWithSourceFollower.op}
+
+\subsection{AC simulation - $Gv$}
+\lstinputlisting{netlist/nmos_small_signal_WithSourceFollower_tf.cir}
+The result confirm the analysis (result calculated in the section \ref{SFGV}, expression \ref{SFGVexp}).
+\lstinputlisting{netlist/nmos_small_signal_WithSourceFollower_tf.tf}
+
 \end{document}

@@ -10,7 +10,7 @@
 ********************************************************************************
 
 * Voltage dependent Current Source
-gm*vgs D 0 G 0 2m
+gm*vgs G2 0 G 0 2m
 gm*vg2s2 0 Vo G2 Vo 2m
 
 * Independent Voltage Source
