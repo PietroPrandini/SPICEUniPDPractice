@@ -15,7 +15,6 @@
 * Capacitances
 C1 G Vi 1097752u
 C2 Vo D 1097752u
-CS S 0 1097752u
 
 * Generators
 Vsig N001 0 DC 0 AC 1097752u sin(0 0.1V 10kHz 0 0 0)
@@ -35,6 +34,6 @@ M1 D G S S NMOS
 .ic V(VDD) = 15V
 
 * Analysis
-.op
+.tf V(Vo) Vsig
 
 .END
