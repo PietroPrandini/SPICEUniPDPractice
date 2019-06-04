@@ -47,7 +47,7 @@ The MOSFET should have a $V_t = 1V$, a $K_n = 4mA/V$ and a $\lambda = 0$.\\
 Other requested parameters are: $I_{DQ} = 0.5mA$, $V_S = 3.5V$, $V_D = 11V$, $V_{DD} = 15V$ and $R_{G2} = 1097752\Omega$.\par
 
 \section{Designing by a DC analysis}
-On a Direct Current analysis the capacitances can be considered as open circuits, the inductances can be considered as short circuits, the signal and the load are removed and the alternate inputs are not considered.\\
+On a Direct Current analysis the capacitances can be considered as open circuits, the inductances can be considered as short circuits, the signal and the load are removed and the alternate current inputs are not considered.\\
 The figure \ref{nmos_DC} represents the circuit for the DC analysis.\par
 
 \begin{figure}[h]
@@ -114,16 +114,77 @@ g_m = K_n V_{ov} = 4 mA/V^2 \cdot 0.5V = 2 mA/V
 
 \subsection{$r_0$}
 \begin{gather}
-r_0 = \frac{1}{\lambda I_D} \xRightarrow{\lambda = 0} r_0 = \infty  \quad r_0 \text{ is considered an open circuit.}\\
+r_0 = \frac{1}{\lambda I_D} \xRightarrow{\lambda = 0} r_0 = \infty  \quad r_0 \text{ is considered as an open circuit.}\\
 \end{gather}
+
+
+\section{AC analysis}
+On an Alternate Current analysis the capacitances can be considered as short circuits, the inductances can be considered as open circuits and the direct current inputs are not considered.\\
+The figure \ref{nmos_AC} represents the circuit for the AC analysis.\\
+Other requested parameters are: $R_{sig} = 200k\Omega$ and $R_L = 8k\Omega$.\par
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=12cm]{schematics/nmos_small_signal.jpg}
+  \includegraphics[width=12cm]{schematics/nmos_AC.jpg}
   \caption{NMOS common source amplifier - AC analysis}
   \label{nmos_AC}
 \end{figure}
 
+\subsection{Hybrid $\pi$ model}
+For a small signal analysis it can be used an equivalent model to represent the behaviour of the transistor.\\
+In this case it is used the hybrid $\pi$ model (figure \ref{nmos_pi}).\par
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_small_signal.jpg}
+  \caption{NMOS common source amplifier - Hybrid $\pi$ model}
+  \label{nmos_pi}
+\end{figure}
+
+\subsection{$R_{IN}$ from $G$}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_small_signal_RIN.jpg}
+  \caption{NMOS common source amplifier - Calculating $R_{IN}$}
+  \label{nmos_pi_RIN}
+\end{figure}
+
+Removing the signal, the load and applying a test voltage source as in figure \ref{nmos_pi_RIN} it is possible to calculate the input's resistance $R_{IN}$.\\
+
+\begin{align}
+R_{IN} = \frac{V_x}{I_x}\\
+\end{align}
+\begin{align}
+I_x = \frac{V_x}{R_{G1} \parallel R_{G2}} \implies R_{G1} \parallel R_{G2} = \frac{V_x}{I_x}
+\implies R_{IN} = R_{G1} \parallel R_{G2}\\
+\end{align}
+\begin{align}
+R_{IN} &= \frac{R_{G1} R_{G2}}{R_{G1} + R_{G2}}\\
+&= \frac{2.19550 M\Omega \cdot 1097752\Omega}{2.19550 M\Omega + 1097752\Omega}\\
+&= 733.16756k\Omega \simeq 733.2k\Omega
+\end{align}
+
+\subsection{$R_{OUT}$ from D}
+
+Removing the signal, the load and applying a test voltage source as in figure \ref{nmos_pi_ROUT} it is possible to calculate the output's resistance $R_{OUT}$.\\
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_small_signal_ROUT.jpg}
+  \caption{NMOS common source amplifier - Calculating $R_{OUT}$}
+  \label{nmos_pi_ROUT}
+\end{figure}
+
+\begin{align}
+R_{OUT} = \frac{V_x}{I_x}\\
+\end{align}
+\begin{align}
+I_x = \frac{V_x}{R_D} \implies R_D = \frac{V_x}{I_x} \implies R_{OUT} = R_D 
+\end{align}
+\begin{align}
+R_{OUT} = 8k\Omega
+\end{align}
 
 \chapter{SPICE simulations}
 
