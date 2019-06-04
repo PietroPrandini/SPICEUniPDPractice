@@ -80,25 +80,25 @@ V_{ov} =
 \left\{\begin{array}{l}
   + 0.5V \quad \text{Real value of } V_{ov} \text{.}\\
   - 0.5V \quad \text{No physical sense.}\\
-\end{array}\right.\\
+\end{array}\right.
 \end{align}
 \begin{align}
 V_{ov} = V_{GS} - V_{t} \implies
 V_{GS} = V_{ov} + V_{t}\\
-V_{GS} = 0.5V + 1V = 1.5V\\
+V_{GS} = 0.5V + 1V = 1.5V
 \end{align}
 
 \subsection{$R_{G1}$}
 \begin{align}
 V_{GS} = V_G - V_S \implies
 V_G = V_{GS} + V_S\\
-V_G = 1.5V + 3.5V = 5V\\
+V_G = 1.5V + 3.5V = 5V
 \end{align}
 
 \begin{align}
 I_G R_{G2} - V_{GS} - I_D R_S = 0 \implies
 I_G = \frac{V_{GS}+I_D R_S}{R_{G2}}\\
-I_G = \frac{1.5V + 0.5mA \cdot 7k\Omega}{1097.752k\Omega} = 4.5547628\mu A \simeq 4.55 \mu A\\
+I_G = \frac{1.5V + 0.5mA \cdot 7k\Omega}{1097.752k\Omega} = 4.5547628\mu A \simeq 4.55 \mu A
 \end{align}
 
 \begin{align}
@@ -114,7 +114,7 @@ g_m = K_n V_{ov} = 4 mA/V^2 \cdot 0.5V = 2 mA/V
 
 \subsection{$r_0$}
 \begin{gather}
-r_0 = \frac{1}{\lambda I_D} \xRightarrow{\lambda = 0} r_0 = \infty  \quad r_0 \text{ is considered as an open circuit.}\\
+r_0 = \frac{1}{\lambda I_D} \xRightarrow{\lambda = 0} r_0 = \infty  \quad r_0 \text{ is considered as an open circuit.}
 \end{gather}
 
 
@@ -157,7 +157,7 @@ R_{IN} = \frac{V_x}{I_x}\\
 \end{align}
 \begin{align}
 I_x = \frac{V_x}{R_{G1} \parallel R_{G2}} \implies R_{G1} \parallel R_{G2} = \frac{V_x}{I_x}
-\implies R_{IN} = R_{G1} \parallel R_{G2}\\
+\implies R_{IN} = R_{G1} \parallel R_{G2}
 \end{align}
 \begin{align}
 R_{IN} &= \frac{R_{G1} R_{G2}}{R_{G1} + R_{G2}}\\
@@ -184,6 +184,72 @@ I_x = \frac{V_x}{R_D} \implies R_D = \frac{V_x}{I_x} \implies R_{OUT} = R_D
 \end{align}
 \begin{align}
 R_{OUT} = 8k\Omega
+\end{align}
+
+\subsection{Voltage Gain - without $R_{sig}$ and $R_L$}
+Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_without_resistances}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_small_signal_without_resistances.jpg}
+  \caption{NMOS common source amplifier - Calculating the voltage gain without $R_{sig}$ and $R_L$}
+  \label{nmos_pi_gain_without_resistances}
+\end{figure}
+
+\begin{align}
+v_{in} = v_{gs}\\
+v_{o} = - g_m v_{gs} R_D
+\end{align}
+
+\begin{align}
+A_v = \frac{v_o}{v_{in}} = \frac{- g_m v_{gs} R_D}{v_{gs}} = - g_m R_D = 2mA/V \cdot 8k\Omega = -16 \quad V/V
+\end{align}
+
+\begin{align}
+A_v|_{dB} = 20 log_{10} |A_v| = 20 log_{10} |-16| = 24.08240 dB \simeq 24.1 dB
+\end{align}
+
+\subsection{Voltage Gain - with $R_{sig}$ and $R_L$}
+Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_with_resistances}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_small_signal_with_resistances.jpg}
+  \caption{NMOS common source amplifier - Calculating the voltage gain with $R_{sig}$ and $R_L$}
+  \label{nmos_pi_gain_with_resistances}
+\end{figure}
+
+\begin{align}
+I_{sig} &= \frac{v_{sig}}{R_{sig} + (R_{G1} \parallel R_{G2})}
+\end{align}
+
+\begin{align}
+v_{in} = v_{gs} &= v_{sig} - R_{sig} I_{sig}\\
+&= v_{sig} - R_{sig} \frac{v_{sig}}{R_{sig} + (R_{G1} \parallel R_{G2})}\\
+&= v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right)
+\end{align}
+
+\begin{align}
+v_{in} = v_{gs} = v_{sig} - R_{sig} I_{sig} \implies v_{sig} = v_{gs} + R_{sig} I_{sig}
+\end{align}
+
+\begin{align}
+v_{sig} &= v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) + R_{sig} \frac{v_{sig}}{R_{sig} + (R_{G1} \parallel R_{G2})}\\
+&= v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})} + R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right)
+\end{align}
+
+\begin{align}
+v_{o} &= - g_m v_{gs} (R_D \parallel R_L)\\
+&= -g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)
+\end{align}
+
+\begin{align}
+G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)}{v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})} + R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right)}\\
+&= \frac{-g_m \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)}{1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})} + R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}}
+\end{align}
+
+\begin{align}
+G_v|_{dB} = 20 log_{10} |G_v| = 20 log_{10} || = dB \simeq  dB
 \end{align}
 
 \chapter{SPICE simulations}
