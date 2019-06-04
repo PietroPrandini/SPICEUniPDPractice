@@ -35,7 +35,7 @@ University of Padua (Italy)}}}
 
 \tableofcontents
 
-\chapter{NMOS common source amplifier with bypass capacitances}
+\chapter{NMOS common source amplifier with bypass capacitance}
 \begin{figure}[h]
   \centering
   \includegraphics[width=12cm]{schematics/nmos.jpg}
@@ -49,7 +49,7 @@ Other requested parameters are: $I_{DQ} = 0.5mA$, $V_S = 3.5V$, $V_D = 11V$, $V_
 
 \section{Analytic solutions}
 
-\subsection{DC analysis}
+\subsection{DC analysis}\label{nmos_DC_section}
 On a Direct Current analysis the capacitances can be considered as open circuits, the inductances can be considered as short circuits, the signal and the load are removed and the alternate current inputs are not considered.\\
 The figure \ref{nmos_DC} represents the circuit for the DC analysis.\par
 
@@ -144,7 +144,7 @@ In this case it is used the hybrid $\pi$ model (figure \ref{nmos_pi}).\par
   \label{nmos_pi}
 \end{figure}
 
-\subsubsection{$R_{IN}$ from $G$}
+\subsubsection{$R_{IN}$ from $G$}\label{RIN}
 
 \begin{figure}[h]
   \centering
@@ -168,7 +168,7 @@ R_{IN} &= \frac{R_{G1} R_{G2}}{R_{G1} + R_{G2}}\\
 &= 733.16756k\Omega \simeq 733.2k\Omega
 \end{align}
 
-\subsubsection{$R_{OUT}$ from D}
+\subsubsection{$R_{OUT}$ from D}\label{ROUT}
 
 Removing the signal, the load and applying a test voltage source as in figure \ref{nmos_pi_ROUT} it is possible to calculate the output's resistance $R_{OUT}$.\\
 
@@ -233,6 +233,12 @@ v_{in} = v_{gs} &= v_{sig} - R_{sig} I_{sig}\\
 \end{align}
 
 \begin{align}
+v_o &= -g_m v_{gs} (R_D \parallel R_L)\\
+&= -g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)
+\end{align}
+
+
+\begin{align}
 G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)}{v_{sig}}\\
 &= -g_m \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)\\
 &= -g_m \left(1 - R_{sig} \frac{1}{R_{sig} + \left(\frac{R_{G1}R_{G2}}{R_{G1}+R_{G2}}\right)}\right) \left(\frac{R_{D}R_{L}}{R_{D}+R_{L}}\right)\\
@@ -242,6 +248,137 @@ G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{si
 
 \begin{align}
 G_v|_{dB} = 20 log_{10} |G_v| = 20 log_{10} |-6.28296| = 15.96329 dB \simeq 16 dB
+\end{align}
+
+\section{SPICE simulations}
+
+\chapter{NMOS common source amplifier without bypass capacitance}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_no_Cs.jpg}
+  \caption{NMOS common source amplifier}
+  \label{nmos_no_Cs}
+\end{figure}
+
+Designing the common source amplifier of the figure \ref{nmos_no_Cs} .\\
+The MOSFET should have a $V_t = 1V$, a $K_n = 4mA/V$ and a $\lambda = 0$.\\
+Other requested parameters are: $I_{DQ} = 0.5mA$, $V_S = 3.5V$, $V_D = 11V$, $V_{DD} = 15V$ and $R_{G2} = 1097752\Omega$.\par
+
+\section{Analytic solution}
+The figure \ref{nmos_DC_no_Cs} represents the circuit for the DC analysis.\\
+It is the same circuit analysed on the section \ref{nmos_DC_section} and so the results of that section are considered also for this section.\par
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_DC.jpg}
+  \caption{NMOS common source amplifier - DC analysis}
+  \label{nmos_DC_no_Cs}
+\end{figure}
+
+\subsubsection{Hybrid $\pi$ model}
+In this case it is used the hybrid $\pi$ model (figure \ref{nmos_pi_no_Cs}).\par
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_small_signal_no_Cs.jpg}
+  \caption{NMOS common source amplifier - Hybrid $\pi$ model}
+  \label{nmos_pi_no_Cs}
+\end{figure}
+
+\subsubsection{$R_{IN}$ from $G$}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_small_signal_RIN_no_Cs.jpg}
+  \caption{NMOS common source amplifier - Calculating $R_{IN}$}
+  \label{nmos_pi_RIN_no_Cs}
+\end{figure}
+
+Removing the signal, the load and applying a test voltage source as in figure \ref{nmos_pi_RIN_no_Cs} it is possible to calculate the input's resistance $R_{IN}$.\\
+The result is obviously equal to the section \ref{RIN}'s result.\par
+
+\subsubsection{$R_{OUT}$ from D}
+
+Removing the signal, the load and applying a test voltage source as in figure \ref{nmos_pi_ROUT_no_Cs} it is possible to calculate the output's resistance $R_{OUT}$.\\
+The result is equal to the section \ref{ROUT}'s result.\par
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_small_signal_ROUT_no_Cs.jpg}
+  \caption{NMOS common source amplifier - Calculating $R_{OUT}$}
+  \label{nmos_pi_ROUT_no_Cs}
+\end{figure}
+
+\subsubsection{Voltage Gain - without $R_{sig}$ and $R_L$}
+Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_without_resistances_no_Cs}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_small_signal_without_resistances_no_Cs.jpg}
+  \caption{NMOS common source amplifier - Calculating the voltage gain without $R_{sig}$ and $R_L$}
+  \label{nmos_pi_gain_without_resistances_no_Cs}
+\end{figure}
+
+\begin{align}
+v_{in} &= v_{g} = v_{gs}+v_s\\
+&= v_{gs} + v_{gs} g_m R_S\\
+&= v_{gs}(1+ g_m R_S)
+\end{align}
+\begin{align}
+v_{o} &= - g_m v_{gs} R_D
+\end{align}
+
+\begin{align}
+A_v = \frac{v_o}{v_{in}} = \frac{- g_m v_{gs} R_D}{v_{gs}(1+ g_m R_S)} = \frac{- g_m R_D}{(1+ g_m R_S)} = \frac{- 2mA/V \cdot 8k\Omega}{1+2mA/V \cdot 7k\Omega} = - 1.06667 \quad V/V \simeq - 1.1 \quad V/V
+\end{align}
+
+\begin{align}
+A_v|_{dB} = 20 log_{10} |A_v| = 20 log_{10} |- 1.06667| \simeq 0.56 dB
+\end{align}
+
+\subsubsection{Voltage Gain - with $R_{sig}$ and $R_L$}
+Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_with_resistances_no_Cs}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/nmos_small_signal_with_resistances_no_Cs.jpg}
+  \caption{NMOS common source amplifier - Calculating the voltage gain with $R_{sig}$ and $R_L$}
+  \label{nmos_pi_gain_with_resistances_no_Cs}
+\end{figure}
+
+\begin{align}
+I_{sig} &= \frac{v_{sig}}{R_{sig} + (R_{G1} \parallel R_{G2})}
+\end{align}
+
+\begin{align}
+v_{in} = v_{g} &= v_{sig} - R_{sig} I_{sig}\\
+&= v_{sig} - R_{sig} \frac{v_{sig}}{R_{sig} + (R_{G1} \parallel R_{G2})}\\
+&= v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right)
+\end{align}
+
+\begin{align}
+v_{gs} &= v_g - v_s\\
+v_{gs} &= v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) - g_m v_gs R_S\\
+v_{gs} + g_m v_{gs} R_S &= v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right)\\
+v_{gs} (1+ g_m R_S) &= v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right)\\
+V_{gs} &= v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) \frac{1}{1+ g_m R_S}
+\end{align}
+
+\begin{align}
+v_o &= - g_m v_{gs} (R_D \parallel R_L)\\
+&= -g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) \frac{1}{1+ g_m R_S} (R_D \parallel R_L)
+\end{align}
+
+\begin{align}
+G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) \frac{1}{1+ g_m R_S} (R_D \parallel R_L)}{v_{sig}}\\
+&= -g_m \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) \frac{1}{1+ g_m R_S} (R_D \parallel R_L)\\
+&= \frac{-g_m}{1+ g_m R_S} \left(1 - \frac{R_{sig}}{R_{sig} + \left(\frac{R_{G1}R_{G2}}{R_{G1}+R_{G2}}\right)}\right) \left(\frac{R_{D}R_{L}}{R_{D}+R_{L}}\right)\\
+&= \frac{-2mA/V}{1+ 2mA/V \cdot 7k\Omega} \left(1 - \frac{200k\Omega}{200k\Omega + \left(\frac{2.19550M\Omega \cdot 1097752\Omega}{2.19550M\Omega +1097752\Omega}\right)}\right) \left(\frac{8k\Omega \cdot 8k\Omega}{8k\Omega + 8k\Omega}\right)\\
+&= -0.41886 \quad V/V \simeq -0.42 \quad V/V
+\end{align}
+
+\begin{align}
+G_v|_{dB} = 20 log_{10} |G_v| = 20 log_{10} |-0.41886| = -7.5586 \simeq -7.56 dB
 \end{align}
 
 \section{SPICE simulations}
