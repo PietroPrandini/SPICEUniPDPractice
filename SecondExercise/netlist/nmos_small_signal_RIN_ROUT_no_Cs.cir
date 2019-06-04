@@ -1,4 +1,4 @@
-* NMOS amplifier - Av, RIN and ROUT
+* NMOS amplifier without bypass capacitances - Av, RIN and ROUT
 ********************************************************************************
 * 2st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
 *                        Pietro Prandini - mat. 1097752                        *
@@ -10,7 +10,7 @@
 ********************************************************************************
 
 * Voltage dependent Current Source
-gm*vgs D 0 G 0 2m
+gm*vgs D S G S 2m
 
 * Independent Voltage Source
 Vx G 0 DC 0 AC 1097752u sin(0 0.1V 10kHz 0 0 0)
@@ -19,6 +19,7 @@ Vx G 0 DC 0 AC 1097752u sin(0 0.1V 10kHz 0 0 0)
 RG1 G 0 2.19550MEG
 RG2 G 0 1097752
 RD D 0 8k
+RS S 0 7k
 
 * Analysis
 .tf V(D) Vx

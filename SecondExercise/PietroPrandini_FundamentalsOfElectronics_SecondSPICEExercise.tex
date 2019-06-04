@@ -208,10 +208,6 @@ v_{o} = - g_m v_{gs} R_D
 A_v = \frac{v_o}{v_{in}} = \frac{- g_m v_{gs} R_D}{v_{gs}} = - g_m R_D = 2mA/V \cdot 8k\Omega = -16 \quad V/V
 \end{align}
 
-\begin{align}
-A_v|_{dB} = 20 log_{10} |A_v| = 20 log_{10} |-16| = 24.08240 dB \simeq 24.1 dB
-\end{align}
-
 \subsubsection{Voltage Gain - with $R_{sig}$ and $R_L$}
 Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_with_resistances}.
 
@@ -246,11 +242,22 @@ G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{si
 &= -6.28296 \quad V/V \simeq -6.3 \quad V/V
 \end{align}
 
-\begin{align}
-G_v|_{dB} = 20 log_{10} |G_v| = 20 log_{10} |-6.28296| = 15.96329 dB \simeq 16 dB
-\end{align}
-
+\clearpage
 \section{SPICE simulations}
+\subsection{DC simulation - Operating Point}
+\lstinputlisting{netlist/a.cir}
+The results confirm the DC analysis.
+\lstinputlisting{netlist/a.op}
+
+\subsection{AC simulation - $Av$, $R_{IN}$ and $R_{OUT}$}
+\lstinputlisting{netlist/nmos_small_signal_RIN_ROUT.cir}
+The result confirm the analysis.
+\lstinputlisting{netlist/nmos_small_signal_RIN_ROUT.tf}
+
+\subsection{AC simulation - $Gv$}
+\lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_with_Rs_Rl.cir}
+The result confirm the analysis.
+\lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_with_Rs_Rl.tf}
 
 \chapter{NMOS common source amplifier without bypass capacitance}
 \begin{figure}[h]
@@ -332,10 +339,6 @@ v_{o} &= - g_m v_{gs} R_D
 A_v = \frac{v_o}{v_{in}} = \frac{- g_m v_{gs} R_D}{v_{gs}(1+ g_m R_S)} = \frac{- g_m R_D}{(1+ g_m R_S)} = \frac{- 2mA/V \cdot 8k\Omega}{1+2mA/V \cdot 7k\Omega} = - 1.06667 \quad V/V \simeq - 1.1 \quad V/V
 \end{align}
 
-\begin{align}
-A_v|_{dB} = 20 log_{10} |A_v| = 20 log_{10} |- 1.06667| \simeq 0.56 dB
-\end{align}
-
 \subsubsection{Voltage Gain - with $R_{sig}$ and $R_L$}
 Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_with_resistances_no_Cs}.
 
@@ -377,10 +380,17 @@ G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{si
 &= -0.41886 \quad V/V \simeq -0.42 \quad V/V
 \end{align}
 
-\begin{align}
-G_v|_{dB} = 20 log_{10} |G_v| = 20 log_{10} |-0.41886| = -7.5586 \simeq -7.56 dB
-\end{align}
-
+\clearpage
 \section{SPICE simulations}
+
+\subsection{AC simulation without bypass capacitances - $Av$, $R_{IN}$ and $R_{OUT}$}
+\lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_no_Cs.cir}
+The result confirm the analysis.
+\lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_no_Cs.tf}
+
+\subsection{AC simulation without bypass capacitances - $Gv$}
+\lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_with_Rs_Rl_no_Cs.cir}
+The result confirm the analysis.
+\lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_with_Rs_Rl_no_Cs.tf}
 
 \end{document}
