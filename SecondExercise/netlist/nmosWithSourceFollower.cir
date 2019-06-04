@@ -1,0 +1,47 @@
+* NMOS amplifier with source follower
+********************************************************************************
+* 2st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
+*                        Pietro Prandini - mat. 1097752                        *
+*                                                                              *
+* This work is licensed under the Creative Commons Attribution-ShareAlike 4.0  *
+* International License. To view a copy of this license, visit                 *
+* http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative  *
+* Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
+********************************************************************************
+
+* NMOS model
+.model NMOS NMOS VT0 = 1V KP = 4m LAMBDA = 0
+
+* Capacitances
+C1 G Vi 100u
+C2 D G2 100u
+CS S 0 100u
+C3 0 D2 100u
+C4 Vo S2 100u
+
+* Generators
+Vsig N001 0 DC 0 AC 1097752u sin(0 0.1V 10kHz 0 0 0)
+
+* Resistances
+Rsig Vi N001 200k
+RG1 VDD G 2.19550MEG
+RG2 G 0 1097752
+RD VDD D 8k
+RS S 0 7k
+RG3 VDD G2 2.19550MEG
+RG4 G2 0 1097752
+RD1 VDD D2 8k
+RS2 S2 0 7k
+RL2 Vo 0 8k
+
+* Transistors
+M1 D G S S NMOS
+M2 D2 G2 S2 S2 NMOS
+
+* Initial conditions
+.ic V(VDD) = 15V
+
+* Analysis
+.op
+
+.END

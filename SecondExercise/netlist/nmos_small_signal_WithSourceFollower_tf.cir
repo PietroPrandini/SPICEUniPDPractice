@@ -1,0 +1,32 @@
+* NMOS amplifier - Gv
+********************************************************************************
+* 2st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
+*                        Pietro Prandini - mat. 1097752                        *
+*                                                                              *
+* This work is licensed under the Creative Commons Attribution-ShareAlike 4.0  *
+* International License. To view a copy of this license, visit                 *
+* http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative  *
+* Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
+********************************************************************************
+
+* Voltage dependent Current Source
+gm*vgs D 0 G 0 2m
+gm*vg2s2 0 Vo G2 Vo 2m
+
+* Independent Voltage Source
+Vsig SIG 0 DC 0 AC 1097752u sin(0 0.1V 10kHz 0 0 0)
+
+* Resistances
+Rsig SIG G 200k
+RG1 G 0 2.19550MEG
+RG2 G 0 1097752
+RD G2 0 8k
+RG3 G2 0 2.1995Meg
+RG4 G2 0 1097752
+RS2 Vo 0 7k
+RL2 Vo 0 8k
+
+* Analysis
+.tf V(Vo) Vsig
+
+.END
