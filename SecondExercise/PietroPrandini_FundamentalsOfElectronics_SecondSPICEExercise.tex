@@ -230,26 +230,15 @@ v_{in} = v_{gs} &= v_{sig} - R_{sig} I_{sig}\\
 \end{align}
 
 \begin{align}
-v_{in} = v_{gs} = v_{sig} - R_{sig} I_{sig} \implies v_{sig} = v_{gs} + R_{sig} I_{sig}
+G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)}{v_{sig}}\\
+&= -g_m \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)\\
+&= -g_m \left(1 - R_{sig} \frac{1}{R_{sig} + \left(\frac{R_{G1}R_{G2}}{R_{G1}+R_{G2}}\right)}\right) \left(\frac{R_{D}R_{L}}{R_{D}+R_{L}}\right)\\
+&= - 2mA/V \left(1 - 200k\Omega \frac{1}{200k\Omega + \left(\frac{2.19550M\Omega \cdot 1097752\Omega}{2.19550M\Omega +1097752\Omega}\right)}\right) \left(\frac{8k\Omega \cdot 8k\Omega}{8k\Omega + 8k\Omega}\right)\\
+&= -6.28296 \quad V/V \simeq -6.3 \quad V/V
 \end{align}
 
 \begin{align}
-v_{sig} &= v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) + R_{sig} \frac{v_{sig}}{R_{sig} + (R_{G1} \parallel R_{G2})}\\
-&= v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})} + R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right)
-\end{align}
-
-\begin{align}
-v_{o} &= - g_m v_{gs} (R_D \parallel R_L)\\
-&= -g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)
-\end{align}
-
-\begin{align}
-G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)}{v_{sig} \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})} + R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right)}\\
-&= \frac{-g_m \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)}{1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})} + R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}}
-\end{align}
-
-\begin{align}
-G_v|_{dB} = 20 log_{10} |G_v| = 20 log_{10} || = dB \simeq  dB
+G_v|_{dB} = 20 log_{10} |G_v| = 20 log_{10} |-6.28296| = 15.96329 dB \simeq 16 dB
 \end{align}
 
 \chapter{SPICE simulations}
