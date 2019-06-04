@@ -49,7 +49,7 @@ Other requested parameters are: $I_{DQ} = 0.5mA$, $V_S = 3.5V$, $V_D = 11V$, $V_
 
 \section{Analytic solutions}
 
-\subsection{DC analysis}\label{nmos_DC_section}
+\subsection{DC analysis}\label{nmos_DC_section}\label{DCsec}
 On a Direct Current analysis the capacitances can be considered as open circuits, the inductances can be considered as short circuits, the signal and the load are removed and the alternate current inputs are not considered.\\
 The figure \ref{nmos_DC} represents the circuit for the DC analysis.\par
 
@@ -189,7 +189,7 @@ I_x = \frac{V_x}{R_D} \implies R_D = \frac{V_x}{I_x} \implies R_{OUT} = R_D
 R_{OUT} = 8k\Omega
 \end{align}
 
-\subsubsection{Voltage Gain - without $R_{sig}$ and $R_L$}
+\subsubsection{Voltage Gain - without $R_{sig}$ and $R_L$}\label{AvSec}
 Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_without_resistances}.
 
 \begin{figure}[h]
@@ -205,10 +205,10 @@ v_{o} = - g_m v_{gs} R_D
 \end{align}
 
 \begin{align}
-A_v = \frac{v_o}{v_{in}} = \frac{- g_m v_{gs} R_D}{v_{gs}} = - g_m R_D = 2mA/V \cdot 8k\Omega = -16 \quad V/V
+A_v = \frac{v_o}{v_{in}} = \frac{- g_m v_{gs} R_D}{v_{gs}} = - g_m R_D = 2mA/V \cdot 8k\Omega = -16 \quad V/V \label{Av}
 \end{align}
 
-\subsubsection{Voltage Gain - with $R_{sig}$ and $R_L$}
+\subsubsection{Voltage Gain - with $R_{sig}$ and $R_L$}\label{GvSec}
 Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_with_resistances}.
 
 \begin{figure}[h]
@@ -239,24 +239,24 @@ G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{si
 &= -g_m \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) (R_D \parallel R_L)\\
 &= -g_m \left(1 - R_{sig} \frac{1}{R_{sig} + \left(\frac{R_{G1}R_{G2}}{R_{G1}+R_{G2}}\right)}\right) \left(\frac{R_{D}R_{L}}{R_{D}+R_{L}}\right)\\
 &= - 2mA/V \left(1 - 200k\Omega \frac{1}{200k\Omega + \left(\frac{2.19550M\Omega \cdot 1097752\Omega}{2.19550M\Omega +1097752\Omega}\right)}\right) \left(\frac{8k\Omega \cdot 8k\Omega}{8k\Omega + 8k\Omega}\right)\\
-&= -6.28296 \quad V/V \simeq -6.3 \quad V/V
+&= -6.28296 \quad V/V \simeq -6.3 \quad V/V \label{Gv}
 \end{align}
 
 \clearpage
 \section{SPICE simulations}
-\subsection{DC simulation - Operating Point}
+\subsection{DC simulation - Operating Point}\label{DCsim}
 \lstinputlisting{netlist/a.cir}
-The results confirm the DC analysis.
+The results confirm the DC analysis (results calculated in the section \ref{DCsec}).
 \lstinputlisting{netlist/a.op}
 
 \subsection{AC simulation - $Av$, $R_{IN}$ and $R_{OUT}$}
 \lstinputlisting{netlist/nmos_small_signal_RIN_ROUT.cir}
-The result confirm the analysis.
+The result confirm the analysis (result calculated in the section \ref{AvSec}, expression \ref{Av}).
 \lstinputlisting{netlist/nmos_small_signal_RIN_ROUT.tf}
 
 \subsection{AC simulation - $Gv$}
 \lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_with_Rs_Rl.cir}
-The result confirm the analysis.
+The result confirm the analysis (result calculated in the section \ref{GvSec}, expression \ref{Gv}).
 \lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_with_Rs_Rl.tf}
 
 \chapter{NMOS common source amplifier without bypass capacitance}
@@ -316,7 +316,7 @@ The result is equal to the section \ref{ROUT}'s result.\par
   \label{nmos_pi_ROUT_no_Cs}
 \end{figure}
 
-\subsubsection{Voltage Gain - without $R_{sig}$ and $R_L$}
+\subsubsection{Voltage Gain - without $R_{sig}$ and $R_L$}\label{AvSecNoCs}
 Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_without_resistances_no_Cs}.
 
 \begin{figure}[h]
@@ -336,10 +336,10 @@ v_{o} &= - g_m v_{gs} R_D
 \end{align}
 
 \begin{align}
-A_v = \frac{v_o}{v_{in}} = \frac{- g_m v_{gs} R_D}{v_{gs}(1+ g_m R_S)} = \frac{- g_m R_D}{(1+ g_m R_S)} = \frac{- 2mA/V \cdot 8k\Omega}{1+2mA/V \cdot 7k\Omega} = - 1.06667 \quad V/V \simeq - 1.1 \quad V/V
+A_v = \frac{v_o}{v_{in}} = \frac{- g_m v_{gs} R_D}{v_{gs}(1+ g_m R_S)} = \frac{- g_m R_D}{(1+ g_m R_S)} = \frac{- 2mA/V \cdot 8k\Omega}{1+2mA/V \cdot 7k\Omega} = - 1.06667 \quad V/V \simeq - 1.1 \quad V/V \label{AvNoCs}
 \end{align}
 
-\subsubsection{Voltage Gain - with $R_{sig}$ and $R_L$}
+\subsubsection{Voltage Gain - with $R_{sig}$ and $R_L$}\label{GvSecNoCs}
 Calculating the gain of the amplifier represented in the figure \ref{nmos_pi_gain_with_resistances_no_Cs}.
 
 \begin{figure}[h]
@@ -377,20 +377,22 @@ G_v = \frac{v_o}{v_{sig}} &= \frac{-g_m v_{sig} \left(1 - R_{sig} \frac{1}{R_{si
 &= -g_m \left(1 - R_{sig} \frac{1}{R_{sig} + (R_{G1} \parallel R_{G2})}\right) \frac{1}{1+ g_m R_S} (R_D \parallel R_L)\\
 &= \frac{-g_m}{1+ g_m R_S} \left(1 - \frac{R_{sig}}{R_{sig} + \left(\frac{R_{G1}R_{G2}}{R_{G1}+R_{G2}}\right)}\right) \left(\frac{R_{D}R_{L}}{R_{D}+R_{L}}\right)\\
 &= \frac{-2mA/V}{1+ 2mA/V \cdot 7k\Omega} \left(1 - \frac{200k\Omega}{200k\Omega + \left(\frac{2.19550M\Omega \cdot 1097752\Omega}{2.19550M\Omega +1097752\Omega}\right)}\right) \left(\frac{8k\Omega \cdot 8k\Omega}{8k\Omega + 8k\Omega}\right)\\
-&= -0.41886 \quad V/V \simeq -0.42 \quad V/V
+&= -0.41886 \quad V/V \simeq -0.42 \quad V/V \label{GvNoCs}
 \end{align}
 
 \clearpage
 \section{SPICE simulations}
+\subsection{DC simulation - Operating Point}
+Same as the section \ref{DCsim}.
 
 \subsection{AC simulation without bypass capacitances - $Av$, $R_{IN}$ and $R_{OUT}$}
 \lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_no_Cs.cir}
-The result confirm the analysis.
+The result confirm the analysis (result calculated in the section \ref{AvSecNoCs}, expression \ref{AvNoCs}).
 \lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_no_Cs.tf}
 
 \subsection{AC simulation without bypass capacitances - $Gv$}
 \lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_with_Rs_Rl_no_Cs.cir}
-The result confirm the analysis.
+The result confirm the analysis (result calculated in the section \ref{GvSecNoCs}, expression \ref{GvNoCs}).
 \lstinputlisting{netlist/nmos_small_signal_RIN_ROUT_with_Rs_Rl_no_Cs.tf}
 
 \end{document}
