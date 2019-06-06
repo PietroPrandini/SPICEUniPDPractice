@@ -11,7 +11,7 @@
 
 * Parameters
 .param Vt = 0.5V
-.param Kp = 200u
+.param unCox = 200u
 .param lambda = 0
 
 .param W12 = 1.25u
@@ -23,7 +23,7 @@
 .param RD = 20k
 
 * NMOS model
-.model NMOS NMOS VT0 = Vt KP = Kp LAMBDA = lambda
+.model NMOS NMOS VT0 = Vt KP = unCox LAMBDA = lambda
 
 * Resistances
 RD1 DDN D1  {RD}
@@ -39,6 +39,10 @@ MQ4 SSN G43 G43 G43 NMOS W=W34 L=L34
 * Voltage sources
 VDD DDN 0 +3
 VSS SSN 0 -3
+
+* Initial conditions
+.ic V(G1) = 0
+.ic V(G2) = 0
 
 * Analysis
 .op
