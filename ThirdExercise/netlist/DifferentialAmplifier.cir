@@ -1,0 +1,39 @@
+* Differential Amplifier
+********************************************************************************
+* 3st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
+*                        Pietro Prandini - mat. 1097752                        *
+*                                                                              *
+* This work is licensed under the Creative Commons Attribution-ShareAlike 4.0  *
+* International License. To view a copy of this license, visit                 *
+* http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative  *
+* Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
+********************************************************************************
+
+* Parameters
+.param Vt = 1V
+.param Kn = 4m
+.param lambda = 0
+.param RD = 20k
+
+* NMOS model
+.model NMOS NMOS VT0 = Vt KP = Kn LAMBDA = lambda
+
+* Resistances
+RD1 DDN D1 {RD}
+RD2 DDN D2 {RD}
+RD4 DDN G43 {(30/1000)*1097752}
+
+* Transistors
+MQ1 D1 G1 S12 S12 NMOS
+MQ2 S12 G2 D2 D2 NMOS
+MQ3 S12 G43 SSN SSN NMOS
+MQ4 SSN G43 G43 G43 NMOS
+
+* Voltage sources
+VDD DDN 0 3
+VSS SSN 0 -3
+
+* Analysis
+.op
+
+.END
