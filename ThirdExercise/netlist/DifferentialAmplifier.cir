@@ -10,27 +10,34 @@
 ********************************************************************************
 
 * Parameters
-.param Vt = 1V
-.param Kn = 4m
+.param Vt = 0.5V
+.param Kp = 200u
 .param lambda = 0
+
+.param W12 = 1.25u
+.param L12 = 0.25u
+
+.param W34 = 4.00u
+.param L34 = 0.20u
+
 .param RD = 20k
 
 * NMOS model
-.model NMOS NMOS VT0 = Vt KP = Kn LAMBDA = lambda
+.model NMOS NMOS VT0 = Vt KP = Kp LAMBDA = lambda
 
 * Resistances
-RD1 DDN D1 {RD}
-RD2 DDN D2 {RD}
+RD1 DDN D1  {RD}
+RD2 DDN D2  {RD}
 RD4 DDN G43 {(30/1000)*1097752}
 
 * Transistors
-MQ1 D1 G1 S12 S12 NMOS
-MQ2 S12 G2 D2 D2 NMOS
-MQ3 S12 G43 SSN SSN NMOS
-MQ4 SSN G43 G43 G43 NMOS
+MQ1 D1  G1  S12 S12 NMOS W=W12 L=L12
+MQ2 S12 G2  D2  D2  NMOS W=W12 L=L12
+MQ3 S12 G43 SSN SSN NMOS W=W34 L=L34
+MQ4 SSN G43 G43 G43 NMOS W=W34 L=L34
 
 * Voltage sources
-VDD DDN 0 3
+VDD DDN 0 +3
 VSS SSN 0 -3
 
 * Analysis
