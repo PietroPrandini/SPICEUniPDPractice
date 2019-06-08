@@ -59,33 +59,34 @@ V_{SS} = -3V
 
 \section{MOSFET current mirror source - Analytic solution}
 \subsection{$I_{D_4}$}
-The transistor $M_4$ has a short circuit between its drain and its gate, so the transistor works in saturation mode.\\
+The transistor $M_4$ has a short circuit between its drain and its gate, so the transistor works in saturation mode.
 The current $I_{D_4}$ could be calculated as:\\
 \begin{align}
-I_{D_4} &= \frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_4 (V_{D_4} - V_{SS} - V_t)^2 \label{ID4Sat}
+I_{D_4} &= \frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_4 (V_{D_4SS} - V_t)^2 \label{ID4Sat}
 \end{align}
-Other expression of the current $I_{D_4}$ is:\\
+Other expression of the current $I_{D_4}$ could be calculated using the LKT:\\
 \begin{align}
-I_{D_4} = \frac{V_{DD} -(V_{D_4} - V_{SS})}{R_{D_4}}\label{ID4K}
+V_{DD}-R_{D_4}I_{D_4}-V_{D4SS}-V_{SS} = 0 \implies
+I_{D_4} = \frac{V_{DD} - V_{D_4SS} - V_{SS}}{R_{D_4}}\label{ID4K}
 \end{align}
-Using the equations \ref{ID4Sat} and \ref{ID4K} it's possible calculating $V_{D_4}$:\\
+Using the equations \ref{ID4Sat} and \ref{ID4K} it's possible calculating $V_{D_4SS}$:\\
 \begin{align}
-\frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_4 (V_{D_4} - V_{SS} - V_t)^2 = \frac{V_{DD} - (V_{D_4} - V_{SS})}{R_{D_4}}
-\end{align}
-\begin{align}
-\frac{1}{2}\cdot 200 \frac{\mu A}{V^2} \cdot 5 \frac{\mu m}{\mu m} (V_{D_4} - (-3V) - 0.5V)^2 = \frac{3V - V_{D_4} + (-3V)}{33k\Omega}\\
-500 \frac{\mu A}{V^2} (V_{D_4} +2.5V)^2 = -\frac{1}{33k\Omega}V_{D_4}\\
-500 \frac{\mu A}{V^2} (V_{D_4}^2+5V\cdot V_{D_4} +6.25V) = -\frac{1}{33k\Omega}V_{D_4}\\
-500 \frac{\mu A}{V^2} \cdot V_{D_4}^2 + \left(500 \frac{\mu A}{V^2} \cdot 5V + \frac{1}{33k\Omega}\right) V_{D_4} + 500 \frac{\mu A}{V^2} \cdot 6.25V = 0\\
-0.5 \frac{mA}{V^2} \cdot V_{D_4}^2 + \left(0.5 \frac{mA}{V^2} \cdot 5V + \frac{1}{33k\Omega}\right) V_{D_4} + 0.5 \frac{mA}{V^2} \cdot 6.25V = 0\\
-\left(0.5 \frac{mA}{V^2}\right) V_{D_4}^2 + \left(2\cdot\frac{35}{66}\frac{mA}{V}\right) V_{D_4} + \left(3\cdot\frac{1}{8}mA\right) = 0
+\frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_4 (V_{D_4SS} - V_t)^2 = \frac{V_{DD} - V_{D_4SS} - V_{SS}}{R_{D_4}}
 \end{align}
 \begin{align}
-V_{D_{4_{1,2}}} = \frac{-\left(2\cdot\frac{35}{66}\frac{mA}{V}\right)\pm \sqrt{\left(2\cdot\frac{35}{66}\frac{mA}{V}\right)^2-4\cdot\left(0.5 \frac{mA}{V^2}\right)\cdot\left(3\cdot\frac{1}{8}mA\right)}}{2\cdot0.5 \frac{mA}{V^2}} = 
+\frac{1}{2}\cdot 200 \frac{\mu A}{V^2} \cdot 5 \frac{\mu m}{\mu m} (V_{D_4SS} - 0.5V)^2 = \frac{3V - V_{D_4SS} - (-3V)}{33k\Omega}\\
+500 \frac{\mu A}{V^2} (V_{D_4SS} -0.5V)^2 = \frac{6}{33}mA-\frac{1}{33k\Omega}V_{D_4SS}\\
+500 \frac{\mu A}{V^2} (V_{D_4SS}^2- V_{D_4SS}\cdot V +0.25V^2) = \frac{6}{33}mA-\frac{1}{33k\Omega}V_{D_4SS}\\
+500 \frac{\mu A}{V^2} \cdot V_{D_4SS}^2 + \left(-500 \frac{\mu A}{V^2}V + \frac{1}{33k\Omega}\right) V_{D_4SS} + 500 \frac{\mu A}{V^2} \cdot 0.25V^2 -\frac{6}{33}mA = 0\\
+0.5 \frac{mA}{V^2} \cdot V_{D_4SS}^2 + \left(-0.5 \frac{mA}{V^2}V + \frac{1}{33k\Omega}\right) V_{D_4SS} + 0.5 \frac{mA}{V^2} \cdot 0.25V^2 -\frac{6}{33}mA = 0\\
+\left(0.5 \frac{mA}{V^2}\right) V_{D_4SS}^2 + \left( -\frac{31}{66}\frac{mA}{V}\right) V_{D_4SS} + \left(-0.05682mA\right) = 0
+\end{align}
+\begin{align}
+V_{{D_{4}SS}_{1,2}} = \frac{-\left( -\frac{31}{66}\frac{mA}{V}\right)\pm \sqrt{\left(-\frac{31}{66}\frac{mA}{V}\right)^2-4\cdot\left(0.5 \frac{mA}{V^2}\right)\cdot\left(-0.05682mA\right)}}{2\cdot0.5 \frac{mA}{V^2}} = 
 \left\{
 \begin{array}{l}
--0.44833V\\
--1.67288V\\
+1.04784V\\
+-0.10845V\\
 \end{array}
 \right.
 \end{align}
