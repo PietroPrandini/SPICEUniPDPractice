@@ -58,7 +58,8 @@ V_{SS} = -3V
 \end{align}
 
 \section{MOSFET current mirror source - Analytic solution}
-\subsection{$V_{D_4SS}$}
+\subsection{MOSFET $M_4$}
+\subsubsection{$V_{D_4SS}$}
 The transistor $M_4$ has a short circuit between its drain and its gate, so the transistor works in saturation mode and the voltage between the drain and the gate are the same of the voltage between the gate and the source.
 The current $I_{D_4}$ could be calculated as:\\
 \begin{align}
@@ -91,11 +92,23 @@ V_{{D_{4}SS}_{1,2}} = \frac{-\left( -\frac{31}{66}\frac{mA}{V}\right)\pm \sqrt{\
 \right. 
 \end{align}
 
-\subsection{$I_{D_4}$}
+\subsubsection{$I_{D_4}$}
 Using the equation \ref{ID4Sat} and the result of the equation \ref{VD4SS}:
 \begin{align}
-I_{D_4} = \frac{1}{2}\cdot 200 \mu A/V^2\cdot 5 \frac{\mu m}{\mu m} \cdot \left(1.04784V -0.5V \right)^2 = 150.06433 \mu A
+I_{D_4} = \frac{1}{2}\cdot 200 \mu A/V^2\cdot 5 \frac{\mu m}{\mu m} \cdot \left(1.04784V -0.5V \right)^2 = 150.06433 \mu A \label{ID4Sat}
 \end{align}
+
+\subsection{MOSFET $M_3$}
+\subsubsection{$I_{S_A}$}
+Using the result of the equation \ref{VD4SS} and supposing that the work is on the saturation mode, it's possible calculating the drain current of the MOSFET $M_3$:
+
+\begin{align}
+I_{SA} = \frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_3 (V_{D_4SS} - V_t)^2
+\end{align}
+\begin{align}
+I_{SA} = \frac{1}{2}\cdot 200 \mu A/V^2\cdot 5 \frac{\mu m}{\mu m} \cdot \left(1.04784V -0.5V \right)^2 = 150.06433 \mu A \label{ISASat}
+\end{align}
+
 
 \section{SPICE Operating Point analysis}
 \lstinputlisting{netlist/DifferentialAmplifier.cir}
