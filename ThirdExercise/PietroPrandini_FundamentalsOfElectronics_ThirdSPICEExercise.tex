@@ -58,8 +58,8 @@ V_{SS} = -3V
 \end{align}
 
 \section{MOSFET current mirror source - Analytic solution}
-\subsection{$I_{D_4}$}
-The transistor $M_4$ has a short circuit between its drain and its gate, so the transistor works in saturation mode.
+\subsection{$V_{D_4SS}$}
+The transistor $M_4$ has a short circuit between its drain and its gate, so the transistor works in saturation mode and the voltage between the drain and the gate are the same of the voltage between the gate and the source.
 The current $I_{D_4}$ could be calculated as:\\
 \begin{align}
 I_{D_4} &= \frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_4 (V_{D_4SS} - V_t)^2 \label{ID4Sat}
@@ -79,16 +79,22 @@ Using the equations \ref{ID4Sat} and \ref{ID4K} it's possible calculating $V_{D_
 500 \frac{\mu A}{V^2} (V_{D_4SS}^2- V_{D_4SS}\cdot V +0.25V^2) = \frac{6}{33}mA-\frac{1}{33k\Omega}V_{D_4SS}\\
 500 \frac{\mu A}{V^2} \cdot V_{D_4SS}^2 + \left(-500 \frac{\mu A}{V^2}V + \frac{1}{33k\Omega}\right) V_{D_4SS} + 500 \frac{\mu A}{V^2} \cdot 0.25V^2 -\frac{6}{33}mA = 0\\
 0.5 \frac{mA}{V^2} \cdot V_{D_4SS}^2 + \left(-0.5 \frac{mA}{V^2}V + \frac{1}{33k\Omega}\right) V_{D_4SS} + 0.5 \frac{mA}{V^2} \cdot 0.25V^2 -\frac{6}{33}mA = 0\\
-\left(0.5 \frac{mA}{V^2}\right) V_{D_4SS}^2 + \left( -\frac{31}{66}\frac{mA}{V}\right) V_{D_4SS} + \left(-0.05682mA\right) = 0
+\left(0.5 \frac{mA}{V^2}\right) V_{D_4SS}^2 + \left( -\frac{31}{66}\frac{mA}{V}\right) V_{D_4SS} + \left(-\frac{5}{88}mA\right) = 0
 \end{align}
 \begin{align}
-V_{{D_{4}SS}_{1,2}} = \frac{-\left( -\frac{31}{66}\frac{mA}{V}\right)\pm \sqrt{\left(-\frac{31}{66}\frac{mA}{V}\right)^2-4\cdot\left(0.5 \frac{mA}{V^2}\right)\cdot\left(-0.05682mA\right)}}{2\cdot0.5 \frac{mA}{V^2}} = 
+V_{{D_{4}SS}_{1,2}} = \frac{-\left( -\frac{31}{66}\frac{mA}{V}\right)\pm \sqrt{\left(-\frac{31}{66}\frac{mA}{V}\right)^2-4\cdot\left(0.5 \frac{mA}{V^2}\right)\cdot\left(-\frac{5}{88}mA\right)}}{2\cdot0.5 \frac{mA}{V^2}} = 
 \left\{
 \begin{array}{l}
-1.04784V\\
--0.10845V\\
+1.04784V \label{VD4SS}\\
+-0.10845V \quad \text{Not possible: }<\text{ of } V_t\\
 \end{array}
-\right.
+\right. 
+\end{align}
+
+\subsection{$I_{D_4}$}
+Using the equation \ref{ID4Sat} and the result of the equation \ref{VD4SS}:
+\begin{align}
+I_{D_4} = \frac{1}{2}\cdot 200 \mu A/V^2\cdot 5 \frac{\mu m}{\mu m} \cdot \left(1.04784V -0.5V \right)^2 = 150.06433 \mu A
 \end{align}
 
 \section{SPICE Operating Point analysis}
