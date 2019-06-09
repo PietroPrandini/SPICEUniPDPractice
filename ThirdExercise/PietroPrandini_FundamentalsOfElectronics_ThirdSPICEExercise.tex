@@ -35,7 +35,7 @@ University of Padua (Italy)}}}
 
 \tableofcontents
 
-\chapter{Differential amplifier with MOS current source}
+\chapter{Differential amplifier with MOS current source}\label{diffampchapter}
 
 \begin{figure}[h]
   \centering
@@ -44,7 +44,7 @@ University of Padua (Italy)}}}
   \label{DifferentialAmplifier}
 \end{figure}
 
-Data:\\
+Initial data:\\
 \begin{align}
 V_t = 0.5V\\
 {K'}_n = {\mu}_n C_{ox} = 200 \frac{\mu A}{V^2}\\
@@ -70,21 +70,21 @@ On static conditions it's considered the input signals $V_{i_1}$ and $V_{i_2}$ t
 The equivalent circuit is on figure \ref{DifferentialAmplifierStaticConditions}.\par
 
 \subsection{MOSFET $M_4$}
-\subsubsection{Saturation mode check}\label{M4SatCheck}
+\subsubsection{Saturation mode checks}\label{M4SatCheck}
 The transistor $M_4$ has a short circuit between its drain and its gate, so the transistor works in saturation mode and the voltage between the drain and the gate are the same of the voltage between the gate and the source:\par
 \begin{align}
-V_{{D_4}SS} > V_{{G_4}SS} - V_t \xRightarrow{V_{{G4}SS} = V_{{D_4}SS}}
+V_{{D_4}SS} > V_{{G_4}SS} - V_t \xRightarrow{V_{{G_4}SS} = V_{{D_4}SS}}
 V_{{D_4}SS} &> V_{{D_4}SS} - V_t\\
 0 &> - V_t \quad \text{(Always true: }V_t > 0\text{ )}
 \end{align}
-It's requested to pay attention to the another check for confirming the saturation:
+It's requested to pay attention to the another check to confirm the work on saturation mode:
 \begin{gather}
-V_{{G_4}SS} > V_t \xRightarrow{V_{{G4}SS} = V_{{D_4}SS}} V_{{D_4}SS} > V_t
+V_{{G_4}SS} > V_t \xRightarrow{V_{{G4}SS} = V_{{D_4}SS}} V_{{D_4}SS} > V_t \label{CheckSat2eq}
 \end{gather}
 
 
-\subsubsection{$V_{D_4SS}$}
-Thanks to the saturation mode of the transistore $M_4$ (see the section \ref{M4SatCheck} for details), could be calculated as:\\
+\subsubsection{$V_{D_4SS}\quad (=V_{G_4SS})$}
+Supposing that the transistor $M_4$ works on the saturation mode (see the section \ref{M4SatCheck} for details), the current $I_{D_4}$ could be calculated as:\\
 \begin{align}
 I_{D_4} &= \frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_4 (V_{D_4SS} - V_t)^2 \label{ID4Sat}
 \end{align}
@@ -115,15 +115,23 @@ V_{{D_{4}SS}_{1,2}} = \frac{-\left( -\frac{31}{66}\frac{mA}{V}\right)\pm \sqrt{\
 \right. 
 \end{align}
 
+Now it's possible to check the last equation that can confirm the work on saturation mode of the MOSFET $M_4$ (equation \ref{CheckSat2eq}):
+\begin{align}
+1.04784V > 0.5V \quad M_4 \text{ works on saturation mode.} \label{M4SatConfirm}
+\end{align}
+
 \subsubsection{$I_{D_4}$}
 Using the equation \ref{ID4Sat} and the result of the equation \ref{VD4SS}:
 \begin{align}
-I_{D_4} = \frac{1}{2}\cdot 200 \mu A/V^2\cdot 5 \frac{\mu m}{\mu m} \cdot \left(1.04784V -0.5V \right)^2 = 150.06433 \mu A \label{ID4Sat}
+I_{D_4} = \frac{1}{2}\cdot 200 \mu A/V^2\cdot 5 \frac{\mu m}{\mu m} \cdot \left(1.04784V -0.5V \right)^2 = 150.06433 \mu A \label{ID4SatResult}
 \end{align}
 
 \subsection{MOSFET $M_3$}
+\subsubsection{$V_{G_3SS}$}\label{VG3SS}
+Observing the circuit represented on the figure \ref{DifferentialAmplifierStaticConditions} it's clear that the voltage $V_{G_3SS}$  is equal to the voltage $V_{D_4SS}$ calculated in the equation \ref{VD4SS}.
+
 \subsubsection{$I_{S_A}$}
-Using the result of the equation \ref{VD4SS} and supposing that the work is on the saturation mode, it's possible calculating the drain current of the MOSFET $M_3$:
+As agree with the consideration of the section \ref{VG3SS} and supposing the work of the MOSFET $M_3$ on the saturation mode, it's possible calculating the drain current of the MOSFET $M_3$:\\
 
 \begin{align}
 I_{SA} = \frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_3 (V_{D_4SS} - V_t)^2
@@ -132,13 +140,109 @@ I_{SA} = \frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_3 (V_{D_4SS} - V_t)^2
 I_{SA} = \frac{1}{2}\cdot 200 \mu A/V^2\cdot 5 \frac{\mu m}{\mu m} \cdot \left(1.04784V -0.5V \right)^2 = 150.06433 \mu A \label{ISASat}
 \end{align}
 
+\subsubsection{Saturation mode checks}
+For obtaining the confirm of the work of the MOSFET $M_3$ on saturation mode the next two equations have to be satisfied:\\
+\begin{align}
+V_{{D_3}SS} > V_{{G_3}SS} - V_t \xRightarrow{V_{{D_3}SS} = V_{S_ASS}, V_{{G_3}SS} = V_{{D_4}SS}} V_{{S_A}SS} > V_{{D_4}SS} - V_t \label{M3SatCheckVSASS}
+\end{align}
+\begin{align}
+V_{{G_3}SS} > V_t \xRightarrow{V_{{G_3}SS} = V_{{D_4}SS}} V_{{D_4}SS} > V_t \label{M3SatCheckVD4SS}
+\end{align}
+The equation \ref{M3SatCheckVSASS} is to be checked, $V_{S_ASS}$ isn't calculated yet.\\
+The equation \ref{M3SatCheckVD4SS} is satisfied (see the equation \ref{M4SatConfirm}).\par
+
 \subsection{MOSFET $M_1$ and MOSFET $M_2$}
+The MOSFET $M_1$ and the MOSFET $M_2$ have the same dimension and the same constructive parameters (see initial data at the start of this chapter \ref{diffampchapter}).\\
+They also have the same voltage applied to every their pins (see figure \ref{DifferentialAmplifierStaticConditions}).\\
+So, additionally supposing the work on the saturation mode of $M_1$ and $M_2$, it's possible to confirm the next equations:\\
+\begin{align}
+I_{D_1} &= I_{D_2}\label{ISA/2}\\
+V_{G_1S_A} &= V_{G_2S_A}\\
+V_{D_1S_A} &= V_{D_2S_A}
+\end{align}
+
+\subsubsection{$I_{D_1} (= I_{D_2})$}
+\begin{align}
+\text{LKC node } S_A \text{: } I_{D_1} + I_{D_2} - I_{S_A} = 0 \xRightarrow{eq. \ref{ISA/2}} 2I_{D_1} - I_{S_A} = 0 \implies I_{D_1} = \frac{I_{S_A}}{2}
+\end{align}
+\begin{align}
+I_{D_1} = \frac{150.06433 \mu A}{2} = 75.03217 \mu A
+\end{align}
+
+\subsubsection{$V_{G_1S_A} ( = V_{G_2S_A})$}
+Supposing the work of the MOSFET $M_1$ (equally $M_2$) on the saturation mode, the drain current could be calculated as:\\
+\begin{align}
+I_{D_1} = \frac{1}{2} K'_n \left(\frac{W}{L}\right)_1 (V_{G_1S_A} - V_t)^2 \label{ID1eq}
+\end{align}
+It's possible using the equation \ref{ID1eq} to calculate $V_{G_1S_A}$:\\
+\begin{align}
+I_{D_1} &= \frac{1}{2} K'_n \left(\frac{W}{L}\right)_1 (V_{G_1S_A} - V_t)^2\\
+\sqrt{I_{D_1}} &= \sqrt{\frac{1}{2} K'_n \left(\frac{W}{L}\right)_1} (V_{G_1S_A} - V_t)\\
+\sqrt{\frac{I_{D_1}}{\frac{1}{2} K'_n \left(\frac{W}{L}\right)_1}} &= V_{G_1S_A} - V_t\\
+V_{G_1S_A} &= \sqrt{\frac{2I_{D_1}}{K'_n \left(\frac{W}{L}\right)_1}} +V_t\\
+V_{G_1S_A} &= \sqrt{\frac{2 \cdot 75.03217 \mu A}{200 \mu A \cdot 20 \frac{\mu A}{\mu A}}} +0.5V\\
+V_{G_1S_A} &= 0.69369V \label{VG1SAvalue}
+\end{align}
+
+\subparagraph{$V_{S_A}$}
+Now it's possible calculating the voltage on the node $S_A$:
+\begin{align}
+V_{G_1S_A} = V_{G_1} - V_{S_A} \implies V_{S_A} = V_{G_1} - V_{G_1S_A}
+\xRightarrow{V_{G_1} = 0, eq. \ref{VG1SAvalue}} V_{S_A} = -0.69369V
+\end{align}
+
+\subsubsection{Saturation mode checks}
+In order to check the mode of the $M_1$ (and $M_2$) the equations to respect are \ref{M12checkSatA} and \ref{M12checkSatB}.\\
+\begin{align}
+V_{D_1S_A} &> V_{G_1S_A} - Vt \label{M12checkSatA}\\
+V_{D_1} - V_{S_A} &> V_{G_1S_A} - Vt\\
+I_{D_1}R_{D_1} - V_{S_A} &> V_{G_1S_A} - Vt\\
+75.03217 \mu A \cdot 20k\Omega - (-0.69369V)&> 0.69369V - 0.5V\\
+2.19433V &> 0.19369V \quad \text{True.}
+\end{align}
+\begin{align}
+V_{G_1S_A} &> V_t \label{M12checkSatB}\\
+0.69369V &> 0.5V \quad \text{True.}
+\end{align}
 
 
+Checking the mode of the $M3$'s work (see equation \ref{M3SatCheckVSASS}):
+\begin{align}
+V_{{S_A}SS} &> V_{{D_4}SS} - V_t\\
+V_{S_A} - V_{SS} &> V_{{D_4}SS} - V_t\\
+-0.69369V - (-3V) &> 1.04784V - 0.5V\\
+2.30631V &> 0.54784V \quad M_3\text{ works on the saturation mode.}
+\end{align}
+
+\subsection{Resuming}
+\begin{tabular}{|c|c|c|c|}
+\hline
+MOSFET & $V_{DSQ}$ & $V_{GSQ}$ & $I_{DQ}$ \\
+\hline
+$M1$ & $2.19433V$ & $0.69369V$ & $75.03217\mu A$ \\
+\hline
+$M2$ & $2.19433V$ & $0.69369V$ & $75.03217\mu A$ \\
+\hline
+$M3$ & $2.30631V$ & $1.04784V$ & $150.06433 \mu A$ \\
+\hline
+$M4$ & $1.04784V$ & $1.04784V$ & $150.06433 \mu A$ \\
+\hline
+
+\end{tabular}
 
 \section{SPICE analysis}
 \subsection{Operating Point on static conditions}
 \lstinputlisting{netlist/DifferentialAmplifierStaticConditions.cir}
 \lstinputlisting{netlist/DifferentialAmplifierStaticConditions.op}
+
+\subsection{Operating Point - common mode signal}
+\lstinputlisting{netlist/DifferentialAmplifierVCM.cir}
+\lstinputlisting{netlist/DifferentialAmplifierVCM.op}
+
+\subsection{Operating Point - differential signals}
+\lstinputlisting{netlist/DifferentialAmplifierVID.cir}
+\lstinputlisting{netlist/DifferentialAmplifierVID.op}
+
+
 
 \end{document}

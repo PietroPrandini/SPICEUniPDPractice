@@ -1,0 +1,16 @@
+       --- Operating Point ---
+
+V(sa):      -0.693691       voltage
+V(ss):      -3              voltage
+V(dd):      3               voltage
+V(d1):      1.49936         voltage
+V(g1):      0               voltage
+Id(M1):     7.50322e-005    device_current
+Ig(M1):     0               device_current
+Ib(M1):     -2.20305e-012   device_current
+Is(M1):     -7.50322e-005   device_current
+I(Isa/2):   7.50322e-005    device_current
+I(Rd1):     7.50322e-005    device_current
+I(Vi1):     0               device_current
+I(Vss):     7.50322e-005    device_current
+I(Vdd):     -7.50322e-005   device_current
