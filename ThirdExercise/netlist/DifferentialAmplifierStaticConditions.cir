@@ -1,4 +1,4 @@
-* Differential Amplifier
+* Differential Amplifier - Static conditions
 ********************************************************************************
 * 3st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
 *                        Pietro Prandini - mat. 1097752                        *
@@ -11,8 +11,6 @@
 
 * Parameters
 .param RD = 20k
-.param VG1 = 0
-.param VG2 = 0
 
 * NMOS models
 .model NA NMOS VT0=0.5 KP=200u LAMBDA=0 W=4.00u L=0.20u
@@ -32,8 +30,8 @@ M4 D4 D4 SS SS NS
 * Voltage sources
 VDD DD 0 3
 VSS SS 0 -3
-Vi1 G1 0 {VG1}
-Vi2 G2 0 {VG2}
+Vi1 G1 0 0
+Vi2 G2 0 0
 
 * Analysis
 .op

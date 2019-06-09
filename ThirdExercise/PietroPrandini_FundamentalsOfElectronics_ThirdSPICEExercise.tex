@@ -109,9 +109,12 @@ I_{SA} = \frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_3 (V_{D_4SS} - V_t)^2
 I_{SA} = \frac{1}{2}\cdot 200 \mu A/V^2\cdot 5 \frac{\mu m}{\mu m} \cdot \left(1.04784V -0.5V \right)^2 = 150.06433 \mu A \label{ISASat}
 \end{align}
 
+\subsection{MOSFET $M_1$ and MOSFET $M_2$ - Common mode $V_{i_1} = V_{i_2} = V_{CM}$}
 
-\section{SPICE Operating Point analysis}
-\lstinputlisting{netlist/DifferentialAmplifier.cir}
-\lstinputlisting{netlist/DifferentialAmplifier.op}
+
+
+\section{SPICE Operating Point analysis - Common mode $V_{i_1} = V_{i_2} = V_{CM} = 0$}
+\lstinputlisting{netlist/DifferentialAmplifierVCMzero.cir}
+\lstinputlisting{netlist/DifferentialAmplifierVCMzero.op}
 
 \end{document}
