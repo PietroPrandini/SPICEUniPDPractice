@@ -57,11 +57,34 @@ V_{DD} = 3V\\
 V_{SS} = -3V
 \end{align}
 
-\section{MOSFET current mirror source - Analytic solution}
+\section{Static conditions - Analytic solution}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/DifferentialAmplifierStaticConditions.jpg}
+  \caption{Differential amplifier with MOS current source - Static conditions}
+  \label{DifferentialAmplifierStaticConditions}
+\end{figure}
+
+On static conditions it's considered the input signals $V_{i_1}$ and $V_{i_2}$ turned off.\\
+The equivalent circuit is on figure \ref{DifferentialAmplifierStaticConditions}.\par
+
 \subsection{MOSFET $M_4$}
+\subsubsection{Saturation mode check}\label{M4SatCheck}
+The transistor $M_4$ has a short circuit between its drain and its gate, so the transistor works in saturation mode and the voltage between the drain and the gate are the same of the voltage between the gate and the source:\par
+\begin{align}
+V_{{D_4}SS} > V_{{G_4}SS} - V_t \xRightarrow{V_{{G4}SS} = V_{{D_4}SS}}
+V_{{D_4}SS} &> V_{{D_4}SS} - V_t\\
+0 &> - V_t \quad \text{(Always true: }V_t > 0\text{ )}
+\end{align}
+It's requested to pay attention to the another check for confirming the saturation:
+\begin{gather}
+V_{{G_4}SS} > V_t \xRightarrow{V_{{G4}SS} = V_{{D_4}SS}} V_{{D_4}SS} > V_t
+\end{gather}
+
+
 \subsubsection{$V_{D_4SS}$}
-The transistor $M_4$ has a short circuit between its drain and its gate, so the transistor works in saturation mode and the voltage between the drain and the gate are the same of the voltage between the gate and the source.
-The current $I_{D_4}$ could be calculated as:\\
+Thanks to the saturation mode of the transistore $M_4$ (see the section \ref{M4SatCheck} for details), could be calculated as:\\
 \begin{align}
 I_{D_4} &= \frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_4 (V_{D_4SS} - V_t)^2 \label{ID4Sat}
 \end{align}
@@ -109,12 +132,13 @@ I_{SA} = \frac{1}{2}{K'}_n \left(\frac{W}{L}\right)_3 (V_{D_4SS} - V_t)^2
 I_{SA} = \frac{1}{2}\cdot 200 \mu A/V^2\cdot 5 \frac{\mu m}{\mu m} \cdot \left(1.04784V -0.5V \right)^2 = 150.06433 \mu A \label{ISASat}
 \end{align}
 
-\subsection{MOSFET $M_1$ and MOSFET $M_2$ - Common mode $V_{i_1} = V_{i_2} = V_{CM}$}
+\subsection{MOSFET $M_1$ and MOSFET $M_2$}
 
 
 
-\section{SPICE Operating Point analysis - Common mode $V_{i_1} = V_{i_2} = V_{CM} = 0$}
-\lstinputlisting{netlist/DifferentialAmplifierVCMzero.cir}
-\lstinputlisting{netlist/DifferentialAmplifierVCMzero.op}
+\section{SPICE analysis}
+\subsection{Operating Point on static conditions}
+\lstinputlisting{netlist/DifferentialAmplifierStaticConditions.cir}
+\lstinputlisting{netlist/DifferentialAmplifierStaticConditions.op}
 
 \end{document}
