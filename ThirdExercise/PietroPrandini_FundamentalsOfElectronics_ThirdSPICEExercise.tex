@@ -129,6 +129,9 @@ I_{D_4} = \frac{1}{2}\cdot 200 \mu A/V^2\cdot 5 \frac{\mu m}{\mu m} \cdot \left(
 \subsection{MOSFET $M_3$}
 \subsubsection{$V_{G_3SS}$}\label{VG3SS}
 Observing the circuit represented on the figure \ref{DifferentialAmplifierStaticConditions} it's clear that the voltage $V_{G_3SS}$  is equal to the voltage $V_{D_4SS}$ calculated in the equation \ref{VD4SS}.
+\begin{align}
+V_{G_3SS} = V_{D_4SS}
+\end{align}
 
 \subsubsection{$I_{S_A}$}
 As agree with the consideration of the section \ref{VG3SS} and supposing the work of the MOSFET $M_3$ on the saturation mode, it's possible calculating the drain current of the MOSFET $M_3$:\\
@@ -148,7 +151,7 @@ V_{{D_3}SS} > V_{{G_3}SS} - V_t \xRightarrow{V_{{D_3}SS} = V_{S_ASS}, V_{{G_3}SS
 \begin{align}
 V_{{G_3}SS} > V_t \xRightarrow{V_{{G_3}SS} = V_{{D_4}SS}} V_{{D_4}SS} > V_t \label{M3SatCheckVD4SS}
 \end{align}
-The equation \ref{M3SatCheckVSASS} is to be checked, $V_{S_ASS}$ isn't calculated yet.\\
+The equation \ref{M3SatCheckVSASS} hasn't to be checked, $V_{S_ASS}$ isn't calculated yet.\\
 The equation \ref{M3SatCheckVD4SS} is satisfied (see the equation \ref{M4SatConfirm}).\par
 
 \subsection{MOSFET $M_1$ and MOSFET $M_2$}
@@ -214,21 +217,22 @@ V_{S_A} - V_{SS} &> V_{{D_4}SS} - V_t\\
 2.30631V &> 0.54784V \quad M_3\text{ works on the saturation mode.}
 \end{align}
 
-\subsection{Resuming}
+\subsection{MOSFET $V_{DS_Q}$, $V_{GS_Q}$, $I_{D_Q}$ - Resuming}
+\begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-MOSFET & $V_{DSQ}$ & $V_{GSQ}$ & $I_{DQ}$ \\
+MOSFET & $V_{DS_Q}$ & $V_{GS_Q}$ & $I_{D_Q}$ \\
 \hline
-$M1$ & $2.19433V$ & $0.69369V$ & $75.03217\mu A$ \\
+$M1$ & $V_{D_1S_A} = 2.19433V$ & $V_{G_1S_A} = 0.69369V$ & $I_{D_1} = 75.03217\mu A$ \\
 \hline
-$M2$ & $2.19433V$ & $0.69369V$ & $75.03217\mu A$ \\
+$M2$ & $V_{D_2S_A} = 2.19433V$ & $V_{G_2S_A} = 0.69369V$ & $I_{D_2} = 75.03217\mu A$ \\
 \hline
-$M3$ & $2.30631V$ & $1.04784V$ & $150.06433 \mu A$ \\
+$M3$ & $V_{S_ASS} = 2.30631V$ & $V_{D_4SS} = 1.04784V$ & $I_{S_A} = 150.06433 \mu A$ \\
 \hline
-$M4$ & $1.04784V$ & $1.04784V$ & $150.06433 \mu A$ \\
+$M4$ & $V_{D_4SS} = 1.04784V$ & $V_{D_4SS} = 1.04784V$ & $I_{D_4} = 150.06433 \mu A$ \\
 \hline
-
 \end{tabular}
+\end{center}
 
 \section{SPICE analysis}
 \subsection{Operating Point on static conditions}
