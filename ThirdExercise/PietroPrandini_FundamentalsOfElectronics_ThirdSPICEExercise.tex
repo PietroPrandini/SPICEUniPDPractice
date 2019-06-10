@@ -234,6 +234,18 @@ $M4$ & $V_{D_4SS} = 1.04784V$ & $V_{D_4SS} = 1.04784V$ & $I_{D_4} = 150.06433 \m
 \end{tabular}
 \end{center}
 
+\subsection{$g_m$}
+\begin{align}
+g_{m_1} = g_{m_2} &= K'_n \left(\frac{W}{L}\right)_1 (V_{G_1S_A} - V_t)\\
+&= 200 \frac{\mu A}{V^2} \cdot 20 \frac{\mu A}{\mu A} \cdot (0.69369V-0.5V)\\
+&= 774.76 \mu A/V
+\end{align}
+\begin{align}
+g_{m_3} = g_{m_4} &= K'_n \left(\frac{W}{L}\right)_3 (V_{D_4SS} - V_t)\\
+&= 200 \frac{\mu A}{V^2} \cdot 5 \frac{\mu A}{\mu A} \cdot (1.04784V-0.5V)\\
+&= 547.80 \mu A/V
+\end{align}
+
 \section{SPICE analysis}
 \subsection{Operating Point on static conditions}
 \lstinputlisting{netlist/DifferentialAmplifierStaticConditions.cir}
