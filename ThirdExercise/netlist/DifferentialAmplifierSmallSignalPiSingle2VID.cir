@@ -13,19 +13,12 @@
 .param RD = 20k
 
 * Current sources
-gm*vg1s1 D1 0 G1 0 774.76u
-gm*vg2s2 D2 0 G2 0 774.76u
-gm*vd4ss4 D4 0 D4 0 547.80
-gm*vd4ss3 SA 0 D4 0 547.80
+gm*vg2 D2 0 G2 0 774.76u
 
 * Resistances
-RD1 0 D1 {RD}
-RD2 0 D2 {RD}
-RD4 0 D4 33k
-r0 0 SA 333.2k
+RD2 D2 0 {RD}
 
 * Voltage sources
-Vi1 G1 0 sine(0 10m 10k 0 0 0)
 Vi2 0 G2 sine(0 10m 10k 0 0 0)
 
 * Analysis

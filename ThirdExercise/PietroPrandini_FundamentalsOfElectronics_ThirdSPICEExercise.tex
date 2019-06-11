@@ -256,9 +256,28 @@ r_0 &= \frac{1}{\lambda I_{S_A}}
 \simeq 333.2k\Omega
 \end{align}
 
-\subsection{Differential gain}
+It's possible see the $r_0$ resitances in the small signal circuit by using the PI model of the transistor MOSFET (figure \ref{PiComplete}).\par
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/DifferentialAmplifierSmallSignalPiComplete.jpg}
+  \caption{Small signal circuit by using the PI model of the Transistor MOSFET}
+  \label{PiComplete}
+\end{figure}
+
+In the small signal circuit are considered only the alternate sources, so the $V_{DD}$ and the $V_{SS}$ voltage sources are substituted by a short circuit.\\
+In this way the mirror current source composed by the MOSFET $M_4$ and the MOSFET $M_5$ are off because the drain, the source and the gate of these MOSFETs have no voltage applied. So we can considered the differential amplifier part of the circuit connected directly to the ground on the node named $S_A$ (figure \ref{PiSimple}).\par
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/DifferentialAmplifierSmallSignalPi.jpg}
+  \caption{Small signal circuit by using the PI model of the Transistor MOSFET - simplifications}
+  \label{PiSimple}
+\end{figure} 
+
+\subsection{Differential gain single ended}
 
 
+\clearpage
 \section{SPICE analysis}
 \subsection{Operating Point on static conditions}
 \lstinputlisting{netlist/DifferentialAmplifierStaticConditions.cir}
