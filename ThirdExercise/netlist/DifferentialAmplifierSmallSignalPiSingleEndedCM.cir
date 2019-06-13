@@ -1,4 +1,4 @@
-* Differential Amplifier - Differential signals
+* Differential Amplifier - Common mode signals
 ********************************************************************************
 * 3st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
 *                        Pietro Prandini - mat. 1097752                        *
@@ -11,15 +11,20 @@
 
 * Parameters
 .param RD = 20k
+.param r0 = 333.2k
 
 * Current sources
+gm*vg1sa D1 SA G1 SA 774.76u
 gm*vg2sa D2 SA G2 SA 774.76u
 
 * Resistances
+RD1 D1 0 {RD}
 RD2 D2 0 {RD}
-Rss1 SA 0 {2*333.2k}
+Rss1 SA 0 {2*r0}
+Rss2 SA 0 {2*r0}
 
 * Voltage sources
+Vi1 G1 0 sine(0 10m 10k 0 0 0)
 Vi2 G2 0 sine(0 10m 10k 0 0 0)
 
 * Analysis

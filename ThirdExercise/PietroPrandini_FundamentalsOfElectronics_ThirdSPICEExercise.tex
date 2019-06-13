@@ -278,7 +278,7 @@ In this way the mirror current source composed by the MOSFET $M_4$ and the MOSFE
 Now it could be clear the effect of the $\lambda = 0.02$ of the MOSFET $M_3$ because its resistance $r_0$ has an effect to the gain of the circuit if the voltage of the node $S_A$ is different than null.\par
 
 \subsection{Gain single ended}
-\subsubsection{Differential pure signal}
+\subsubsection{Differential pure signal gain}
 Now it's applied  small alternate voltage signal to the circuit of the figure \ref{PiSimple}:\\
 \begin{align}
 V_{i_1} =+ \frac{V_{id}}{2} \label{Vi1d}\\
@@ -292,7 +292,7 @@ Given that the circuit of the figure \ref{PiSimple} is symmetrical and it's poss
 \begin{figure}[h]
   \centering
   \includegraphics[width=12cm]{schematics/DifferentialAmplifierSmallSignalPiSingleEndedVID.jpg}
-  \caption{Small signal circuit single ended for a differential pure signal}
+  \caption{Small signal circuit single ended for a differential pure signal.}
   \label{PiSingle2}
 \end{figure}
 
@@ -319,6 +319,58 @@ A_d &= \frac{V_{D_2} - V_{D_1}}{V_{id}}\\
 &= g_m R_{D} \label{Ad}
 \end{align}
 
+\subsubsection{Common mode gain}
+By applying a common mode signal to the inputs of the differential amplifier, on $r0$ there is current different than null, so in this case it gives an important role to the common mode gain.\\
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/DifferentialAmplifierSmallSignalPiSingleEndedCM.jpg}
+  \caption{Small signal circuit single ended for a common mode signal.}
+  \label{PiSingle2}
+\end{figure}
+Some useful equations for calculating the common mode gain are \ref{2r0} and \ref{VG1SAcm}.\\
+\begin{align}
+V_{i1} = V_{i2} = V_{i_{CM}} \label{vcm}\\
+R_{ss_1} = R_{ss_2} = 2 r_0 \label{2r0}\\
+V_{G_1S_A} = V_{G_2S_A}
+\end{align}
+\begin{align}
+-V_{i_1} + V_{G_1S_A} + g_m V_{G_1S_A} R_{ss_1} &= 0\\
+-V_{i_1} + V_{G_1S_A} (1+g_m R_{ss_1}) &= 0\\
+\implies V_{G_1S_A} &= \frac{V_{i_1}}{1+g_m R_{ss_1}}\\ \xRightarrow{(eq.: \ref{2r0})}
+V_{G_1S_A} &= \frac{V_{i_1}}{1+2g_m r_0}\label{VG1SAcm}
+\end{align}
+
+In order to calculate de common mode gain, the common mode gain of the single ended circuit are calculated first:\\
+\begin{align}
+V_{D_1} &= -g_m R_{D_1}V_{G_1S_A}\\
+V_{D_1} &= -g_m R_{D_1} \left(\frac{V_{i_1}}{1+2g_m r_0} \right)\\
+V_{D_1} &= \frac{-g_m R_{D_1}}{1+2g_m r_0}V_{i_1}\\
+\implies \frac{V_{D_1}}{V_{i1}} &= \frac{-g_m R_{D_1}}{1+2g_m r_0}\\
+\xRightarrow{(eq.: \ref{RD} and \ref{vcm})} \frac{V_{D_1}}{V_{i_{CM}}} &= \frac{-g_m R_{D}}{1+2g_m r_0} = A_{CM_{single\cdot ended\cdot 1}} \simeq \frac{R_{D}}{2r_0}
+\end{align}
+
+\begin{align}
+A_{CM_{single\cdot ended\cdot 1}} \simeq \frac{R_{D}}{2r_0} \quad \text{for } r_0 \gg 1
+\end{align}
+
+\begin{align}
+\frac{V_{D_2}}{V_{i_{CM}}} = \frac{-g_m R_{D}}{1+2g_m r_0} = A_{CM_{single\cdot ended\cdot 2}}\\
+\end{align}
+\begin{align}
+A_{CM_{single\cdot ended\cdot 2}} \simeq \frac{R_{D}}{2r_0} \quad \text{for } r_0 \gg 1
+\end{align}
+
+The common mode gain is:\\
+\begin{align}
+A_{CM} &= \frac{V_{D_2} - V_{D_1}}{V_{i_{CM}}}\\
+&= A_{CM_{single\cdot ended\cdot 2}} -A_{CM_{single\cdot ended\cdot 1}} \\
+&= \left(\frac{-g_m R_{D}}{1+2g_m r_0} \right) - \left(\frac{-g_m R_{D}}{1+2g_m r_0} \right)\\
+&= 0
+\end{align}
+
+\subsubsection{Common mode gain with $\lambda_3 = 0$}
+With $\lambda_3 = 0$, the $r_0$ of the MOSFET $M_3$ isn't finite.\\
+So the common mode gain would be null but also the single ended gain.\par
 
 \clearpage
 \section{SPICE analysis}

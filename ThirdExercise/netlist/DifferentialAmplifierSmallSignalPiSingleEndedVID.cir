@@ -11,16 +11,19 @@
 
 * Parameters
 .param RD = 20k
+.param r0 = 333.2k
 
 * Current sources
-gm*vg2sa D2 SA G2 SA 774.76u
+gm*vg1sa D1 0 G1 0 774.76u
+gm*vg2sa D2 0 G2 0 774.76u
 
 * Resistances
+RD1 D1 0 {RD}
 RD2 D2 0 {RD}
-Rss1 SA 0 {2*333.2k}
 
 * Voltage sources
-Vi2 G2 0 sine(0 10m 10k 0 0 0)
+Vi1 G1 0  sine(0 10m 10k 0 0 0)
+Vi2 0  G2 sine(0 10m 10k 0 0 0)
 
 * Analysis
 .TRAN 0u 250u 0 1u
