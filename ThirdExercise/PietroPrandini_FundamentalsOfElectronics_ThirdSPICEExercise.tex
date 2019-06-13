@@ -240,11 +240,11 @@ g_{m_1} = g_{m_2} &= K'_n \left(\frac{W}{L}\right)_1 (V_{G_1S_A} - V_t)\\
 &= 200 \frac{\mu A}{V^2} \cdot 20 \frac{\mu A}{\mu A} \cdot (0.69369V-0.5V)\\
 &= 774.76 \mu A/V
 \end{align}
-\begin{align}
-g_{m_3} = g_{m_4} &= K'_n \left(\frac{W}{L}\right)_3 (V_{D_4SS} - V_t)\\
-&= 200 \frac{\mu A}{V^2} \cdot 5 \frac{\mu A}{\mu A} \cdot (1.04784V-0.5V)\\
-&= 547.80 \mu A/V
-\end{align}
+%\begin{align}
+%g_{m_3} = g_{m_4} &= K'_n \left(\frac{W}{L}\right)_3 (V_{D_4SS} - V_t)\\
+%&= 200 \frac{\mu A}{V^2} \cdot 5 \frac{\mu A}{\mu A} \cdot (1.04784V-0.5V)\\
+%&= 547.80 \mu A/V
+%\end{align}
 
 \subsection{MOSFET $M_3$ with $\lambda = 0.02$}
 From now the MOSFET $M_3$ is considered with $\lambda = 0.02$.\par
@@ -266,15 +266,42 @@ It's possible see the $r_0$ resitances in the small signal circuit by using the 
 \end{figure}
 
 In the small signal circuit are considered only the alternate sources, so the $V_{DD}$ and the $V_{SS}$ voltage sources are substituted by a short circuit.\\
-In this way the mirror current source composed by the MOSFET $M_4$ and the MOSFET $M_5$ are off because the drain, the source and the gate of these MOSFETs have no voltage applied. So we can considered the differential amplifier part of the circuit connected directly to the ground on the node named $S_A$ (figure \ref{PiSimple}).\par
+In this way the mirror current source composed by the MOSFET $M_4$ and the MOSFET $M_5$ are off because the drain, the source and the gate of these MOSFETs have no voltage applied. So we can simplify the small signal circuit of the figure \ref{PiComplete} to the small signal circuit of the figure \ref{PiSimple}.\par
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=12cm]{schematics/DifferentialAmplifierSmallSignalPi.jpg}
   \caption{Small signal circuit by using the PI model of the Transistor MOSFET - simplifications}
   \label{PiSimple}
-\end{figure} 
+\end{figure}
 
-\subsection{Differential gain single ended}
+Now it could be clear the effect of the $\lambda = 0.02$ of the MOSFET $M_3$ because its resistance $r_0$ has an effect to the gain of the circuit if the voltage of the node $S_A$ is different than null.\par
+
+\subsection{Gain single ended}
+\subsubsection{Differential pure signal}
+Now it's applied  small alternate voltage signal to the circuit of the figure \ref{PiSimple}:\\
+\begin{align}
+V_{i_1} =+ \frac{V_{id}}{2}\\
+V_{i_2} =- \frac{V_{id}}{2} \label{Vi2d}
+\end{align}
+
+
+Applying a small alternate voltage signal to the circuit of the figure \ref{PiSimple} there aren't current on the resistance $r_0$ so it could be treated as a short circuit.\\
+Given that the circuit of the figure \ref{PiSimple} is symmetrical it's possible analyse the single ended behaviour of the circuit on figure \ref{PiSingle2}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{schematics/DifferentialAmplifierSmallSignalPiSingle2VID.jpg}
+  \caption{Small signal circuit single ended for a differential pure signal}
+  \label{PiSingle2}
+\end{figure}
+
+The single ended gain for a small differential signal is:\\
+\begin{align}
+V_{D_2} = - g_m V_{G_2} R_{D_2} \xRightarrow{(eq. \ref{Vi2d})}
+V_{D_2} = - g_m \left(-\frac{V_{id}}{2}\right) R_{D_2} \implies
+\frac{V_{D_2}}{V_{id}} = g_m {R_{D_2}} = A_{d_{single\cdot ended}}
+\end{align}
 
 
 \clearpage
