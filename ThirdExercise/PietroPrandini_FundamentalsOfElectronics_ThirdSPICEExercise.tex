@@ -51,7 +51,7 @@ V_t = 0.5V\\
 \lambda = 0\\
 \left(\frac{W}{L}\right)_1 = \left(\frac{W}{L}\right)_2 = 20\\
 \left(\frac{W}{L}\right)_3 = \left(\frac{W}{L}\right)_4 = 5\\
-R_{D_1} = R_{D_2} = 20k\Omega\\
+R_{D_1} = R_{D_2} = R_D = 20k\Omega \label{RD}\\
 R_{D_4} = \frac{30}{1000}\cdot 1097752 \Omega = 32.93k\Omega \simeq 33k\Omega\\
 V_{DD} = 3V\\
 V_{SS} = -3V
@@ -281,7 +281,7 @@ Now it could be clear the effect of the $\lambda = 0.02$ of the MOSFET $M_3$ bec
 \subsubsection{Differential pure signal}
 Now it's applied  small alternate voltage signal to the circuit of the figure \ref{PiSimple}:\\
 \begin{align}
-V_{i_1} =+ \frac{V_{id}}{2}\\
+V_{i_1} =+ \frac{V_{id}}{2} \label{Vi1d}\\
 V_{i_2} =- \frac{V_{id}}{2} \label{Vi2d}
 \end{align}
 
@@ -291,16 +291,32 @@ Given that the circuit of the figure \ref{PiSimple} is symmetrical it's possible
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=12cm]{schematics/DifferentialAmplifierSmallSignalPiSingle2VID.jpg}
+  \includegraphics[width=12cm]{schematics/DifferentialAmplifierSmallSignalPiSingleEndedVID.jpg}
   \caption{Small signal circuit single ended for a differential pure signal}
   \label{PiSingle2}
 \end{figure}
 
-The single ended gain for a small differential signal is:\\
+It's possible finding the single ended gain $A_d$ for a small differential signal by calculate first the single ended gain (eq. \ref{Ad1}, \ref{Ad2} and \ref{Ad}).\\
+
+\begin{align}
+V_{D_1} = - g_m V_{G_1} R_{D_1} \xRightarrow{(eq. \ref{Vi1d})}
+V_{D_2} = - g_m \frac{V_{id}}{2} R_{D_2} \implies
+\frac{V_{D_1}}{V_{id}} = - \frac{g_m R_{D_1}}{2} = A_{d_{single\cdot ended\cdot 1}}\label{Ad1}
+\end{align}
+
 \begin{align}
 V_{D_2} = - g_m V_{G_2} R_{D_2} \xRightarrow{(eq. \ref{Vi2d})}
 V_{D_2} = - g_m \left(-\frac{V_{id}}{2}\right) R_{D_2} \implies
-\frac{V_{D_2}}{V_{id}} = g_m {R_{D_2}} = A_{d_{single\cdot ended}}
+\frac{V_{D_2}}{V_{id}} = \frac{g_m R_{D_2}}{2} = A_{d_{single\cdot ended\cdot 2}}\label{Ad2}
+\end{align}
+
+\begin{align}
+A_d &= \frac{V_{D_2} - V_{D_1}}{V_{id}}\\
+&= A_{d_{single\cdot ended\cdot 2}} - A_{d_{single\cdot ended\cdot 1}}\\
+&= \frac{g_m R_{D_2}}{2} - \left(- \frac{g_m R_{D_1}}{2} \right)\\
+&= \frac{g_m R_{D_2}}{2} + \frac{g_m R_{D_1}}{2}\\
+&= \frac{g_m R_{D}}{2} + \frac{g_m R_{D}}{2} \quad \text{(see eq. \ref{RD})}\\
+&= g_m R_{D} \label{Ad}
 \end{align}
 
 
