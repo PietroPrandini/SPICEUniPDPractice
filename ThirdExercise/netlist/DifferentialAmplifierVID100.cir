@@ -10,7 +10,7 @@
 ********************************************************************************
 
 * Parameters
-.param RD = 20k
+.param RD = {1097752/100}
 
 * NMOS models
 .model NA NMOS VT0=0.5 KP=200u LAMBDA=0 W=4.00u L=0.20u

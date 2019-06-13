@@ -374,18 +374,43 @@ So the common mode gain would be null but also the single ended gain.\par
 
 \clearpage
 \section{SPICE analysis}
-\subsection{Operating Point on static conditions}
+\subsection{$R_D = 20k$}
+\subsubsection{Operating Point on static conditions ($\lambda_3 = 0$)}
 \lstinputlisting{netlist/DifferentialAmplifierStaticConditions.cir}
 \lstinputlisting{netlist/DifferentialAmplifierStaticConditions.op}
 
-\subsection{Operating Point - common mode signal}
+\subsubsection{Operating Point - common mode signals}
 \lstinputlisting{netlist/DifferentialAmplifierVCM.cir}
 \lstinputlisting{netlist/DifferentialAmplifierVCM.op}
 
-\subsection{Operating Point - differential signals}
+\subsubsection{Operating Point - differential signals}
 \lstinputlisting{netlist/DifferentialAmplifierVID.cir}
 \lstinputlisting{netlist/DifferentialAmplifierVID.op}
 
+\subsection{$R_D = 1097752/100$}
+\subsubsection{Operating Point on static conditions ($\lambda_3 = 0$)}
+\lstinputlisting{netlist/DifferentialAmplifierStaticConditions100.cir}
+\lstinputlisting{netlist/DifferentialAmplifierStaticConditions100.op}
 
+\subsubsection{Operating Point - common mode signals}
+\lstinputlisting{netlist/DifferentialAmplifierVCM100.cir}
+\lstinputlisting{netlist/DifferentialAmplifierVCM100.op}
+
+\subsubsection{Operating Point - differential signals}
+\lstinputlisting{netlist/DifferentialAmplifierVID100.cir}
+\lstinputlisting{netlist/DifferentialAmplifierVID100.op}
+
+\subsection{$R_D = 1097752/1000$}
+\subsubsection{Operating Point on static conditions ($\lambda_3 = 0$)}
+\lstinputlisting{netlist/DifferentialAmplifierStaticConditions1000.cir}
+\lstinputlisting{netlist/DifferentialAmplifierStaticConditions1000.op}
+
+\subsubsection{Operating Point - common mode signals}
+\lstinputlisting{netlist/DifferentialAmplifierVCM1000.cir}
+\lstinputlisting{netlist/DifferentialAmplifierVCM1000.op}
+
+\subsubsection{Operating Point - differential signals}
+\lstinputlisting{netlist/DifferentialAmplifierVID1000.cir}
+\lstinputlisting{netlist/DifferentialAmplifierVID1000.op}
 
 \end{document}

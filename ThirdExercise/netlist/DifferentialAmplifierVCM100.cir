@@ -1,4 +1,4 @@
-* Differential Amplifier - Differential signals
+* Differential Amplifier - Common Mode signals
 ********************************************************************************
 * 3st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
 *                        Pietro Prandini - mat. 1097752                        *
@@ -10,7 +10,7 @@
 ********************************************************************************
 
 * Parameters
-.param RD = 20k
+.param RD = {1097752/100}
 
 * NMOS models
 .model NA NMOS VT0=0.5 KP=200u LAMBDA=0 W=4.00u L=0.20u
@@ -32,7 +32,7 @@ M4 D4 D4 SS SS NS
 VDD DD 0 3
 VSS SS 0 -3
 Vi1 G1 0 sine(0 10m 10k 0 0 0)
-Vi2 0 G2 sine(0 10m 10k 0 0 0)
+Vi2 G2 0 sine(0 10m 10k 0 0 0)
 
 * Analysis
 .op

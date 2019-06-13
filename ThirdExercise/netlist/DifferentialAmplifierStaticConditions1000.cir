@@ -1,4 +1,4 @@
-* Differential Amplifier - Differential signals
+* Differential Amplifier - Static conditions
 ********************************************************************************
 * 3st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
 *                        Pietro Prandini - mat. 1097752                        *
@@ -10,12 +10,11 @@
 ********************************************************************************
 
 * Parameters
-.param RD = 20k
+.param RD = {1097752/1000}
 
 * NMOS models
 .model NA NMOS VT0=0.5 KP=200u LAMBDA=0 W=4.00u L=0.20u
 .model NS NMOS VT0=0.5 KP=200u LAMBDA=0 W=1.25u L=0.25u
-.model NS3 NMOS VT0=0.5 KP=200u LAMBDA=0.02 W=1.25u L=0.25u
 
 * Resistances
 RD1 DD D1 {RD}
@@ -25,14 +24,14 @@ RD4 DD D4 33k
 * Transistors
 M1 D1 G1 SA SA NA
 M2 D2 G2 SA SA NA
-M3 SA D4 SS SS NS3
+M3 SA D4 SS SS NS
 M4 D4 D4 SS SS NS
 
 * Voltage sources
 VDD DD 0 3
 VSS SS 0 -3
-Vi1 G1 0 sine(0 10m 10k 0 0 0)
-Vi2 0 G2 sine(0 10m 10k 0 0 0)
+Vi1 G1 0 0
+Vi2 G2 0 0
 
 * Analysis
 .op
