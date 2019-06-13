@@ -1,1 +1,33 @@
        --- Operating Point ---
+
+V(dd):    3               voltage
+V(d1):    2.17633         voltage
+V(d2):    2.17633         voltage
+V(d4):    -1.95216        voltage
+V(g1):    0               voltage
+V(sa):    -0.693691       voltage
+V(g2):    0               voltage
+V(ss):    -3              voltage
+Id(M4):   0.000150065     device_current
+Ig(M4):   0               device_current
+Ib(M4):   -1.05784e-012   device_current
+Is(M4):   -0.000150065    device_current
+Id(M3):   0.000150065     device_current
+Ig(M3):   0               device_current
+Ib(M3):   -2.31631e-012   device_current
+Is(M3):   -0.000150065    device_current
+Id(M2):   7.50327e-005    device_current
+Ig(M2):   0               device_current
+Ib(M2):   -2.88002e-012   device_current
+Is(M2):   -7.50327e-005   device_current
+Id(M1):   7.50327e-005    device_current
+Ig(M1):   0               device_current
+Ib(M1):   -2.88002e-012   device_current
+Is(M1):   -7.50327e-005   device_current
+I(Rd4):   0.000150065     device_current
+I(Rd2):   7.50327e-005    device_current
+I(Rd1):   7.50327e-005    device_current
+I(Vi2):   0               device_current
+I(Vi1):   0               device_current
+I(Vss):   0.000300131     device_current
+I(Vdd):   -0.000300131    device_current
