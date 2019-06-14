@@ -1,0 +1,31 @@
+* CMOS Inverter - Characteristic Vin/Vout
+********************************************************************************
+* 3st Exercise - Fundamentals Of Electronics - a.a. 2018-2019 - UniPD - Italy  *
+*                        Pietro Prandini - mat. 1097752                        *
+*                                                                              *
+* This work is licensed under the Creative Commons Attribution-ShareAlike 4.0  *
+* International License. To view a copy of this license, visit                 *
+* http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative  *
+* Commons, PO Box 1866, Mountain View, CA 94042, USA.                          *
+********************************************************************************
+
+* NMOS models
+.model P PMOS VT0=-0.7 KP=12u LAMBDA=0.01 L=50n W=200n
+.model N NMOS VT0=0.7  KP=48u LAMBDA=0.01 L={ln} W={Wn}
+
+* Transistors
+Mp  OUT IN  DD  DD  P
+Mn  OUT IN  0   0   N
+
+* Voltage sources
+VDD DD  0  5
+VIN IN  0  0
+
+* Parameters
+.param Ln = 10u
+.step param Wn list 1u 2u 5u 20u 50u 100u
+
+* Analysis
+.DC VIN 0 5
+
+.END
