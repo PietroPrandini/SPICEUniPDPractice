@@ -11,7 +11,7 @@
 
 * NMOS models
 .model P PMOS VT0=-0.7 KP=12u LAMBDA=0.01 L=50n W=200n
-.model N NMOS VT0=0.7  KP=48u LAMBDA=0.01 L={ln} W={Wn}
+.model N NMOS VT0=0.7  KP=48u LAMBDA=0.01 L={50n*{Ln}} W={50n*{Wn}}
 
 * Transistors
 Mp  OUT IN  DD  DD  P
@@ -22,8 +22,8 @@ VDD DD  0  5
 VIN IN  0  0
 
 * Parameters
-.param Ln = 10u
-.step param Wn list 1u 2u 5u 20u 50u 100u
+.param Ln = 10
+.step param Wn list 1 2 5 20 50 100
 
 * Analysis
 .DC VIN 0 5
