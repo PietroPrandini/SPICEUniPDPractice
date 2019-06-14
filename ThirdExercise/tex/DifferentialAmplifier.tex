@@ -7,7 +7,7 @@
   \label{DifferentialAmplifier}
 \end{figure}
 
-Initial data:\\
+\section{Initial data}\label{DAInitialData}
 \begin{align}
 V_t = 0.5V\\
 {K'}_n = {\mu}_n C_{ox} = 200 \frac{\mu A}{V^2}\\
@@ -20,7 +20,7 @@ V_{DD} = 3V\\
 V_{SS} = -3V
 \end{align}
 
-\section{Static conditions - Analytic solution}
+\section{Static conditions}
 
 \begin{figure}[h]
   \centering
@@ -118,7 +118,7 @@ The equation \ref{M3SatCheckVSASS} hasn't to be checked, $V_{S_ASS}$ isn't calcu
 The equation \ref{M3SatCheckVD4SS} is satisfied (see the equation \ref{M4SatConfirm}).\par
 
 \subsection{MOSFET $M_1$ and MOSFET $M_2$}
-The MOSFET $M_1$ and the MOSFET $M_2$ have the same dimension and the same constructive parameters (see initial data at the start of this chapter \ref{diffampchapter}).\\
+The MOSFET $M_1$ and the MOSFET $M_2$ have the same dimension and the same constructive parameters (see initial data at the start of this chapter \ref{DAInitialData}).\\
 They also have the same voltage applied to every their pins (see figure \ref{DifferentialAmplifierStaticConditions}).\\
 So, additionally supposing the work on the saturation mode of $M_1$ and $M_2$, it's possible to confirm the next equations:\\
 \begin{align}
@@ -209,6 +209,7 @@ g_{m_1} = g_{m_2} &= K'_n \left(\frac{W}{L}\right)_1 (V_{G_1S_A} - V_t)\\
 %&= 547.80 \mu A/V
 %\end{align}
 
+\section{Small signal analysis}
 \subsection{MOSFET $M_3$ with $\lambda = 0.02$}
 From now the MOSFET $M_3$ is considered with $\lambda = 0.02$.\par
 On this way there are some changes of the voltages and the currents of the circuit but they could be considered negligible, so it's considered true the past result from now too.\par
@@ -240,8 +241,7 @@ In this way the mirror current source composed by the MOSFET $M_4$ and the MOSFE
 
 Now it could be clear the effect of the $\lambda = 0.02$ of the MOSFET $M_3$ because its resistance $r_0$ has an effect to the gain of the circuit if the voltage of the node $S_A$ is different than null.\par
 
-\subsection{Gain single ended}
-\subsubsection{Differential pure signal gain}
+\subsection{Differential pure signal gain}
 Now it's applied  small alternate voltage signal to the circuit of the figure \ref{PiSimple}:\\
 \begin{align}
 V_{i_1} =+ \frac{V_{id}}{2} \label{Vi1d}\\
@@ -282,7 +282,7 @@ A_d &= \frac{V_{D_2} - V_{D_1}}{V_{id}}\\
 &= g_m R_{D} \label{Ad}
 \end{align}
 
-\subsubsection{Common mode gain}
+\subsection{Common mode gain}
 By applying a common mode signal to the inputs of the differential amplifier, on $r0$ there is current different than null, so in this case it gives an important role to the common mode gain.\\
 \begin{figure}[h]
   \centering
@@ -331,7 +331,7 @@ A_{CM} &= \frac{V_{D_2} - V_{D_1}}{V_{i_{CM}}}\\
 &= 0
 \end{align}
 
-\subsubsection{Common mode gain with $\lambda_3 = 0$}
+\subsection{Common mode gain with $\lambda_3 = 0$}
 With $\lambda_3 = 0$, the $r_0$ of the MOSFET $M_3$ isn't finite.\\
 So the common mode gain would be null but also the single ended gain.\par
 
