@@ -14,7 +14,7 @@ V_{DD} = 5V
 \begin{align} \label{mp}
 M_p \left\{
 \begin{array}{l}
-V_t = 0.7V\\
+V_{t_p} = -0.7V\\
 K'_p = \mu _p C_{ox} = 12 \mu A / V^2\\
 \lambda = 0.01 V^{-1}
 \end{array}
@@ -24,7 +24,7 @@ K'_p = \mu _p C_{ox} = 12 \mu A / V^2\\
 \begin{align} \label{mn}
 M_n \left\{
 \begin{array}{l}
-V_t = 0.7V\\
+V_{t_n} = 0.7V\\
 K'_n = \mu _n C_{ox} = 48 \mu A / V^2\\
 \lambda = 0.01 V^{-1}
 \end{array}
@@ -64,9 +64,9 @@ So in the equations \ref{wn} and \ref{wp} there is the weight of the MOSFET's ci
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
-MOS & $K'_{n,p}$ & $W_{n,p}$ & $L_{n,p}$ & $V_t$ & $\lambda$\\
+MOS & $K'_{p,n}$ & $W_{p,n}$ & $L_{p,n}$ & $V_{t_{p,n}}$ & $\lambda$\\
 \hline
-$M_p$ & $12 \mu A / V^2$ & $200nm$ & $50nm$ & $0.7V$ & $0.01 V^{-1}$\\
+$M_p$ & $12 \mu A / V^2$ & $200nm$ & $50nm$ & $-0.7V$ & $0.01 V^{-1}$\\
 $M_n$ & $48 \mu A / V^2$ & $50nm$ & $50nm$ & $0.7V$ & $0.01 V^{-1}$\\
 \hline
 \end{tabular}
